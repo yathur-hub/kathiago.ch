@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+interface Props {
+  portalId: string;
+  formId: string;
+}
+
+const { portalId = "456789", formId = "123-abc-456" } = Astro.props;
+---
+
+<div class="hubspot-form-container">
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+  <script define:vars={{ portalId, formId }}>
+    // @ts-ignore
+    if (window.hbspt) {
+      // @ts-ignore
+      window.hbspt.forms.create({
+        region: "na1",
+        portalId: portalId,
+        formId: formId
+      });
+    }
+  </script>
+  <div id={`hs-form-${formId}`}></div>
+</div>

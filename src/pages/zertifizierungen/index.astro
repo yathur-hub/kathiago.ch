@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const certs = [
+  { title: 'CICERO', href: '/zertifizierungen/cicero/', description: 'Das Branchenregister für Versicherungsvermittler.' },
+  { title: 'SAQ', href: '/zertifizierungen/saq/', description: 'Zertifizierung für Bankkundenberater nach ISO-Norm.' },
+  { title: 'Rezertifizierung', href: '/zertifizierungen/rezertifizierung/', description: 'Erhalten Sie Ihren Status durch kontinuierliche Weiterbildung.' },
+];
+---
+
+<Layout 
+  title="Zertifizierungen" 
+  description="Übersicht der anerkannten Branchenzertifizierungen wie CICERO und SAQ."
+>
+  <section class="bg-navy text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-6xl mb-6">Anerkannte <span class="text-accent">Zertifizierungen</span></h1>
+      <p class="text-xl text-slate-300 max-w-2xl">Wir bereiten Sie auf die wichtigsten Standards der Schweizer Finanzbranche vor.</p>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {certs.map(cert => (
+          <div class="card p-8">
+            <h2 class="text-2xl mb-4 text-primary">{cert.title}</h2>
+            <p class="text-slate-600 mb-6">{cert.description}</p>
+            <a href={cert.href} class="text-primary font-bold hover:underline">Mehr erfahren &rarr;</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

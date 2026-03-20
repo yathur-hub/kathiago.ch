@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { ContentService } from '../../services/contentService';
+
+const posts = await ContentService.getBlogPosts();
+---
+
+<Layout title="Blog">
+  <section class="bg-surface py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-6xl mb-6">Kathiago <span class="text-primary">Insights</span></h1>
+      <p class="text-xl text-slate-600 max-w-2xl">Aktuelle Analysen, News und Praxistipps für die Finanzbranche.</p>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.map(post => (
+          <article class="card flex flex-col">
+            <div class="p-6 flex-grow">
+              <div class="text-xs font-bold text-primary uppercase mb-2">{post.data.category}</div>
+              <h2 class="text-xl mb-4 hover:text-primary transition-colors">
+                <a href={`/blog/${post.data.category.toLowerCase()}/${post.data.slug || post.id}/`}>{post.data.title}</a>
+              </h2>
+              <p class="text-slate-600 text-sm mb-6">{post.data.metaDescription}</p>
+            </div>
+            <div class="p-6 border-t border-slate-100 flex justify-between items-center text-xs text-slate-400">
+              <span>Von {post.data.author}</span>
+              <span>{post.data.publishDate.toLocaleDateString('de-CH')}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

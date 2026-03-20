@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { ContentService } from '../../services/contentService';
+
+const programs = await ContentService.getPrograms();
+---
+
+<Layout title="Programme">
+  <section class="bg-navy text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-6xl mb-6">Unsere <span class="text-accent">Bildungsprogramme</span></h1>
+      <p class="text-xl text-slate-300 max-w-2xl">Vom Einstieg bis zur Experten-Zertifizierung. Finden Sie den passenden Weg für Ihre Karriere.</p>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {programs.map(program => (
+          <div class="card flex flex-col">
+            <div class="p-8 flex-grow">
+              <div class="text-xs font-bold text-primary uppercase tracking-wider mb-4">{program.data.category}</div>
+              <h3 class="text-2xl mb-4">{program.data.title}</h3>
+              <p class="text-slate-600 mb-8">{program.data.metaDescription}</p>
+              <ul class="space-y-2 mb-8">
+                {program.data.modules?.slice(0, 3).map(mod => (
+                  <li class="text-sm text-slate-500 flex items-center">
+                    <span class="text-primary mr-2">&check;</span> {mod}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="p-8 pt-0">
+              <a href={`/programme/${program.data.slug || program.id}/`} class="btn-primary w-full">Details & Anmeldung</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

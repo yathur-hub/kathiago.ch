@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="404 - Seite nicht gefunden">
+  <section class="section-spacing min-h-[60vh] flex items-center justify-center text-center">
+    <div class="max-w-xl px-4">
+      <h1 class="text-9xl font-display font-bold text-primary/20 mb-4">404</h1>
+      <h2 class="text-3xl md:text-4xl mb-6">Hoppla! Diese Seite existiert nicht.</h2>
+      <p class="text-slate-600 mb-10">
+        Es scheint, als hätten wir den Pfad verloren. Vielleicht hilft Ihnen unsere Navigation weiter oder Sie kehren zur Startseite zurück.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/" class="btn-primary">Zur Startseite</a>
+        <a href="/programme/" class="btn-secondary">Programme entdecken</a>
+      </div>
+    </div>
+  </section>
+</Layout>

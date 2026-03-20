@@ -1,0 +1,395 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ContentService } from '../services/contentService';
+
+const programs = await ContentService.getPrograms();
+---
+
+<Layout title="Finanzbildung für Berater, die Verantwortung tragen">
+  <!-- 1. HERO -->
+  <section class="relative bg-surface pt-20 pb-32 md:pt-32 md:pb-48 overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 -left-24 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
+      <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+            Zukunft der Finanzberatung
+          </div>
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 text-navy leading-[0.9] tracking-tight">
+            Finanzbildung für Berater, die <span class="text-primary">Verantwortung</span> tragen.
+          </h1>
+          <div class="max-w-2xl space-y-6 text-xl text-slate-600 mb-12 leading-relaxed">
+            <p>
+              Die Schweizer Finanzberatung verändert sich fundamental. Regulatorische Anforderungen steigen, Produkte werden komplexer und digitale Vermögenswerte verändern die Gespräche in der Praxis.
+            </p>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-4 mb-12">
+            <a href="/programme/" class="btn-primary text-lg px-8 py-4 shadow-lg shadow-primary/20">Programm finden</a>
+            <a href="/kontakt/" class="btn-secondary text-lg px-8 py-4">Strategiegespräch buchen</a>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-x-8 gap-y-6 pt-8 border-t border-slate-200/60">
+            <div class="flex items-center space-x-2 text-sm font-bold text-slate-400 uppercase tracking-widest">
+              <span>Anerkannt durch:</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+              <img src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/vbv%20logo.webp" alt="VBV" class="h-12 w-auto object-contain" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqtbOiYEwWSpsqvTVH572nIMLNbvjMhmOwvw&s" alt="IAF" class="h-10 w-auto object-contain" />
+              <img src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/Eidgeno%CC%88ssische_Finanzmarktaufsicht_logo.svg.png" alt="FINMA" class="h-8 w-auto object-contain" />
+              <img src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/SAQ_Logo_CMYK.jpg" alt="SAQ" class="h-8 w-auto object-contain" />
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative hidden lg:block">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-[2rem] blur-2xl opacity-50"></div>
+            <div class="relative bg-white p-8 rounded-[2rem] border border-slate-100 shadow-2xl space-y-8">
+              <div class="space-y-4">
+                <div class="h-1 w-12 bg-primary rounded-full"></div>
+                <h3 class="text-2xl font-bold text-navy">Warum Kathiago?</h3>
+              </div>
+              <ul class="space-y-6">
+                {[
+                  "Anerkannte Qualifikationen (VBV, IAF, FIDLEG)",
+                  "Praxisorientierte Ausbildung mit realen Fällen",
+                  "Strukturierte Kompetenzpfade statt Seminare",
+                  "Integration digitaler Vermögenswerte"
+                ].map((item) => (
+                  <li class="flex items-start space-x-4 group">
+                    <div class="mt-1 w-5 h-5 rounded-full bg-success/10 flex items-center justify-center text-success flex-shrink-0 group-hover:bg-success group-hover:text-white transition-colors">
+                      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <span class="text-slate-700 font-medium leading-tight">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div class="pt-4">
+                <a href="/ueber-uns/" class="text-primary font-bold hover:underline inline-flex items-center">
+                  Mehr über unsere Haltung <span class="ml-2">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unsere Bildungsprogramme -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Unsere Bildungsprogramme</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {programs.map(program => (
+          <div class="card flex flex-col">
+            <div class="p-8 flex-grow">
+              <div class="text-xs font-bold text-primary uppercase tracking-wider mb-4">{program.data.category}</div>
+              <h3 class="text-2xl mb-4">{program.data.title}</h3>
+              <p class="text-slate-600 mb-8">{program.data.metaDescription}</p>
+              <ul class="space-y-2 mb-8">
+                {program.data.modules?.slice(0, 3).map(mod => (
+                  <li class="text-sm text-slate-500 flex items-center">
+                    <span class="text-primary mr-2">&check;</span> {mod}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="p-8 pt-0">
+              <a href={`/programme/${program.data.slug || program.id}/`} class="btn-primary w-full">Details & Anmeldung</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MARKTRELEVANZ – WARUM JETZT? -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Der Beratungsmarkt wird nicht einfacher. Er wird anspruchsvoller.</h2>
+        <div class="space-y-6 text-slate-600 mb-12">
+          <p>Die Anforderungen an Finanzberater haben sich in den letzten Jahren fundamental verändert.</p>
+          <p>
+            FIDLEG verlangt nicht nur formale Kenntnisse, sondern einen strukturierten Umgang mit Verhaltensregeln, Informationspflichten und Dokumentationsanforderungen.
+            Gleichzeitig erwarten Kunden transparente Erklärungen zu Anlageklassen, Risiken, Gebührenstrukturen und Alternativen.
+          </p>
+          <p>
+            Hinzu kommt eine neue Dimension: digitale Vermögenswerte.
+            Bitcoin, Tokenisierung und neue Marktinfrastrukturen sind Teil öffentlicher Diskussionen geworden – und damit Teil von Kundengesprächen.
+          </p>
+          <p>
+            Die Herausforderung besteht nicht darin, alles zu wissen.
+            Die Herausforderung besteht darin, strukturiert zu denken, korrekt zu argumentieren und regulatorisch sauber zu handeln.
+          </p>
+          <p>Kathiago adressiert genau diese Schnittstelle zwischen Marktanforderung und Kompetenzentwicklung.</p>
+        </div>
+        <blockquote class="border-l-4 border-primary pl-6 py-2 italic text-2xl text-navy font-display">
+          „Beratung beginnt nicht beim Produkt.<br />
+          Sie beginnt beim Verständnis.“
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. UNSER KOMPETENZMODELL -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-8 text-navy">Struktur statt Seminar. Entwicklung statt Wissensansammlung.</h2>
+      <div class="max-w-3xl space-y-6 text-slate-600 mb-12">
+        <p>Viele Weiterbildungen vermitteln Inhalte.</p>
+        <p>Wir entwickeln Kompetenz.</p>
+        <p>Unsere Programme basieren auf einem klar definierten Entwicklungsmodell, das drei Dimensionen verbindet.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div class="card p-8 bg-white">
+          <h3 class="text-xl font-bold mb-4 text-primary">1. Fachliche Tiefe</h3>
+          <div class="space-y-4 text-slate-600 text-sm">
+            <p>Ein Finanzberater muss Anlageklassen verstehen, Vorsorgesysteme durchdringen, steuerliche Zusammenhänge einordnen und Immobilienfinanzierungen korrekt berechnen können.</p>
+            <p>Diese Tiefe entsteht nicht durch reine Theorie.</p>
+            <p>Sie entsteht durch strukturierte Fallarbeit, Repetition, Anwendung und kritische Auseinandersetzung mit realen Beratungssituationen.</p>
+            <p>Unsere Programme bauen Wissen systematisch auf – von Grundlagen bis zur komplexen Finanzplanung.</p>
+          </div>
+        </div>
+        <div class="card p-8 bg-white">
+          <h3 class="text-xl font-bold mb-4 text-primary">2. Regulatorische Klarheit</h3>
+          <div class="space-y-4 text-slate-600 text-sm">
+            <p>Regulierung ist kein Nebenthema.</p>
+            <p>Sie ist Teil der täglichen Beratung.</p>
+            <p>Wir vermitteln:</p>
+            <ul class="list-disc pl-4 space-y-1">
+              <li>Verhaltensregeln gemäss FIDLEG</li>
+              <li>Informations- und Dokumentationspflichten</li>
+              <li>Einordnung von Prospekt- und Basisinformationspflicht</li>
+              <li>Strukturierte Portfolioanalyse im regulatorischen Kontext</li>
+            </ul>
+            <p>Ziel ist nicht regulatorische Angst, sondern regulatorische Souveränität.</p>
+          </div>
+        </div>
+        <div class="card p-8 bg-white">
+          <h3 class="text-xl font-bold mb-4 text-primary">3. Zukunftsfähigkeit</h3>
+          <div class="space-y-4 text-slate-600 text-sm">
+            <p>Digitale Vermögenswerte sind kein Modethema.</p>
+            <p>Sie sind Bestandteil moderner Kapitalmärkte.</p>
+            <p>Berater müssen sie weder promoten noch ablehnen – aber sie müssen sie einordnen können.</p>
+            <p>Wir vermitteln Integrationslogik:</p>
+            <p>Wie lassen sich neue Anlageformen in bestehende Beratungsprozesse einbetten, ohne regulatorische Sicherheit zu gefährden?</p>
+          </div>
+        </div>
+      </div>
+      <a href="/programme/" class="text-primary font-bold hover:underline flex items-center">
+        Programme im Überblick <span class="ml-2">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 4. DEIN ENTWICKLUNGSPFAD -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-navy">Weiterbildung als systematischer Aufbau.</h2>
+        <p class="text-xl text-slate-600">Kompetenz entsteht nicht sprunghaft. Sie entsteht durch aufeinander abgestimmte Entwicklungsschritte.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {[
+          {
+            step: "01",
+            title: "Versicherungsvermittler VBV",
+            desc: "Die regulatorische und fachliche Grundlage für professionelle Versicherungsberatung.",
+            color: "bg-primary/5 border-primary/20"
+          },
+          {
+            step: "02",
+            title: "Finanzberater IAF",
+            desc: "Erweiterung um Vermögensberatung, Immobilienfinanzierung und Steuerkompetenz.",
+            color: "bg-primary/10 border-primary/20"
+          },
+          {
+            step: "03",
+            title: "Vermögensberater",
+            desc: "Vertiefung der Anlagekompetenz und Portfolioanalyse im FIDLEG-Kontext.",
+            color: "bg-primary/20 border-primary/30"
+          },
+          {
+            step: "04",
+            title: "Eidg. Finanzplaner",
+            desc: "Qualifikation für komplexe Lebenszyklusplanung und anspruchsvolle Mandate.",
+            color: "bg-navy text-white border-navy"
+          },
+          {
+            step: "05",
+            title: "Crypto Advisor",
+            desc: "Ergänzung des Fundaments um digitale Asset-Kompetenz und neue Marktinfrastrukturen.",
+            color: "bg-accent/10 border-accent/20"
+          }
+        ].map((item) => (
+          <div class={`p-8 rounded-3xl border ${item.color} flex flex-col h-full`}>
+            <div class="text-xs font-bold uppercase tracking-widest mb-4 opacity-60">Schritt {item.step}</div>
+            <h3 class="text-2xl font-bold mb-4 leading-tight">{item.title}</h3>
+            <p class="text-sm opacity-80 leading-relaxed mb-6">{item.desc}</p>
+            <div class="mt-auto">
+              <div class="h-1 w-12 bg-current opacity-20 rounded-full"></div>
+            </div>
+          </div>
+        ))}
+        <div class="p-8 rounded-3xl border border-dashed border-slate-300 flex flex-col items-center justify-center text-center bg-slate-50">
+          <h3 class="text-xl font-bold text-navy mb-2">Individueller Pfad?</h3>
+          <p class="text-sm text-slate-500 mb-6">Lassen Sie uns gemeinsam Ihre optimale Route planen.</p>
+          <a href="/kontakt/" class="btn-primary w-full">Beratung anfordern</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. TRADITION UND DIGITALE VERMÖGENSWERTE -->
+  <section class="section-spacing bg-navy text-white overflow-hidden relative">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <h2 class="text-3xl md:text-5xl font-bold mb-8">Zwischen bewährten Anlageformen und neuen Marktstrukturen.</h2>
+        <p class="text-xl text-slate-300">Die Finanzberatung steht an einer Schnittstelle. Berater, die beide Welten verstehen, gewinnen an Glaubwürdigkeit.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-10 rounded-[2.5rem] space-y-8">
+          <div class="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center text-primary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-3xl font-bold">Die Tradition</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Bewährte Anlageformen wie Obligationen, Aktien, Fonds und strukturierte Produkte bilden das Fundament. Wir vermitteln tiefes Verständnis für Vorsorgesysteme und steuerliche Zusammenhänge.
+          </p>
+          <ul class="space-y-3 pt-4">
+            {["Aktien & Obligationen", "Vorsorge & Steuern", "Immobilienfinanzierung"].map(item => (
+              <li class="flex items-center gap-3 text-sm text-slate-300">
+                <span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-10 rounded-[2.5rem] space-y-8">
+          <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center text-accent">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-3xl font-bold">Die Innovation</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Blockchain-Technologie, Tokenisierung und digitale Assets verändern die Marktinfrastruktur. Wir befähigen Berater, diese Entwicklungen korrekt einzuordnen und regulatorisch sicher zu handeln.
+          </p>
+          <ul class="space-y-3 pt-4">
+            {["Bitcoin & Blockchain", "Tokenisierung", "Digitale Marktinfrastruktur"].map(item => (
+              <li class="flex items-center gap-3 text-sm text-slate-300">
+                <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-20 text-center">
+        <p class="text-slate-400 mb-8 max-w-2xl mx-auto">Kathiago vermittelt keine Spekulation. Wir vermitteln strukturiertes Verständnis, Risikoeinordnung und dokumentationsfähige Beratung.</p>
+        <a href="/programme/crypto-advisor/" class="btn-accent text-lg px-10 py-4 inline-block">Crypto Advisor entdecken</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. RESSOURCEN & ANALYSE -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl mb-8 text-navy">Wir entwickeln Programme nicht im Vakuum.</h2>
+          <div class="space-y-6 text-slate-600 mb-10">
+            <p>Die Finanzbranche verändert sich dynamisch.</p>
+            <p>Regulatorische Anpassungen, Marktvolatilität, technologische Innovationen – all das beeinflusst Beratung.</p>
+            <p>Deshalb publiziert Kathiago regelmässig Analysen zu:</p>
+            <ul class="list-disc pl-4 space-y-2">
+              <li>Digital Asset Integration</li>
+              <li>Entwicklung regulatorischer Rahmenbedingungen</li>
+              <li>Veränderungen in der Beratungsstruktur</li>
+              <li>Trends in der Portfoliozusammensetzung</li>
+            </ul>
+            <p>Diese Ressourcen-Arbeit dient als Grundlage für unsere Ausbildungsinhalte.</p>
+            <p>Wir lehren nicht, was gestern relevant war – sondern was morgen Bestand hat.</p>
+          </div>
+          <a href="/ressourcen/" class="btn-primary">Aktuellen Report herunterladen</a>
+        </div>
+        <div class="bg-surface p-12 rounded-3xl border border-slate-100">
+          <div class="aspect-[3/4] bg-slate-200 rounded-xl shadow-inner flex items-center justify-center text-slate-400 italic">
+            [Visualisierung: Ressourcen Report Cover]
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FÜR WEN WIR ARBEITEN -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Kompetenz für Berater mit Anspruch.</h2>
+        <div class="space-y-6 text-slate-600 mb-10">
+          <p>Unsere Programme richten sich an Finanzberater, die ihre Tätigkeit als verantwortungsvolle Profession verstehen.</p>
+          <p>An Einzelberater, die regulatorische Sicherheit suchen.</p>
+          <p>An Selbständige, die ihre Marktposition stärken wollen.</p>
+          <p>An Teams und Unternehmen, die Weiterbildung als strategischen Hebel begreifen.</p>
+          <p>Wir sind kein Massenanbieter.</p>
+          <p>Wir arbeiten mit Beratern, die Qualität als Differenzierungsmerkmal sehen.</p>
+        </div>
+        <a href="/kontakt/" class="btn-primary">Weiterbildung besprechen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. UNSERE HALTUNG -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Von aktiven Marktpraktikern geführt.</h2>
+        <div class="space-y-6 text-slate-600">
+          <p>Kathiago wurde von zwei erfahrenen Finanzdienstleistern gegründet, die zusammen über 20 Jahre kombinierte Markterfahrung einbringen.</p>
+          <p>Diese Erfahrung prägt unsere Inhalte:</p>
+          <ul class="list-disc pl-4 space-y-2">
+            <li>reale Kundengespräche</li>
+            <li>typische Einwände</li>
+            <li>komplexe Mandate</li>
+            <li>regulatorische Unsicherheiten</li>
+            <li>Marktveränderungen aus erster Hand</li>
+          </ul>
+          <p>Unsere Perspektive ist operativ, nicht theoretisch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. ABSCHLUSS -->
+  <section class="py-24 bg-primary text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl md:text-5xl mb-8">Kompetenz ist eine Entscheidung.</h2>
+      <div class="max-w-2xl mx-auto space-y-6 mb-12 opacity-90">
+        <p>Die Finanzberatung wird nicht einfacher.</p>
+        <p>Sie wird anspruchsvoller, technischer und verantwortungsvoller.</p>
+        <p>Weiterbildung ist deshalb kein Zusatzmodul im Kalender.</p>
+        <p>Sie ist Grundlage professioneller Beratung.</p>
+        <p>Wenn du Beratung ernst nimmst, ist der nächste Schritt klar.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/programme/" class="bg-accent hover:bg-amber-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">Programm auswählen</a>
+        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Strategiegespräch buchen</a>
+      </div>
+    </div>
+  </section>
+</Layout>

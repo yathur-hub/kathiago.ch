@@ -1,0 +1,228 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Regulatorische Analysen für Finanzberater">
+  <!-- 1) HERO -->
+  <section class="relative bg-navy pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden text-white">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/10 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+          Research
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-[0.9] tracking-tight">
+          Regulatorische Analysen für Finanzberater
+        </h1>
+        <p class="text-xl md:text-2xl font-medium mb-10 leading-relaxed opacity-90">
+          Einordnung von FIDLEG, FINIG und weiteren Vorschriften – verständlich, strukturiert und praxisnah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/insights/" class="btn-primary text-lg px-8 py-4 shadow-lg shadow-primary/20">Aktuelle Analyse herunterladen</a>
+          <a href="/insights/" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">Alle Analysen ansehen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2) WARUM REGULATORISCHE ANALYSEN? -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl mb-8 text-navy">Komplexität reduziert Entscheidungsfähigkeit</h2>
+          <div class="space-y-6 text-slate-600">
+            <p>Regulatorische Anforderungen sind umfangreich, technisch formuliert und schwer einzuordnen. Viele Berater stehen vor der Frage: „Was bedeutet das konkret für meine Beratung?“</p>
+            <p>Regulatorische Analysen von Kathiago schaffen Klarheit und Sicherheit im Beratungsprozess.</p>
+          </div>
+        </div>
+        <div class="bg-surface p-8 rounded-2xl border border-primary/10">
+          <h3 class="font-bold text-navy mb-4">Typische Probleme:</h3>
+          <ul class="space-y-2 text-slate-600">
+            {["Gesetz verstanden, aber nicht angewendet", "Unsicherheit bei der Umsetzung", "Fehlende Struktur im Beratungsprozess"].map(item => (
+              <li class="flex items-center gap-2"><span class="text-accent">✓</span> {item}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12">
+        <blockquote class="border-l-4 border-primary pl-6 py-2 italic text-2xl text-navy font-display">
+          „Regulierung wird erst relevant, wenn sie deinen Alltag beeinflusst.“
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) POSITIONIERUNG IM SYSTEM -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Der Compliance-Layer im Content-System</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {[
+          { title: "Funktion", items: ["Übersetzung in Praxis", "Ergänzung zu Marktstudien", "Grundlage für Weiterbildung"] },
+          { title: "Wirkung", items: ["Beratungsqualität", "Risikoreduktion", "Entscheidungsfähigkeit"] },
+          { title: "Bestandteil von", items: ["Content-System", "Strategischer Layer", "Compliance-Struktur"] }
+        ].map(item => (
+          <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+            <h3 class="font-bold text-navy mb-4">{item.title}</h3>
+            <ul class="space-y-2 text-slate-600">
+              {item.items.map(sub => <li>{sub}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) THEMENFELDER -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Was analysiert wird</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { title: "FIDLEG", desc: "Verhaltensregeln, Dokumentationspflichten, Kundenklassifizierung" },
+          { title: "FINIG", desc: "Anforderungen an Institute, organisatorische Vorgaben" },
+          { title: "Beratungspflichten", desc: "Informationspflicht, Offenlegung, Interessenkonflikte" },
+          { title: "Produktregulierung", desc: "Prospektpflicht, Basisinformationsblatt, Transparenz" },
+          { title: "Neue Entwicklungen", desc: "Änderungen, Anpassungen, Interpretation" }
+        ].map(item => (
+          <div class="p-6 bg-surface rounded-xl border border-slate-100 flex flex-col">
+            <h3 class="font-bold text-navy mb-2">{item.title}</h3>
+            <p class="text-slate-600 text-sm">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) AUFBAU EINER ANALYSE -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Von Gesetz zu Handlung</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+          <h3 class="font-bold text-navy mb-4">Struktur</h3>
+          <ul class="list-decimal pl-5 space-y-2 text-slate-600">
+            <li>Ausgangslage</li>
+            <li>Problemstellung</li>
+            <li>Analyse</li>
+            <li>Übersetzung in Praxis</li>
+            <li>Handlungsempfehlungen</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex items-center">
+          <p class="text-lg text-slate-600 font-bold">Ziel ist immer:<br/>→ vom Gesetz zur Handlung</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6) METHODIK -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Wie analysiert wird</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {[
+          { title: "Quellen", items: ["gesetzliche Grundlagen", "offizielle Dokumente", "Branchenstandards"] },
+          { title: "Interpretation", items: ["Einordnung durch Praxiserfahrung", "Verbindung zu realen Situationen"] },
+          { title: "Strukturierung", items: ["Reduktion auf Relevanz", "klare Entscheidungslogiken"] }
+        ].map(item => (
+          <div class="p-8 bg-surface rounded-2xl border border-slate-100">
+            <h3 class="font-bold text-navy mb-4">{item.title}</h3>
+            <ul class="space-y-2 text-slate-600 text-sm">
+              {item.items.map(sub => <li>{sub}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) NUTZEN FÜR DEN LESER -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Was du konkret daraus ziehst</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+          <h3 class="font-bold text-navy mb-4">Konkreter Nutzen</h3>
+          <ul class="list-disc pl-5 space-y-2 text-slate-600">
+            <li>klare Einordnung regulatorischer Anforderungen</li>
+            <li>strukturierte Umsetzung im Alltag</li>
+            <li>Reduktion von Unsicherheit</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+          <h3 class="font-bold text-navy mb-4">Für Berater bedeutet das:</h3>
+          <ul class="list-disc pl-5 space-y-2 text-slate-600">
+            <li>weniger Fehler</li>
+            <li>höhere Sicherheit</li>
+            <li>bessere Qualität</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8) DOWNLOAD & ZUGANG -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl mb-8 text-navy">Zugang zu den Analysen</h2>
+      <p class="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">Die Analysen werden als strukturierte Dokumente bereitgestellt. Einfach auswählen, Kontaktdaten eingeben und sofortigen Zugriff erhalten.</p>
+      <a href="/insights/" class="btn-primary text-lg px-8 py-4">Analyse herunterladen</a>
+    </div>
+  </section>
+
+  <!-- 9) WEITERVERWENDUNG -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Mehr als einmal lesen</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {[
+          { title: "Weiterbildung", items: ["Integration in Lehrgänge", "Ergänzung zu Kursinhalten"] },
+          { title: "Blog", items: ["vertiefende Einzelthemen"] },
+          { title: "Updates", items: ["Praxis", "direkte Anwendung im Beratungsalltag"] }
+        ].map(item => (
+          <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+            <h3 class="font-bold text-navy mb-4">{item.title}</h3>
+            <ul class="space-y-2 text-slate-600 text-sm">
+              {item.items.map(sub => <li>{sub}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 10) STRATEGISCHE RELEVANZ -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Warum dieser Bereich entscheidend ist</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {["Compliance-Sicherheit", "Vertrauensaufbau", "Differenzierung", "Sales Enablement"].map(item => (
+          <div class="p-6 bg-surface rounded-xl border border-slate-100 text-center font-bold text-navy">
+            {item}
+          </div>
+        ))}
+      </div>
+      <p class="mt-12 text-center text-xl font-bold text-navy">Ohne Einordnung bleibt Regulierung ein Risiko. Mit Einordnung wird sie beherrschbar.</p>
+    </div>
+  </section>
+
+  <!-- 11) ABSCHLUSS -->
+  <section class="py-24 bg-navy text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl md:text-5xl mb-8 text-white">Regulierung verstehen – statt reagieren</h2>
+      <div class="max-w-2xl mx-auto space-y-6 mb-12 opacity-90">
+        <p>Regulierung wird nicht weniger. Sie wird komplexer.</p>
+        <p>Wer erfolgreich beraten will, muss: verstehen, einordnen, umsetzen.</p>
+        <p>Die regulatorischen Analysen liefern dafür die Grundlage.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/insights/" class="bg-accent hover:bg-amber-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">Aktuelle Analyse herunterladen</a>
+        <a href="/insights/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Alle Analysen ansehen</a>
+        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Beratung anfragen</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,323 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+--- 
+
+<Layout title="Crypto Advisor">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fadeIn 1.5s ease-in-out forwards; }
+    .slide-up { animation: slideUp 1s ease-in-out forwards; }
+  </style>
+
+  <!-- 1. HERO -->
+  <section class="relative bg-surface pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6 fade-in">
+            Programm
+          </div>
+          <h1 class="text-5xl md:text-7xl font-bold mb-8 text-navy leading-[0.9] tracking-tight fade-in">
+            Crypto Advisor
+          </h1>
+          <p class="text-xl md:text-2xl text-primary font-medium mb-8 leading-relaxed fade-in">
+            Digitale Assets verstehen, einordnen und verantwortungsvoll in die Beratung integrieren.
+          </p>
+          <div class="space-y-6 text-lg text-slate-600 mb-10 leading-relaxed fade-in">
+            <p>Digitale Assets sind kein Trend mehr.<br />Sie sind ein fester Bestandteil der finanziellen Realität vieler Kunden.</p>
+            <p>Die Herausforderung:</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>hohe Volatilität</li>
+              <li>fehlende Einordnung</li>
+              <li>regulatorische Unsicherheit</li>
+              <li>emotionale Entscheidungen</li>
+            </ul>
+            <p>Viele Berater vermeiden das Thema. Andere überschätzen es.</p>
+            <p>Der Crypto Advisor schafft Klarheit.</p>
+            <p>Er vermittelt, wie digitale Assets strukturiert verstanden, kritisch eingeordnet und sinnvoll in bestehende Beratungskonzepte integriert werden können.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 slide-up">
+            <a href="/programme/crypto-advisor/" class="btn-primary text-lg px-8 py-4 shadow-lg shadow-primary/20">Programm entdecken</a>
+            <a href="/kontakt/" class="btn-secondary text-lg px-8 py-4">Einordnungsgespräch anfragen</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-2xl space-y-8 relative">
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-accent/10 rounded-full blur-2xl"></div>
+            <h3 class="text-2xl font-bold text-navy">Eckdaten zum Lehrgang</h3>
+            <div class="space-y-6">
+              <div class="flex items-center justify-between py-3 border-b border-slate-100">
+                <span class="text-slate-500">Format</span>
+                <span class="font-bold text-navy">Kompakt</span>
+              </div>
+              <div class="flex items-center justify-between py-3 border-b border-slate-100">
+                <span class="text-slate-500">Fokus</span>
+                <span class="font-bold text-navy">Einordnung</span>
+              </div>
+              <div class="flex items-center justify-between py-3 border-b border-slate-100">
+                <span class="text-slate-500">Ziel</span>
+                <span class="font-bold text-navy">Urteilskraft</span>
+              </div>
+              <div class="flex items-center justify-between py-3">
+                <span class="text-slate-500">Struktur</span>
+                <span class="font-bold text-navy">Systematisch</span>
+              </div>
+            </div>
+            <div class="pt-4">
+              <a href="/kontakt/" class="flex items-center justify-center w-full bg-surface text-navy p-4 rounded-xl font-bold hover:bg-slate-100 transition-colors group">
+                <span>Einordnungsgespräch anfragen</span>
+                <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. WARUM CRYPTO ADVISOR? -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Zwischen Ignoranz und Hype liegt Kompetenz</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 text-slate-600">
+          <p>Der Markt ist aktuell geprägt von zwei Extremen:</p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-6 bg-surface rounded-xl border border-slate-100">
+              <p class="font-bold text-navy">Berater, die Crypto ignorieren</p>
+            </div>
+            <div class="p-6 bg-surface rounded-xl border border-slate-100">
+              <p class="font-bold text-navy">Berater, die es unreflektiert pushen</p>
+            </div>
+          </div>
+          <p>Beides ist problematisch. Kunden stellen Fragen zu Investition, Portfolio-Integration, Risiken und Regulatorik. Wer diese nicht beantworten kann, verliert Relevanz.</p>
+        </div>
+        <blockquote class="border-l-4 border-primary pl-8 py-4 italic text-2xl text-navy font-display bg-surface p-8 rounded-r-2xl">
+          „Nicht zu wissen ist kein Risiko.<br />
+          Falsch einzuordnen schon.“
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. POSITIONIERUNG IM SYSTEM -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Kein Ersatz – sondern Erweiterung</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card p-8 bg-white border border-slate-100 rounded-2xl">
+          <h3 class="font-bold text-navy mb-4">Funktion im Bildungssystem</h3>
+          <ul class="list-disc pl-5 space-y-2 text-slate-600">
+            <li>Ergänzung zu Vermögensberatung</li>
+            <li>Ergänzung zu Finanzplanung</li>
+            <li>Zukunftskompetenz für Berater</li>
+          </ul>
+        </div>
+        <div class="card p-8 bg-white border border-slate-100 rounded-2xl md:col-span-2">
+          <h3 class="font-bold text-navy mb-4">Er richtet sich an Berater, die:</h3>
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div class="p-4 bg-surface rounded-lg">bestehende Kompetenzen erweitern wollen</div>
+            <div class="p-4 bg-surface rounded-lg">Kundenfragen kompetent beantworten möchten</div>
+            <div class="p-4 bg-surface rounded-lg">sich frühzeitig positionieren wollen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ZIELGRUPPE -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Für Berater mit Zukunftsorientierung</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 bg-surface rounded-2xl">
+          <h3 class="font-bold text-navy mb-4">Typische Profile</h3>
+          <ul class="list-disc pl-5 space-y-2 text-slate-600">
+            <li>Vermögensberater</li>
+            <li>Finanzplaner</li>
+            <li>unabhängige Finanzberater</li>
+            <li>Berater in Banken und Versicherungen</li>
+          </ul>
+        </div>
+        <div class="p-8 bg-surface rounded-2xl">
+          <h3 class="font-bold text-navy mb-4">Voraussetzung</h3>
+          <ul class="list-disc pl-5 space-y-2 text-slate-600">
+            <li>Grundverständnis von Finanzmärkten</li>
+            <li>Offenheit für neue Anlageklassen</li>
+            <li>Bereitschaft zur kritischen Einordnung</li>
+          </ul>
+        </div>
+        <div class="p-8 bg-surface rounded-2xl">
+          <h3 class="font-bold text-navy mb-4">Nicht geeignet für</h3>
+          <ul class="list-disc pl-5 space-y-2 text-slate-600">
+            <li>rein spekulativ orientierte Teilnehmer</li>
+            <li>Personen ohne Bezug zur Finanzberatung</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. KOMPETENZPROFIL -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Was du konkret beherrschst</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { title: "Verständnis digitaler Assets", items: ["Funktionsweise von Kryptowährungen", "Unterschiede zwischen Asset-Klassen", "Marktmechanismen"] },
+          { title: "Risikoanalyse", items: ["Volatilität", "Liquiditätsrisiken", "regulatorische Unsicherheiten"] },
+          { title: "Portfolio-Integration", items: ["Rolle digitaler Assets im Portfolio", "Diversifikationseffekte", "Risiko-Rendite-Einordnung"] },
+          { title: "Kundenberatung", items: ["strukturierte Gesprächsführung", "Erwartungsmanagement", "klare Kommunikation von Chancen und Risiken"] },
+          { title: "Regulatorische Einordnung", items: ["Umgang mit Unsicherheiten", "Einordnung in bestehende Beratungspflichten"] }
+        ].map(item => (
+          <div class="card p-8 bg-white border border-slate-100 rounded-2xl">
+            <h3 class="text-xl font-bold mb-4 text-primary">{item.title}</h3>
+            <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
+              {item.items.map(sub => <li>{sub}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. INHALTLICHE STRUKTUR -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Systematisch aufgebaut – kritisch eingeordnet</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { title: "Grundlagen", items: ["Was sind digitale Assets?", "Blockchain verstehen", "Marktüberblick"] },
+          { title: "Markt & Produkte", items: ["Kryptowährungen", "Token-Strukturen", "Plattformen und Ökosysteme"] },
+          { title: "Risiken", items: ["Marktvolatilität", "Sicherheitsrisiken", "regulatorische Themen"] },
+          { title: "Integration", items: ["Einbindung in Portfolios", "Kundenszenarien", "Entscheidungslogik"] },
+          { title: "Beratung", items: ["Gesprächsführung", "Erwartungssteuerung", "Dokumentation"] }
+        ].map(item => (
+          <div class="p-6 bg-surface rounded-xl border border-slate-100">
+            <h3 class="font-bold text-navy mb-3">{item.title}</h3>
+            <ul class="list-disc pl-5 space-y-1 text-slate-600 text-sm">
+              {item.items.map(sub => <li>{sub}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PRAXISBEZUG -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl mb-8 text-navy">Von der Theorie zur Beratungssituation</h2>
+          <p class="text-slate-600 mb-6">Die Inhalte werden entlang realer Beratungssituationen vermittelt.</p>
+          <div class="grid grid-cols-2 gap-4">
+            {["typische Kundenfragen", "häufige Fehlannahmen", "Entscheidungsdilemmata", "strukturierte Argumentation"].map(item => (
+              <div class="p-4 bg-white rounded-lg border border-slate-100 text-sm font-bold text-navy">{item}</div>
+            ))}
+          </div>
+        </div>
+        <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-lg">
+          <p class="text-lg font-bold text-primary mb-4">Ziel ist, dass du nach dem Lehrgang:</p>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-3"><span class="text-accent text-2xl">→</span> nicht mehr ausweichst</li>
+            <li class="flex items-center gap-3"><span class="text-accent text-2xl">→</span> sondern klar einordnest</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. STRATEGISCHE RELEVANZ -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Warum dieses Thema entscheidend ist</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {[
+          { title: "Kunden erwarten", items: ["Orientierung", "Einordnung", "ehrliche Einschätzung"] },
+          { title: "Berater, die beherrschen", items: ["gewinnen Vertrauen", "differenzieren sich", "bleiben relevant"] },
+          { title: "Berater, die ignorieren", items: ["verlieren Anschluss", "wirken unsicher", "verlieren Mandate"] }
+        ].map(item => (
+          <div class="p-8 bg-surface rounded-2xl">
+            <h3 class="font-bold text-navy mb-4">{item.title}</h3>
+            <ul class="list-disc pl-5 space-y-2 text-slate-600">
+              {item.items.map(sub => <li>{sub}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. EINORDNUNG IM WEITERBILDUNGSPFAD -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-8 text-navy">Wann macht der Crypto Advisor Sinn?</h2>
+      <div class="space-y-6 text-slate-600 mb-10">
+        <p>Der ideale Zeitpunkt ist nach einer Grundausbildung.</p>
+        <h3 class="font-bold text-navy">Typische Reihenfolge</h3>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>Vermögensberater IAF</li>
+          <li>Finanzberater IAF</li>
+          <li>Eidg. Finanzplaner</li>
+          <li>→ danach: Crypto Advisor</li>
+        </ul>
+        <p>Oder: bestehende Berater mit Praxis → direkt als Ergänzung</p>
+        <p>Der Crypto Advisor ist kein Einstieg. Er ist ein Differenzierungsmodul.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. POSITIONIERUNGSEFFEKT -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl mb-8 text-navy">Was sich für dich verändert</h2>
+      <div class="space-y-6 text-slate-600 mb-10">
+        <p>Nach dem Lehrgang bist du in der Lage:</p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>digitale Assets einzuordnen</li>
+          <li>Kundenfragen strukturiert zu beantworten</li>
+          <li>Risiken klar zu kommunizieren</li>
+        </ul>
+        <p>Das führt zu:</p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>höherer Glaubwürdigkeit</li>
+          <li>besserer Kundenbindung</li>
+          <li>klarerer Positionierung</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. ABSCHLUSS -->
+  <section class="py-24 bg-navy text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl md:text-5xl mb-8 text-white">Zukunft verstehen – statt reagieren</h2>
+      <div class="max-w-2xl mx-auto space-y-6 mb-12 opacity-90">
+        <p>Digitale Assets werden bleiben.</p>
+        <p>Die Frage ist nicht, ob du dich damit beschäftigst. Sondern wie.</p>
+        <p>Der Crypto Advisor schafft die Grundlage dafür:</p>
+        <ul class="list-none space-y-2">
+          <li>strukturiert</li>
+          <li>kritisch</li>
+          <li>verantwortungsvoll</li>
+        </ul>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/programme/crypto-advisor/" class="bg-accent hover:bg-amber-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">Programm entdecken</a>
+        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Beratungsgespräch vereinbaren</a>
+        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Weiterbildungsweg planen</a>
+      </div>
+    </div>
+  </section>
+</Layout>

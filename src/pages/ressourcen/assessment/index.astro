@@ -1,0 +1,427 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { 
+  CheckCircle2, 
+  BarChart3, 
+  ShieldCheck, 
+  ArrowRight, 
+  PlayCircle, 
+  FileText, 
+  HelpCircle, 
+  Zap,
+  TrendingUp
+} from 'lucide-react';
+---
+
+<Layout title="Assessments & Lernkontrollen">
+  <!-- 1. HERO -->
+  <section class="relative bg-navy pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden text-white">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/10 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+            Ressourcen
+          </div>
+          <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-[0.9] tracking-tight">
+            Assessments & Lernkontrollen
+          </h1>
+          <p class="text-xl md:text-2xl font-medium mb-10 leading-relaxed opacity-90">
+            Qualitätssicherung und Kompetenznachweis für moderne Beratungsunternehmen.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/kontakt/" class="btn-primary text-lg px-8 py-4 shadow-lg shadow-primary/20">Erstgespräch vereinbaren</a>
+          </div>
+        </div>
+
+        <div class="hidden lg:block lg:col-span-5">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-accent/20 blur-3xl rounded-full"></div>
+            <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl shadow-2xl">
+              <div class="space-y-6">
+                <div class="flex items-center gap-4 p-4 bg-white/10 rounded-xl">
+                  <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center text-accent">
+                    <BarChart3 size={24} />
+                  </div>
+                  <div>
+                    <div class="text-sm opacity-60">Reporting</div>
+                    <div class="font-bold text-white">Echtzeit-Auswertung</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4 p-4 bg-white/10 rounded-xl">
+                  <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center text-primary">
+                    <ShieldCheck size={24} />
+                  </div>
+                  <div>
+                    <div class="text-sm opacity-60">Konformität</div>
+                    <div class="font-bold text-white">Regulatorisch sicher</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4 p-4 bg-white/10 rounded-xl">
+                  <div class="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center text-emerald-400">
+                    <Zap size={24} />
+                  </div>
+                  <div>
+                    <div class="text-sm opacity-60">Effizienz</div>
+                    <div class="font-bold text-white">Automatisierte Prozesse</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PROBLEM -> LÖSUNG -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-navy mb-8">Vom „Durchklicken“ zur echten Kompetenz</h2>
+          <div class="space-y-6 text-slate-600 leading-relaxed">
+            <p>
+              In vielen Unternehmen ist Weiterbildung ein passiver Prozess: Videos werden im Hintergrund abgespielt, 
+              Inhalte nur oberflächlich konsumiert. Das Ergebnis: Wissen verpufft, regulatorische Risiken steigen.
+            </p>
+            <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-r-xl">
+              <p class="text-red-800 font-medium">
+                Das Problem: Ohne Überprüfung bleibt unklar, ob die Lernziele erreicht wurden.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100 shadow-sm">
+          <h3 class="text-2xl font-bold text-navy mb-6">Die Lösung: Strukturierte Erfolgskontrolle</h3>
+          <p class="text-slate-600 mb-8">
+            Assessments transformieren passives Konsumieren in aktives Lernen. Sie stellen sicher, 
+            dass Wissen nicht nur vermittelt, sondern auch verstanden wurde.
+          </p>
+          <div class="bg-white p-6 rounded-xl border border-primary/10">
+            <div class="text-sm text-primary font-bold uppercase tracking-wider mb-2">Das Ergebnis</div>
+            <p class="text-xl font-bold text-navy">
+              → Nachweisbare Kompetenz statt blosser Teilnahmebestätigung.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. WAS DIE ASSESSMENTS SIND -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Was die Assessments sind</h2>
+        <p class="text-slate-600">
+          Unsere Assessments sind keine isolierten Tests, sondern integraler Bestandteil eines didaktischen Gesamtsystems.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {[
+          { 
+            icon: PlayCircle, 
+            title: "Video-Lektionen", 
+            text: "Kompakte Wissensvermittlung als Basis." 
+          },
+          { 
+            icon: HelpCircle, 
+            title: "Interaktive Quizzes", 
+            text: "Kurze Checks zur Selbstkontrolle während des Lernens." 
+          },
+          { 
+            icon: FileText, 
+            title: "Abschluss-Tests", 
+            text: "Strukturierte Überprüfung der Kernkompetenzen." 
+          },
+          { 
+            icon: ShieldCheck, 
+            title: "Zertifizierung", 
+            text: "Offizieller Nachweis der erbrachten Leistung." 
+          }
+        ].map(item => (
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+              <item.icon size={24} />
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-4">{item.title}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ASSESSMENT-ÜBERSICHT -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Strukturierte Entwicklung über mehrere Stufen</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          {
+            title: "Assessment 1",
+            items: ["Krankenkasse", "Vorsorge (inkl. Analyse)", "Eigenheim", "Anlagen", "Sachversicherungen"]
+          },
+          {
+            title: "Assessment 2",
+            items: ["Vertiefung Vorsorge", "Steueroptimierung", "Nachlassplanung", "Unternehmensberatung"]
+          },
+          {
+            title: "Assessment 3",
+            items: ["Komplexe Finanzplanung", "Asset Management", "Risikomanagement", "Rechtliche Grundlagen"]
+          },
+          {
+            title: "Assessment 4",
+            items: ["Leadership in der Beratung", "Verkaufspsychologie", "Kundenbindungsstrategien"]
+          },
+          {
+            title: "Assessment 5",
+            items: ["Mastery & Zertifizierung", "Abschlussprüfung", "Praxis-Transfer Projekt"]
+          }
+        ].map((item, index) => (
+          <div class="flex flex-col h-full bg-surface rounded-2xl border border-slate-100 overflow-hidden">
+            <div class="bg-navy p-6 text-white">
+              <div class="text-xs font-bold text-accent uppercase tracking-widest mb-2">Stufe {index + 1}</div>
+              <h3 class="text-2xl font-bold">{item.title}</h3>
+            </div>
+            <div class="p-8 flex-grow">
+              <ul class="space-y-4">
+                {item.items.map(li => (
+                  <li class="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 size={18} className="text-emerald-500 shrink-0 mt-0.5" />
+                    <span>{li}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+        <div class="flex flex-col h-full bg-primary/5 rounded-2xl border border-primary/10 p-8 items-center justify-center text-center">
+          <TrendingUp size={48} className="text-primary mb-4 opacity-20" />
+          <h3 class="text-xl font-bold text-navy mb-2">Kontinuierliches Wachstum</h3>
+          <p class="text-sm text-slate-600">Die Assessments bauen logisch aufeinander auf und sichern den langfristigen Erfolg.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. REPORTING & KONTROLLE -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+              <div class="text-3xl font-bold text-primary mb-2">100%</div>
+              <div class="text-sm text-slate-500">Transparenz</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+              <div class="text-3xl font-bold text-accent mb-2">Realtime</div>
+              <div class="text-sm text-slate-500">Monitoring</div>
+            </div>
+            <div class="col-span-2 bg-navy p-6 rounded-2xl text-white">
+              <div class="flex items-center gap-4 mb-4">
+                <BarChart3 className="text-accent" />
+                <div class="font-bold">Automatisierte Reports</div>
+              </div>
+              <p class="text-sm opacity-80">
+                Erhalten Sie detaillierte Einblicke in den Lernfortschritt Ihres Teams – jederzeit und überall.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy mb-8">Reporting & Kontrolle</h2>
+          <div class="space-y-6 text-slate-600">
+            <p>
+              Für Unternehmen ist die Übersicht entscheidend. Unsere Plattform bietet detaillierte 
+              Dashboards für HR-Verantwortliche und Teamleiter.
+            </p>
+            <ul class="space-y-4">
+              {[
+                "Echtzeit-Übersicht über Lernfortschritte",
+                "Automatisierte Benachrichtigungen bei Abschluss",
+                "Export-Funktionen für regulatorische Audits",
+                "Identifikation von Wissenslücken im Team"
+              ].map(item => (
+                <li class="flex items-center gap-3">
+                  <div class="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center shrink-0">
+                    <CheckCircle2 size={14} className="text-emerald-600" />
+                  </div>
+                  <span class="font-medium text-navy">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PREISMODELLE -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Preismodelle</h2>
+        <p class="text-slate-600">Wählen Sie das passende Modell für Ihre Unternehmensgrösse.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Starter -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 flex flex-col">
+          <h3 class="text-xl font-bold text-navy mb-2">Starter</h3>
+          <p class="text-slate-500 text-sm mb-4">CHF 1'490/Mt.</p>
+          <div class="text-sm font-bold text-primary mb-6">Pro Lizenz CHF 80/Mt.</div>
+          <ul class="space-y-3 mb-10 flex-grow">
+            {[
+              "Zugang Assessment 1*",
+              "Zugang Assessment 2*",
+              "Zugang Assessment 3*",
+              "Zugang Assessment 4*",
+              "Zugang Assessment 5*",
+              "Über alle Assessments:",
+              "• Praxistipps",
+              "• Quizzes pro Modul",
+              "• Mitarbeiter Reporting"
+            ].map(item => (
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <CheckCircle2 size={18} className="text-slate-400 shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <a href="/kontakt/" class="w-full py-3 px-6 rounded-lg border border-navy text-navy font-bold text-center hover:bg-navy hover:text-white transition-colors">Anfragen</a>
+        </div>
+
+        <!-- Business -->
+        <div class="bg-navy p-8 rounded-2xl border border-primary/20 flex flex-col relative transform lg:-translate-y-4 shadow-2xl">
+          <div class="absolute top-0 right-8 transform -translate-y-1/2 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+            Empfohlen
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Business</h3>
+          <p class="text-white/60 text-sm mb-4">CHF 2'490/Mt.</p>
+          <div class="text-sm font-bold text-accent mb-6">Pro Lizenz CHF 80/Mt.</div>
+          <ul class="space-y-3 mb-10 flex-grow">
+            {[
+              "Zugang Assessment 1 - 5*",
+              "Über alle Assessments:",
+              "• Praxistipps",
+              "• Quizzes pro Modul",
+              "• Mitarbeiter Reporting",
+              "Zusätzlich:",
+              "• 2x Trainings à 2h pro Monat",
+              "• Preisnachlass bei Trainings"
+            ].map(item => (
+              <li class="flex items-start gap-3 text-sm text-white/80">
+                <CheckCircle2 size={18} className="text-accent shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <a href="/kontakt/" class="btn-primary w-full py-4 text-center">Angebot anfordern</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 flex flex-col">
+          <h3 class="text-xl font-bold text-navy mb-2">Premium</h3>
+          <p class="text-slate-500 text-sm mb-4">CHF 7'990/Mt.</p>
+          <div class="text-sm font-bold text-primary mb-2">Pro Lizenz CHF 50/Mt.</div>
+          <div class="text-xs text-slate-400 mb-6">Setup: CHF 32'000</div>
+          <ul class="space-y-3 mb-10 flex-grow">
+            {[
+              "Zugang Assessment 1 - 5*",
+              "Über alle Assessments:",
+              "• Praxistipps",
+              "• Quizzes pro Modul",
+              "• Mitarbeiter Reporting",
+              "Zusätzlich:",
+              "• 4x Trainings à 2h pro Monat",
+              "• Preisnachlass bei Trainings",
+              "Academy:",
+              "• Komplettes White Labeling",
+              "• Personalisierte Academy",
+              "• Business Development"
+            ].map(item => (
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <CheckCircle2 size={18} className="text-slate-400 shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <a href="/kontakt/" class="w-full py-3 px-6 rounded-lg border border-navy text-navy font-bold text-center hover:bg-navy hover:text-white transition-colors">Kontaktieren</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. POSITIONIERUNG -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">Warum unsere Assessments anders sind</h2>
+      
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-2xl border border-slate-100">
+          <h3 class="text-xl font-bold text-red-600 mb-6 flex items-center gap-2">
+            <span class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center text-sm">✕</span>
+            Herkömmliche Ansätze
+          </h3>
+          <ul class="space-y-4">
+            {[
+              "Reine Wissensabfrage ohne Praxisbezug",
+              "Statische PDF-Tests oder Papierformulare",
+              "Keine Echtzeit-Auswertung möglich",
+              "Hoher administrativer Aufwand"
+            ].map(item => (
+              <li class="flex items-start gap-3 text-slate-500 text-sm">
+                <ArrowRight size={16} className="mt-1 shrink-0 opacity-30" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border-2 border-primary/20 shadow-lg">
+          <h3 class="text-xl font-bold text-emerald-600 mb-6 flex items-center gap-2">
+            <span class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center text-sm">✓</span>
+            Unser Assessment-System
+          </h3>
+          <ul class="space-y-4">
+            {[
+              "Didaktisch fundierte Transfer-Prüfung",
+              "Vollständig digital und interaktiv",
+              "Sofortige Resultate und Zertifikate",
+              "Nahtlose Integration in den Workflow"
+            ].map(item => (
+              <li class="flex items-start gap-3 text-navy font-medium">
+                <CheckCircle2 size={18} className="text-emerald-500 mt-0.5 shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CONVERSION -->
+  <section class="py-24 bg-navy text-white text-center relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full bg-primary/5 pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8">Bereit für den nächsten Schritt?</h2>
+      <p class="text-xl opacity-80 mb-12 leading-relaxed">
+        Lassen Sie uns gemeinsam besprechen, wie strukturierte Assessments die Qualität 
+        Ihrer Beratung nachhaltig sichern können.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/kontakt/" class="btn-primary text-lg px-10 py-4">Erstgespräch vereinbaren</a>
+        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 text-white px-10 py-4 rounded-md font-bold text-lg transition-colors">Unterlagen anfordern</a>
+      </div>
+      <p class="mt-12 text-sm opacity-50">
+        Unverbindliche Beratung für Unternehmen und Bildungsinstitute.
+      </p>
+    </div>
+  </section>
+</Layout>

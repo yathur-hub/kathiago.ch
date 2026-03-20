@@ -1,0 +1,95 @@
+---
+import '../index.css';
+import MegaMenu from '../components/MegaMenu';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+}
+
+const { 
+  title, 
+  description = "Kathiago - Die führende Plattform für Finanzbildung und Zertifizierung.",
+  canonical = Astro.url.href
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/Kathiago%20Logo%20Transparent.png" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <title>{title} | Kathiago</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="sticky top-0 z-[100] bg-white/80 backdrop-blur-md border-b border-slate-100">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <a href="/" class="flex items-center">
+              <img src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/Kathiago%20Logo%20Transparent.png" alt="Kathiago Logo" class="h-16 w-auto" />
+            </a>
+          </div>
+          
+          <div class="flex items-center">
+            <MegaMenu client:load />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="bg-navy text-white section-spacing">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div class="col-span-1 md:col-span-2">
+            <div class="mb-6">
+              <a href="/" class="inline-block">
+                <img src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/Kathiago%20Logo%20Transparent.png" alt="Kathiago Logo" class="h-[60px] w-auto brightness-0 invert" />
+              </a>
+            </div>
+            <p class="text-slate-400 max-w-sm">
+              Wir befähigen Finanzprofis durch erstklassige Ausbildung und praxisnahe Zertifizierungen.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="font-bold mb-4">Rechtliches</h3>
+            <ul class="space-y-2 text-slate-400">
+              <li><a href="/impressum/" class="hover:text-white transition-colors">Impressum</a></li>
+              <li><a href="/datenschutz/" class="hover:text-white transition-colors">Datenschutz</a></li>
+              <li><a href="/agb/" class="hover:text-white transition-colors">AGB</a></li>
+              <li><a href="/cookie/" class="hover:text-white transition-colors">Cookie-Richtlinie</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-bold mb-4">Kontakt</h3>
+            <p class="text-slate-400">
+              info@kathiago.ch<br />
+              Zürich, Schweiz
+            </p>
+          </div>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+          &copy; {new Date().getFullYear()} Kathiago. Alle Rechte vorbehalten.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

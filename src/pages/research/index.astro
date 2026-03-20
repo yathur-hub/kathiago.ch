@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { ContentService } from '../../services/contentService';
+
+const reports = await ContentService.getResearchReports();
+---
+
+<Layout 
+  title="Research & Marktanalysen" 
+  description="Exklusive Marktstudien und regulatorische Analysen für die Finanzbranche."
+>
+  <section class="bg-surface py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-6xl mb-6">Kathiago <span class="text-primary">Research</span></h1>
+      <p class="text-xl text-slate-600 max-w-2xl">Datengetriebene Einblicke in die Trends und Regulatorik der Schweizer Finanzwelt.</p>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {reports.map(report => (
+          <div class="card p-8 border-l-4 border-l-primary">
+            <div class="text-xs font-bold text-slate-400 uppercase mb-2">{report.data.category}</div>
+            <h2 class="text-2xl mb-4">{report.data.title}</h2>
+            <p class="text-slate-600 mb-8">{report.data.metaDescription}</p>
+            <a href={`/research/${report.data.slug || report.id}/`} class="btn-primary">Report ansehen</a>
+          </div>
+        ))}
+      </div>
+      
+      <div class="mt-20 p-12 bg-navy text-white rounded-2xl text-center">
+        <h3 class="text-2xl mb-4">Individuelle Analysen benötigt?</h3>
+        <p class="text-slate-400 mb-8 max-w-xl mx-auto">Wir erstellen massgeschneiderte Marktberichte für Finanzinstitute und Versicherungen.</p>
+        <a href="/kontakt/" class="btn-accent">Anfrage senden</a>
+      </div>
+    </div>
+  </section>
+</Layout>
