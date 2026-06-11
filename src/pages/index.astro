@@ -4,6 +4,39 @@ import { ContentService } from '../services/contentService';
 import CompetenceSelector from '../components/CompetenceSelector';
 
 const programs = await ContentService.getPrograms();
+
+const videoTestimonials = [
+  {
+    id: "urJCaMqSQ-M",
+    title: "Endrit Osmani: Disziplin, Einsatz & Vorbildfunktion",
+    description: "Endrit zeigt, was konsequenter Einsatz, Disziplin und Teamgedanke in der Finanzberatung bewirken können – geprägt durch eine klare Haltung und spürbare Motivation.",
+    label: "Kathiago Talent"
+  },
+  {
+    id: "EQcNS_z8rdM",
+    title: "Remzi Bilginer: Klarheit, Disziplin & Leadership",
+    description: "Remzi steht für Fokus, Zielstrebigkeit und Leadership. Sein Weg zeigt, wie klare Entscheidungen und persönliche Disziplin nachhaltige Entwicklung ermöglichen.",
+    label: "Kathiago Talent"
+  },
+  {
+    id: "1j2RAO1muEc",
+    title: "Sandro Lapini: Präsenz, Durchhaltewille & Glaubwürdigkeit",
+    description: "Sandro überzeugt durch Präsenz, Aufnahmefähigkeit und innere Stärke. Ein Beispiel dafür, wie Durchhaltewille und Glaubwürdigkeit den eigenen Weg prägen.",
+    label: "Kathiago Talent"
+  },
+  {
+    id: "XiQ7BFaO3Ck",
+    title: "Sven Damay: Verständnis, Haltung & Kundenfokus",
+    description: "Sven steht für echtes Verständnis, positive Energie und konsequenten Kundenfokus. Sein Weg zeigt, wie wichtig Haltung in der Finanzberatung ist.",
+    label: "Kathiago Talent"
+  },
+  {
+    id: "WDisy9A010U",
+    title: "Florian Krasniqi: Authentizität, Drive & Vertrieb",
+    description: "Florian bringt Authentizität, Energie und Vertriebsstärke zusammen. Sein Beispiel zeigt, wie Drive und Echtheit in der Beratung Wirkung entfalten.",
+    label: "Kathiago Talent"
+  }
+];
 ---
 
 <Layout title="Finanzbildung für Berater, die Verantwortung tragen">
@@ -58,6 +91,133 @@ const programs = await ContentService.getPrograms();
       </div>
     </div>
   </section>
+
+  <!-- Video-Testimonials -->
+  <section class="section-spacing bg-surface relative overflow-hidden">
+    <!-- Decorative background detail -->
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.02] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-4">
+          Community & Erfolg
+        </div>
+        <h2 id="testimonials-heading" class="text-3xl md:text-5xl font-bold mb-6 text-navy">
+          Echte Stimmen aus der Kathiago-Community
+        </h2>
+        <p class="text-lg md:text-xl text-slate-600 leading-relaxed font-sans">
+          Unsere Talents erzählen, wie sie ihren Weg in der Finanzberatung gehen – mit Haltung, Praxisnähe und Verantwortung.
+        </p>
+      </div>
+
+      <!-- Video Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-16" aria-labelledby="testimonials-heading">
+        {videoTestimonials.map((testimonial, i) => {
+          let gridClasses = "col-span-1";
+          if (i === 3) {
+            gridClasses = "md:col-span-1 lg:col-span-2 lg:col-start-2";
+          } else if (i === 4) {
+            gridClasses = "md:col-span-2 md:max-w-md md:mx-auto md:w-full lg:col-span-2 lg:col-start-4 lg:max-w-none";
+          } else {
+            gridClasses = "md:col-span-1 lg:col-span-2";
+          }
+
+          return (
+            <div class={`${gridClasses} flex`} id={`testimonial-card-${i}`}>
+              <div class="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-300 group w-full flex flex-col">
+                <!-- Video Pre-loader container -->
+                <div class="relative w-full aspect-video bg-slate-900 overflow-hidden">
+                  <button
+                    class="video-trigger absolute inset-0 w-full h-full text-left focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-2 z-10 cursor-pointer"
+                    data-video-id={testimonial.id}
+                    data-video-title={testimonial.title}
+                    aria-label={`Video abspielen: ${testimonial.title}`}
+                  >
+                    <img
+                      src={`https://img.youtube.com/vi/${testimonial.id}/maxresdefault.jpg`}
+                      alt={testimonial.title}
+                      class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      onerror="this.onerror=null; this.src='https://img.youtube.com/vi/' + this.dataset.videoId + '/hqdefault.jpg';"
+                      data-video-id={testimonial.id}
+                    />
+                    <!-- Overlay shadow/gradient -->
+                    <div class="absolute inset-0 bg-navy/20 group-hover:bg-navy/35 transition-colors duration-300"></div>
+                    <!-- Play button icon -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                      <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 fill-current ml-1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                
+                <!-- Info details -->
+                <div class="p-6 md:p-8 flex flex-col flex-grow">
+                  <div class="flex items-center space-x-2 mb-3">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-primary/10 text-primary">
+                      {testimonial.label}
+                    </span>
+                  </div>
+                  <h3 class="text-lg md:text-xl font-bold text-navy mb-3 leading-snug">
+                    {testimonial.title}
+                  </h3>
+                  <p class="text-slate-600 text-sm leading-relaxed mb-0">
+                    {testimonial.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- CTA after Bereich -->
+      <div class="max-w-4xl mx-auto bg-white border border-slate-200/60 rounded-3xl p-8 md:p-10 shadow-sm text-center">
+        <h4 class="text-xl md:text-2xl font-bold text-navy mb-6">
+          Du möchtest deinen nächsten Schritt in der Finanzberatung machen?
+        </h4>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a href="/programme/" class="btn-primary w-full sm:w-auto px-8 py-3 text-base">
+            Programm finden
+          </a>
+          <a href="/kontakt/" class="btn-secondary w-full sm:w-auto px-8 py-3 text-base">
+            Strategiegespräch buchen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client-side Video Dynamic Loader Script -->
+  <script>
+    const triggers = document.querySelectorAll('.video-trigger');
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        const currentTrigger = e.currentTarget as HTMLElement;
+        if (!currentTrigger) return;
+        const videoId = currentTrigger.getAttribute('data-video-id');
+        const videoTitle = currentTrigger.getAttribute('data-video-title') || 'Video Testimonial';
+        if (!videoId) return;
+
+        const container = currentTrigger.parentElement;
+        if (!container) return;
+
+        const iframe = document.createElement('iframe');
+        iframe.className = 'absolute inset-0 w-full h-full';
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+        iframe.title = videoTitle;
+        iframe.frameBorder = '0';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        
+        container.innerHTML = '';
+        container.appendChild(iframe);
+      });
+    });
+  </script>
 
   <!-- Unsere Bildungsprogramme -->
   <section class="section-spacing bg-white">
