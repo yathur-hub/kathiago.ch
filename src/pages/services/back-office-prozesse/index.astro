@@ -1,0 +1,256 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Back-Office & Prozesse für Finanzdienstleister | Kathiago" description="Kathiago unterstützt Finanzdienstleister beim Aufbau und der Optimierung von Back-Office-Strukturen, Prozessen, Schnittstellen und administrativen Abläufen.">
+  <!-- 1. HERO -->
+  <section class="relative bg-surface pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6 font-mono">
+            Service
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-8 text-navy leading-[1.1] tracking-tight">
+            Back-Office & Prozesse
+          </h1>
+          <p class="text-xl md:text-2xl text-primary font-medium mb-8 leading-relaxed">
+            Ein starkes Finanzdienstleistungsunternehmen braucht nicht nur gute Beratung. Es braucht ein Back-Office, das zuverlässig funktioniert, klare Prozesse und eine Organisation, die Beratung, Administration und Compliance sauber verbindet.
+          </p>
+          <div class="space-y-6 text-lg text-slate-600 mb-10 leading-relaxed">
+            <p>
+              Kathiago unterstützt Finanzdienstleister beim Aufbau, bei der Strukturierung und bei der Optimierung von Back-Office- und Prozesslandschaften. Ziel ist ein Tagesgeschäft, das effizienter, sicherer und besser steuerbar wird.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/kontakt/" class="btn-primary text-center text-lg px-8 py-4 shadow-lg shadow-primary/20">Erstgespräch vereinbaren</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-2xl space-y-8 relative">
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-2xl"></div>
+            <h3 class="text-2xl font-bold text-navy">Für wen geeignet?</h3>
+            <p class="text-slate-600 text-sm">
+              Dieser Service richtet sich an Finanzdienstleister, die ihre internen Abläufe professionalisieren möchten:
+            </p>
+            <div class="space-y-3">
+              {[
+                "Selbstständige Finanzberater & Versicherungsvermittler",
+                "Broker und Maklerorganisationen",
+                "Vermögensberater & Finanzplaner",
+                "Vermittlerorganisationen",
+                "Kleine und mittlere Finanzdienstleistungsunternehmen",
+                "Wachsende Beraterteams",
+                "Geschäftsleitungen mit Fokus auf Effizienz & Skalierbarkeit"
+              ].map((item) => (
+                <div class="flex items-start gap-2">
+                  <div class="text-primary mt-1 flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <span class="text-sm font-medium text-slate-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TYPISCHE AUSGANGSLAGEN -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Typische Ausgangslagen</h2>
+        <p class="text-lg text-slate-600">
+          Viele Finanzdienstleister wachsen über Kundenbeziehungen, Empfehlungen und Vertrieb. Die internen Strukturen wachsen jedoch oft nicht im gleichen Tempo mit. Dies führt zu manuellen Reibungsverlusten, die Marge, Zeit und regulatorische Sicherheit kosten.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { title: "Heuristische Prozesse", desc: "Zentrale Abläufe sind nirgends dokumentiert und hängen an einzelnen Köpfen." },
+          { title: "Schnittstellen-Konflikte", desc: "Beratung und Administration arbeiten nicht sauber abgestimmt zusammen." },
+          { title: "Uneinheitliche Dossiers", desc: "Kundendossiers sind uneinheitlich aufgebaut, Dokumente fehlen oder sind schwer auffindbar." },
+          { title: "Doppelspurigkeiten", desc: "Aufgaben bleiben liegen, werden mehrfach erledigt oder erfordern ständige Rückfragen." },
+          { title: "Mangelnde Tool-Nutzung", desc: "Eingekaufte CRMs oder Beratungstools werden nicht konsequent oder falsch genutzt." },
+          { title: "Administrative Überlastung", desc: "Wachstum führt zu operativer Überforderung – die Geschäftsleitung hat keine Zeit fürs Kerngeschäft." }
+        ].map((item) => (
+          <div class="p-8 rounded-3xl border border-slate-100 bg-surface flex flex-col h-full hover:shadow-lg transition-all duration-300">
+            <h3 class="text-xl font-bold text-navy mb-4">{item.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES AND DETAILS -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Unsere Leistungen</h2>
+        <p class="text-lg text-slate-600">
+          Wir reduzieren Reibungsverluste und übersetzen Vorgaben in klare, praktikable Abläufe.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Analyse & Back-Office-Strukturen</h3>
+            <p class="text-slate-600 mb-6 text-sm">Bevor Abläufe optimiert werden können, müssen sie sichtbar gemacht werden. Wir analysieren und helfen beim Aufbau:</p>
+            <ul class="space-y-2 text-sm text-slate-700 font-medium">
+              <li>• Analyse des Ist-Beratungs- und Administrationsflusses</li>
+              <li>• Aufdeckung von Doppelspurigkeiten und Medienbrüchen</li>
+              <li>• Klare Zuordnung von Aufgaben, Rollen & Verantwortlichkeiten</li>
+              <li>• Stellvertretungsregelungen & Qualitätskontrollen</li>
+              <li>• Entlastungs-Szenarien für die Geschäftsleitung</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Schnittstellen, Dokumente & Vorlagen</h3>
+            <p class="text-slate-600 mb-6 text-sm">Verzahnung der Abteilungen und Bereitstellung hocheffizienter Arbeitsmittel:</p>
+            <ul class="space-y-2 text-sm text-slate-700 font-medium">
+              <li>• Definition der Schnittstelle und Übergabekriterien zwischen Front und Back</li>
+              <li>• Bereitstellung strukturierter Checklisten & Übergabeformulare</li>
+              <li>• Standardisierte Vorlagen für Beratungsunterlagen</li>
+              <li>• Einheitliche Dossierstrukturen & Ablagekonzepte</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Prozessdesign und Prozessoptimierung</h3>
+            <p class="text-slate-600 mb-6 text-sm">Wir unterstützen Sie bei der Standardisierung und verständlichen Dokumentation zentraler Prozesse:</p>
+            <ul class="space-y-2 text-sm text-slate-700 font-medium">
+              <li>• Kundenaufnahme & Erstkontakt-Vorbereitung</li>
+              <li>• Bedarfsaufnahme & Beratungsprozess-Ablauf</li>
+              <li>• Angebotsprozess & Antragsabwicklung</li>
+              <li>• Dokumentations-, Archivierungs- & Nachbearbeitungs-Logik</li>
+              <li>• Periodische Kundenbetreuungs-Frequenzen</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Tool- und Systemlogik</h3>
+            <p class="text-slate-600 mb-6 text-sm">Systeme lösen keine Probleme, wenn die Abläufe unklar sind. Ist der Prozess klar, maximieren wir die Tool-Effizienz:</p>
+            <ul class="space-y-2 text-sm text-slate-700 font-medium">
+              <li>• Klärung benötigter Systeme (CRM, PMS, Depotbank-Schnittstellen)</li>
+              <li>• Eliminierung von Medienbrüchen & Redundanzen</li>
+              <li>• Abbildung der Beratungsprozesse direkt in der Software</li>
+              <li>• Automatisierungs-Möglichkeiten für Kunden-Reportings</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abgrenzungen -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Wie ordnet sich dieser Service ein?</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-3">Abgrenzung zu Operativer Unterstützung</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Der Service Back-Office & Prozesse fokussiert stark auf Struktur, Analyse, Software-Integration und nachhaltige Prozessoptimierung. Der Service <strong>Operative Unterstützung</strong> fokussiert auf die konkrete, temporäre oder laufende Abarbeitung der täglichen administrativen Berge.<br />
+            <strong>Back-Office & Prozesse verbessert die operative Schiene; Operative Unterstützung hilft beim Fahren.</strong>
+          </p>
+        </div>
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-3">Abgrenzung zu Compliance</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Compliance definiert die regulatorischen Vorgaben, Pflichten und Kontrollpunkte. Der Service Back-Office & Prozesse übersetzt diese formulierten Pflichten direkt in die praktischen Arbeitsschritte Ihrer Teams.<br />
+            <strong>Compliance sagt, was bewiesen sein muss; Backoffice & Prozesse klärt, wie es ohne Reibung erzeugt wird.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARUM KATHIAGO -->
+  <section class="section-spacing bg-surface border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-3xl font-bold text-navy mb-4">Warum Kathiago?</h2>
+        <p class="text-slate-600">
+          Kathiago kennt Finanzdienstleistung nicht nur aus der Theorie. Wir verstehen die wichtige Schnittstelle zwischen Front-Beratung, Back-Office, Systemen und regulatorischen Anforderungen bis ins Detail.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+        <div class="bg-white p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2">Pragmatische Hebel statt Bürokratie</h4>
+          <p class="text-slate-600 text-xs">Wir streben nicht nach maximaler Zertifizierungs-Bürokratie, sondern nach schlanken Prozessen, die Ihre qualitative Beratungszeit erhöhen.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2">Fokus auf Skalierung</h4>
+          <p class="text-slate-600 text-xs">Prozesse sind der Hebel für Wachstum. Erst wenn das Back-Office entlastet ist, können Sie neue Berater anbinden und Kunden verlässlich betreuen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS & FAQ -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Der Ablauf</h3>
+          <div class="space-y-8">
+            {[
+              { num: "1", title: "Erstgespräch", desc: "Wir klären Ihre aktuelle Situation, Ihre grössten Reibungsverluste und Ihre Ziele." },
+              { num: "2", title: "Prozessaufnahme & Audit", desc: "Wir erfassen das Zusammenspiel von Beratung, Administration und Technologie." },
+              { num: "3", title: "Schwachstellenanalyse", desc: "Identifikation von Engpässen, unklaren Rollen und regulatorischen Risiken." },
+              { num: "4", title: "Einführung & Begleitung", desc: "Gemeinsame Erarbeitung und praxisnahe Teambegleitung bei der neuen Prozessstruktur." }
+            ].map((step) => (
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">
+                  {step.num}
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy">{step.title}</h4>
+                  <p class="text-sm text-slate-600 mt-1">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Häufige Fragen</h3>
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Ist dieser Service nur für grössere Unternehmen geeignet?</h4>
+              <p class="text-sm text-slate-600">Nein. Gerade kleine und mittlere Finanzdienstleister profitieren von klaren Prozessen, weil sie weniger personelle Ressourcen für das Auffangen von Fehlern und zeitintensive Rückfragen haben.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Geht es im Prozessdesign primär um Software?</h4>
+              <p class="text-sm text-slate-600">Nein, Software ist nur ein Hilfsmittel. Zuerst strukturieren wir das 'Wer', 'Wann' und 'Was'. Wenn die logischen Meilensteine stehen, binden wir die Software optimiert an.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Kann Kathiago bei der praktischen Umsetzung helfen?</h4>
+              <p class="text-sm text-slate-600">Ja. Neben konzeptioneller Analyse können wir als operativer Support auch bei Datenbereinigung, Dossierübertragungen und Software-Einrichtung direkt mitwirken.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ACTION BOX -->
+  <section class="section-spacing bg-navy text-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/3 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+      <h2 class="text-3xl md:text-5xl font-bold max-w-3xl mx-auto">Verlieren Sie keine wertvolle Beratungszeit mehr.</h2>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto">Machen Sie Ihr Unternehmen bereit für spürbares Wachstum und administrative Entlastung. Starten Sie mit der Potenzialanalyse.</p>
+      <a href="/kontakt/" class="btn-accent text-lg px-10 py-4 inline-block">Prozess-Audit anfordern</a>
+    </div>
+  </section>
+</Layout>

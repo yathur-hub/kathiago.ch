@@ -1,0 +1,263 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Compliance für Finanzdienstleister | Kathiago" description="Kathiago unterstützt Finanzdienstleister beim Aufbau von Compliance-Strukturen, Dokumentation, Weisungen, Kontrollpunkten und regulatorischer Nachweisführung.">
+  <!-- 1. HERO -->
+  <section class="relative bg-surface pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6 font-mono">
+            Service
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-8 text-navy leading-[1.1] tracking-tight">
+            Compliance für Finanzdienstleister
+          </h1>
+          <p class="text-xl md:text-2xl text-primary font-medium mb-8 leading-relaxed">
+            Compliance ist im Finanzdienstleistungsbereich mehr als eine Pflicht. Sie ist die Grundlage für Vertrauen, Qualität und langfristige Geschäftsfähigkeit.
+          </p>
+          <div class="space-y-6 text-lg text-slate-600 mb-10 leading-relaxed">
+            <p>
+              Kathiago unterstützt Finanzdienstleister dabei, regulatorische Anforderungen in klare Strukturen, verständliche Prozesse und saubere Dokumentation zu übersetzen. Ziel ist nicht Bürokratie, sondern eine Compliance-Logik, die im Alltag funktioniert.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/kontakt/" class="btn-primary text-center text-lg px-8 py-4 shadow-lg shadow-primary/20">Erstgespräch vereinbaren</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-2xl space-y-8 relative">
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-2xl"></div>
+            <h3 class="text-2xl font-bold text-navy">Für wen geeignet?</h3>
+            <p class="text-slate-600 text-sm">
+              Dieser Service richtet sich an ungebundene Vermittler und Beraterunternehmen:
+            </p>
+            <div class="space-y-3">
+              {[
+                "Versicherungsvermittler & Broker",
+                "Maklerorganisationen & Vertriebe",
+                "Finanzberater & Vermögensberater",
+                "Finanzplaner & Vermittlerorganisationen",
+                "Kleine und mittlere Finanzdienstleistungsunternehmen",
+                "Geschäftsleitungen & Compliance-Verantwortliche",
+                "Qualitäts-, Prozess- und Dokumentations-Manager"
+              ].map((item) => (
+                <div class="flex items-start gap-2">
+                  <div class="text-primary mt-1 flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <span class="text-sm font-medium text-slate-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TYPISCHE AUSGANGSLAGEN -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Typische Ausgangslagen</h2>
+        <p class="text-lg text-slate-600">
+          Viele Finanzdienstleister haben einzelne Dokumente, Vorlagen oder Prozesse. Was oft fehlt, ist ein durchgängiges System: klare Verantwortlichkeiten, aktuelle Weisungen, nachvollziehbare Beratungsdokumentation, definierte Kontrollpunkte und eine saubere Ablage.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { title: "Unvollständige Dokumente", desc: "Die bestehende Dokumentation ist unvollständig, uneinheitlich oder unsicher." },
+          { title: "Fehlende Richtlinien", desc: "Weisungen und interne Standards fehlen oder sind nicht mehr aktuell." },
+          { title: "Informelle Kontrollen", desc: "Kontrollpunkte und Freigaben bestehen nur informell und sind nicht nachweisfähig." },
+          { title: "Ungeregelte Zuständigkeiten", desc: "Die Zuständigkeiten zwischen Beratung, Backoffice und Überprüfung sind unklar." },
+          { title: "Aufsichtsrechtliche Revision", desc: "Ein externes Audit oder eine Registerprüfung steht an und erfordert Vorbereitung." },
+          { title: "Wachstumsabgleiche", desc: "Das Unternehmen wächst und benötigt eine verlässlichere, prüffähige Compliance-Struktur." }
+        ].map((item) => (
+          <div class="p-8 rounded-3xl border border-slate-100 bg-surface flex flex-col h-full hover:shadow-lg transition-all duration-300">
+            <h3 class="text-xl font-bold text-navy mb-4">{item.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES AND DETAILS -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Unsere Leistungen</h2>
+        <p class="text-lg text-slate-600">
+          Wir verankern Compliance so in Ihrem Unternehmen, dass sie verständlich, prüfbar und praktisch umsetzbar bleibt.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Compliance-Standortbestimmung & Aufbau</h3>
+            <p class="text-slate-600 mb-6 text-sm">Am Anfang analysieren wir, wo Ihr Unternehmen steht, und bauen ein praktikables System auf:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Sichtung aller bestehenden Dokumente, Weisungen & Verträge</li>
+              <li>• Lückenanalyse bezüglich relevanter regulatorischer Anforderungen</li>
+              <li>• Rollen- & Zuständigkeitsregelungen</li>
+              <li>• Aufbau klarer Eskalationswege & Nachweislogiken</li>
+              <li>• Schnittstellen zwischen Beratung, Backoffice und Geschäftsleitung</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Beratung, Dokumentation & Kontrollpunkte</h3>
+            <p class="text-slate-600 mb-6 text-sm">Zentral ist eine saubere Kundendokumentation und Überprüfbarkeit:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Strukturierung der Kundendossiers & Beratungsdokumente</li>
+              <li>• Definition von Pflichtinformationen nach FIDLEG / VAG / VBV</li>
+              <li>• Erstellung interner Kontrolllisten & Freigabeprozesse</li>
+              <li>• Stichproben- & Audit-Unterstützung</li>
+              <li>• Dokumentation von Belegkorrekturen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Weisungen und Richtlinien</h3>
+            <p class="text-slate-600 mb-6 text-sm">Interne Weisungen schaffen Verbindlichkeit für alle Beteiligten. Wir erstellen und überarbeiten:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Interne Verhaltensregeln</li>
+              <li>• Prozessrichtlinien für die Kundenberatung</li>
+              <li>• Dokumentationsvorgaben & Ablageregeln</li>
+              <li>• Qualitätskontroll- & Kontroll-Weisungsstandards</li>
+            </ul>
+            <p class="text-xs text-slate-400 mt-4 leading-relaxed"><em>* Hinweis: Kathiago unterstützt bei der praktischen Strukturierung und Umsetzung. Bei rechtlich verbindlichen Einzelfragen kann der Einbezug spezialisierter Fachpersonen sinnvoll sein.</em></p>
+          </div>
+
+          <div class="bg-white p-8 rounded-3xl border border-slate-100 border-l-4 border-l-primary">
+            <h3 class="text-2xl font-bold text-navy mb-4">Relevante Themenfelder</h3>
+            <div class="flex flex-wrap gap-2">
+              {[
+                "Compliance-Organisation",
+                "GwG-Abklärungen & Dokumentationen",
+                "FIDLEG Verhaltensregeln",
+                "VAG- / AVO-Vorgaben",
+                "Informations- & Rechenschaftspflichten",
+                "Interne Kontrollsysteme (IKS)",
+                "Qualitätssicherung & Stichprobenlogik"
+              ].map((tag) => (
+                <span class="bg-surface px-3 py-1 rounded-full text-xs font-semibold text-slate-700 border border-slate-100">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abgrenzungen -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Wie ordnet sich dieser Service ein?</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-3">Abgrenzung zu FINMA-Registrierung & Regulatorik</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            FINMA-Registrierung & Regulatorik fokussiert auf die erste formale Einplanung, Registrierung, Nachweise und die behördliche Zulassung des Geschäfts. Der Service <strong>Compliance</strong> geht im Anschluss tiefer auf die reibungslose tägliche Umsetzung, Überwachung und Einhaltung im Unternehmen ein.<br />
+            <strong>Finanz-Regulatorik ebnet den Weg; Compliance sichert ihn langfristig ab.</strong>
+          </p>
+        </div>
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-3">Abgrenzung zu Bildungsprogrammen</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Unsere Bildungsprogramme vermitteln Fachwissen, bereiten auf Prüfungen vor und stärken Kompetenzen. Der Service Compliance übersetzt diese Fachpflichten in Unternehmensstrukturen, umsetzbare Weisungen, Prozesse und Kontrollpunkte.<br />
+            <strong>Bildungsprogramme entwickeln Menschen; Compliance entwickelt die Organisation.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARUM KATHIAGO -->
+  <section class="section-spacing bg-surface border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-3xl font-bold text-navy mb-4">Warum Kathiago?</h2>
+        <p class="text-slate-600">
+          Kathiago verbindet Finanzfachwissen, Ausbildungsnähe und belegte Umsetzungserfahrung im Schweizer Markt. Dadurch können wir Compliance-Vorgaben verständlich und unaufgeregt in Ihren Alltag integrieren – ohne starre Handbücher und ohne das Geschäft zu blockieren.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+        <div class="bg-white p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2">Unaufgeregte Alltagskompatibilität</h4>
+          <p class="text-slate-600 text-xs">Wir wissen, dass Compliancesysteme nur dann nützen, wenn sie von den Beratern im stressigen Alltagsgeschäft auch tatsächlich angewendet werden.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2">Ganzheitlicher Partner</h4>
+          <p class="text-slate-600 text-xs">Wir decken die Lücke auf, formulieren das Reglement und unterstützen Sie bei Bedarf auch bei der nachfolgenden Fachschulung Ihres Teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS & FAQ -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Der Ablauf</h3>
+          <div class="space-y-8">
+            {[
+              { num: "1", title: "Erstgespräch", desc: "Wir klären Ihre Ausgangslage, Ihre wichtigsten Risiken und Ihre unmittelbaren Handlungsfelder." },
+              { num: "2", title: "Dokumenten- und Prozesssichtung", desc: "Wir prüfen, welche Unterlagen, Prozesse, Weisungen und Nachweise bereits bestehen." },
+              { num: "3", title: "Lückenanalyse & Optimierung", desc: "Wir identifizieren, wo Strukturen fehlen, wo Dokumentation verbessert werden sollte." },
+              { num: "4", title: "Aufbau & Begleitung", desc: "Wir erstellen bzw. überarbeiten Weisungen und begleiten Sie bei der laufenden Einhaltung." }
+            ].map((step) => (
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">
+                  {step.num}
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy">{step.title}</h4>
+                  <p class="text-sm text-slate-600 mt-1">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Häufige Fragen</h3>
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Ist Compliance nur für grosse Finanzdienstleister relevant?</h4>
+              <p class="text-sm text-slate-600">Nein. Gerade kleinere und mittlere Finanzdienstleister benötigen klare, pragmatische Compliance-Strukturen, weil sie oft weniger interne Ressourcen im Backoffice zur Fehlerkorrektur haben.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Erstellt Kathiago auch Vorlagen und Weisungen?</h4>
+              <p class="text-sm text-slate-600">Ja. Kathiago unterstützt bei der sachlogischen Strukturierung, Erstellung und Überarbeitung von internen Weisungen, kundenkonformen Prozessunterlagen und Kontrollübersichten.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Ist das eine anwaltliche Rechtsberatung?</h4>
+              <p class="text-sm text-slate-600">Kathiago unterstützt bei der praktischen, strukturellen Organisation und der operativen Umsetzung von Vorgaben. Bei komplexen, rechtsverbindlichen Einzelfragen binden wir spezialisierte Kanzleien ein.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ACTION BOX -->
+  <section class="section-spacing bg-navy text-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/3 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+      <h2 class="text-3xl md:text-5xl font-bold max-w-3xl mx-auto">Sicher durch das Audit.</h2>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto">Überlassen Sie Ihre haftungsrelevante Rechtssicherheit nicht dem Zufall. Kontaktieren Sie uns für eine Compliance-Standortbestimmung.</p>
+      <a href="/kontakt/" class="btn-accent text-lg px-10 py-4 inline-block">Termin vereinbaren</a>
+    </div>
+  </section>
+</Layout>

@@ -7,28 +7,28 @@ const menuSections = [
     title: 'Programme',
     links: [
       { label: 'Versicherungsvermittler VBV', href: '/programme/versicherungsvermittler-vbv/' },
-      { label: 'Finanzberater IAF', href: '/programme/finanzberater-iaf/' },
-      { label: 'Vermögensberater IAF', href: '/programme/vermoegensberater-iaf/' },
       { label: 'Zert. Vermögensberater KT', href: '/programme/zert-vermoegensberater-kt/' },
       { label: 'FIDLEG Verhaltensregeln', href: '/programme/fidleg-verhaltensregeln/' },
+      { label: 'Finanzberater IAF', href: '/programme/finanzberater-iaf/' },
       { label: 'Eidg. Finanzplaner', href: '/programme/eidg-finanzplaner/' },
-      { label: 'Crypto Advisor', href: '/programme/crypto-advisor/' },
+    ]
+  },
+  {
+    title: 'Services',
+    links: [
+      { label: 'Firmenaufbau', href: '/services/firmenaufbau/' },
+      { label: 'FINMA-Registrierung & Regulatorik', href: '/services/finma-registrierung-regulatorik/' },
+      { label: 'Compliance', href: '/services/compliance/' },
+      { label: 'Back-Office & Prozesse', href: '/services/back-office-prozesse/' },
+      { label: 'Operative Unterstützung', href: '/services/operative-unterstuetzung/' },
+      { label: 'Mentoring', href: '/services/mentoring/' },
     ]
   },
   {
     title: 'Zertifizierungen',
     links: [
-      { label: 'CICERO', href: '/zertifizierungen/cicero/' },
       { label: 'SAQ', href: '/zertifizierungen/saq/' },
       { label: 'Rezertifizierung', href: '/zertifizierungen/rezertifizierung/' },
-    ]
-  },
-  {
-    title: 'Ressourcen',
-    links: [
-      { label: 'Assessment', href: '/ressourcen/assessment/' },
-      { label: 'Marktstudien', href: '/ressourcen/marktstudien/' },
-      { label: 'Regulatorische Analysen', href: '/ressourcen/regulatorische-analysen/' },
     ]
   },
   {

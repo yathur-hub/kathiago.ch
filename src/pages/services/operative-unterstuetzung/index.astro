@@ -1,0 +1,259 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Operative Unterstützung für Finanzdienstleister | Kathiago" description="Kathiago unterstützt Finanzdienstleister im Tagesgeschäft: administrative Entlastung, Dossieraufarbeitung, operative Projektunterstützung und temporäre Kapazität.">
+  <!-- 1. HERO -->
+  <section class="relative bg-surface pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6 font-mono">
+            Service
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-8 text-navy leading-[1.1] tracking-tight">
+            Operative Unterstützung
+          </h1>
+          <p class="text-xl md:text-2xl text-primary font-medium mb-8 leading-relaxed">
+            Wenn das Tagesgeschäft zu viel operative Kapazität bindet, bleiben Wachstum, Kundenbetreuung und Führungsaufgaben liegen.
+          </p>
+          <div class="space-y-6 text-lg text-slate-600 mb-10 leading-relaxed">
+            <p>
+              Kathiago unterstützt Finanzdienstleister dort, wo konkrete Entlastung benötigt wird: bei administrativen Aufgaben, Dossieraufarbeitung, Prozessumsetzung, regulatorisch relevanter Nachführung und temporären Engpässen im laufenden Betrieb.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/kontakt/" class="btn-primary text-center text-lg px-8 py-4 shadow-lg shadow-primary/20">Erstgespräch vereinbaren</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-2xl space-y-8 relative">
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-2xl"></div>
+            <h3 class="text-2xl font-bold text-navy">Für wen geeignet?</h3>
+            <p class="text-slate-600 text-sm">
+              Dieser Service bietet kurz- oder langfristige Unterstützung für:
+            </p>
+            <div class="space-y-3">
+              {[
+                "Finanzberater & Versicherungsvermittler",
+                "Broker und Maklerorganisationen",
+                "Vermögensberater & Finanzplaner",
+                "Vermittlerorganisationen & SMUs",
+                "Wachsende Beraterteams",
+                "Geschäftsleitungen mit operativer Überlastung",
+                "Unternehmen mit administrativen Rückständen"
+              ].map((item) => (
+                <div class="flex items-start gap-2">
+                  <div class="text-primary mt-1 flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <span class="text-sm font-medium text-slate-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TYPISCHE AUSGANGSLAGEN -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Wenn Arbeit nicht geplant, sondern erledigt werden muss</h2>
+        <p class="text-lg text-slate-600">
+          Viele Finanzdienstleister wissen genau, was zu tun wäre. Das Problem ist nicht fehlendes Wissen, sondern fehlende Zeit, fehlende Ressourcen oder fehlende operative Kapazität. Kundendossiers müssen nachgeführt, Dokumentationen bereinigt und Prozesse konkret im Alltag umgesetzt werden.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { title: "Dossierrückstände", desc: "Kundendossiers müssen nachgepflegt und dokumentarisch bereinigt werden." },
+          { title: "Administrative Überlast", desc: "Das Back-Office ist dauerhaft am Limit – Rückstände stauen sich auf." },
+          { title: "Governance-Überhang", desc: "Die Geschäftsleitung befasst sich zu viel mit Bürotätigkeiten statt Führung." },
+          { title: "Regulatorischer Aufwand", desc: "Neue regulatorische Anforderungen erzeugen unerwartet viel administrativen Aufwand." },
+          { title: "Vakanz & Ausfälle", desc: "Unerwartete Abwesenheiten oder Kündigungen hinterlassen kritische Lücken." },
+          { title: "Projektphasen", desc: "Ein einmaliges Projekt oder eine Software-Migration verlangt zusätzlichen Support." }
+        ].map((item) => (
+          <div class="p-8 rounded-3xl border border-slate-100 bg-surface flex flex-col h-full hover:shadow-lg transition-all duration-300">
+            <h3 class="text-xl font-bold text-navy mb-4">{item.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES AND DETAILS -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Unsere Leistungen</h2>
+        <p class="text-lg text-slate-600">
+          Kathiago hilft Ihnen dabei, die operative Last aus dem Tagesgeschäft zu nehmen und anstehende Aufgaben pragmatisch zu lösen.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Administrative Entlastung</h3>
+            <p class="text-slate-600 mb-6 text-sm">Wiederkehrende administrative Pflichten binden erhebliche Frontkompetenzen. Wir entlasten Sie flexibel:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Administrative Nachbearbeitung von Terminen</li>
+              <li>• Strukturierung, Sortierung und Vorbereitung von Unterlagen</li>
+              <li>• Vorbereitung komplexer Dokumentationspakete</li>
+              <li>• Pflege interner Übersichten und Schnittstellen</li>
+              <li>• Entlastungsunterstützung bei wiederkehrenden Aufgaben</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Dossieraufarbeitung</h3>
+            <p class="text-slate-600 mb-6 text-sm">Fehlerhafte, unvollständige Dossiers führen zu Compliance-Haftungsrisiken. Wir bereinigen:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Strukturierte Sichtung und Inventur bestehender Akten</li>
+              <li>• Identifikation und Anmahnung fehlender Belege</li>
+              <li>• Nachführung aller relevanter Kundendaten & Status</li>
+              <li>• Vereinheitlichung der elektronischen Ablageordnung</li>
+              <li>• Erstellung nachweiskonformer Kontrollübersichten</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Prozessumsetzung & Regulatorik-Support</h3>
+            <p class="text-slate-600 mb-6 text-sm">Gedachte Prozesse nützen erst, wenn sie konkret im Betrieb ankommen:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Operative Einführung neuer Checklisten & Abläufe</li>
+              <li>• Einpflege neuer regulatorischer Dokumentationsstandards</li>
+              <li>• Vorbereitung interner Kontrollen und Revisionsaudits</li>
+              <li>• Abstimmung mit Compliancevorgaben zur Abnahme</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Temporärer Support & Projektbegleitung</h3>
+            <p class="text-slate-600 mb-6 text-sm">Wir springen ein, wenn personelle Ausfälle oder Wachstumsprojekte Sie belasten:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Überbrückung administrativer Engpässe ohne neue Fixkosten</li>
+              <li>• Abarbeitung anfallender Aufgabenberge</li>
+              <li>• Planung, Tracking, Abstimmung & Koordination bei Projekten</li>
+              <li>• Nacharbeit und Datenmigrationen aus Altsystemen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abgrenzungen -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Wie ordnet sich dieser Service ein?</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-3">Abgrenzung zu Back-Office & Prozesse</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Der Service Back-Office & Prozesse analysiert, strukturiert und optimiert die Systemlandschaft und den generellen Standard Ihres Betriebs. <strong>Operative Unterstützung</strong> springt direkt praktisch ein, wenn Hände zur reinen Aufarbeitung und Erledigung konkreter Dossiers im Alltag benötigt werden.<br />
+            <strong>Back-Office & Prozesse plant die Struktur; Operative Unterstützung führt die Arbeiten aus.</strong>
+          </p>
+        </div>
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-3">Abgrenzung zu Compliance / Mentoring</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Compliance definiert Regeln und Kontrollpunkte, während Mentoring die Führungsfigur stärkt. Operative Unterstützung konzentriert sich rein darauf, Arbeitsberge abzutragen, Ablagen zu säubern und das Team im Tagesgeschäft wirksam zu entlasten.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARUM KATHIAGO -->
+  <section class="section-spacing bg-surface border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-3xl font-bold text-navy mb-4">Warum Kathiago?</h2>
+        <p class="text-slate-600">
+          Kathiago versteht den Alltag von Finanzdienstleistern vollumfänglich und weiss, dass operative Entlastung nur dann Nutzen bringt, wenn sie pragmatisch, loyal, diskret und fachlich absolut fehlerfrei erfolgt.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+        <div class="space-y-2">
+          <h4 class="font-bold text-navy">Keine Einarbeitungszeit</h4>
+          <p class="text-slate-600">Wir kennen die Schweizer Finanzbranche, typische Depotbankformulare und Branchen-CRMs auswendig.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold text-navy">Absolute Diskretion (NDA)</h4>
+          <p class="text-slate-600">Wir wahren höchste Loyalität gegenüber Ihren Endkunden und berücksichtigen moderne DSGV-Vorgaben.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold text-navy">Keine HR-Nebenkosten</h4>
+          <p class="text-slate-600">Sie buchen Unterstützung genau dann, wenn Sie sie brauchen – ohne Kündigungsfristen oder Personalkosten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS & FAQ -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Der Ablauf</h3>
+          <div class="space-y-8">
+            {[
+              { num: "1", title: "Erstgespräch", desc: "Wir klären, wo operative Engpässe bestehen und welche Aufgaben Priorität haben." },
+              { num: "2", title: "Aufgaben- & Umfangsklärung", desc: "Wir definieren gemeinsam, welche Arbeiten übernommen oder begleitet werden sollen." },
+              { num: "3", title: "Priorisierung & Umsetzung", desc: "Kathiago unterstützt strukturiert bei der Aufarbeitung offener Dossiers oder Aufgaben." },
+              { num: "4", title: "Übergabe", desc: "Ergebnisse werden nachvollziehbar dokumentiert und nahtlos zurück übergeben." }
+            ].map((step) => (
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">
+                  {step.num}
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy">{step.title}</h4>
+                  <p class="text-sm text-slate-600 mt-1">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Häufige Fragen</h3>
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Übernimmt Kathiago operative Aufgaben direkt?</h4>
+              <p class="text-sm text-slate-600">Ja. Je nach Problemstellung können wir konkrete Arbeiten im Back-Office Ihres Betriebs entlastend und loyal ausführen und dokumentieren.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Unterstützt Kathiago auch bei Dossieraufarbeitung?</h4>
+              <p class="text-sm text-slate-600">Ja. Die systematische Aufarbeitung, Kontrollüberprüfung und Nachführung von Kundendossiers gehört zu unseren täglichen Kernkompetenzen.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Ist dieser Service für kleine Vermittler geeignet?</h4>
+              <p class="text-sm text-slate-600">Absolut. Gerade Einzel- oder Kleinberatungsstellen haben keine Vollzeitkräfte für administrative Berge und profitieren extrem von flexibler Entlastung.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ACTION BOX -->
+  <section class="section-spacing bg-navy text-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/3 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+      <h2 class="text-3xl md:text-5xl font-bold max-w-3xl mx-auto">Fehlt Ihnen die Kapazität im Tagesgeschäft?</h2>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto">Sichern Sie sich die Unterstützung, die Sie brauchen, genau dann, wenn Sie sie brauchen. Sprechen Sie mit uns für ein unkompliziertes Kennenlernen.</p>
+      <a href="/kontakt/" class="btn-accent text-lg px-10 py-4 inline-block">Support anfragen</a>
+    </div>
+  </section>
+</Layout>

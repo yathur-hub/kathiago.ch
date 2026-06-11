@@ -1,0 +1,260 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Firmenaufbau für Finanzdienstleister | Kathiago" description="Kathiago unterstützt Finanzdienstleister beim strukturierten Firmenaufbau: Geschäftsmodell, Organisation, Prozesse, regulatorische Vorbereitung und operative Umsetzung.">
+  <!-- 1. HERO -->
+  <section class="relative bg-surface pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6 font-mono">
+            Service
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-8 text-navy leading-[1.1] tracking-tight">
+            Firmenaufbau für Finanzdienstleister
+          </h1>
+          <p class="text-xl md:text-2xl text-primary font-medium mb-8 leading-relaxed">
+            Ein Finanzdienstleistungsunternehmen aufzubauen bedeutet mehr als eine Firma zu gründen. Es braucht ein tragfähiges Geschäftsmodell, klare Verantwortlichkeiten, saubere Prozesse, regulatorisches Verständnis und eine Organisation, die im Tagesgeschäft funktioniert.
+          </p>
+          <div class="space-y-6 text-lg text-slate-600 mb-10 leading-relaxed">
+            <p>
+              Kathiago begleitet Finanzdienstleister beim Aufbau oder der Weiterentwicklung ihrer Unternehmensstruktur. Wir unterstützen Sie dabei, Ihr Geschäftsmodell, Ihre Abläufe und Ihre Organisation so aufzusetzen, dass Sie rechtlich, operativ und kommerziell belastbar arbeiten können.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/kontakt/" class="btn-primary text-center text-lg px-8 py-4 shadow-lg shadow-primary/20">Erstgespräch vereinbaren</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-2xl space-y-8 relative">
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-2xl"></div>
+            <h3 class="text-2xl font-bold text-navy">Für wen geeignet?</h3>
+            <p class="text-slate-600 text-sm">
+              Dieser Service richtet sich an Finanzdienstleister, die sich in einer Aufbau-, Wachstums- oder Reorganisationsphase befinden:
+            </p>
+            <div class="space-y-3">
+              {[
+                "Gründerinnen und Gründer im Finanzdienstleistungsbereich",
+                "Selbstständige Finanzberater & Versicherungsvermittler",
+                "Vermögensberater & Finanzplaner",
+                "Broker und Vermittlerorganisationen",
+                "Kleine und mittlere Finanzvertriebe",
+                "Bestehende Unternehmen mit Wachstumsbedarf",
+                "Führungspersonen vor Professionalisierungsschritt"
+              ].map((item) => (
+                <div class="flex items-start gap-2">
+                  <div class="text-primary mt-1 flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <span class="text-sm font-medium text-slate-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TYPISCHE AUSGANGSLAGEN -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Typische Ausgangslagen</h2>
+        <p class="text-lg text-slate-600">
+          Viele Finanzdienstleister starten mit hoher Fachkompetenz, aber ohne ausreichend strukturierte Unternehmensbasis. Die Beratung funktioniert, die Kundenbeziehungen sind vorhanden, doch intern fehlen klare Abläufe, definierte Rollen, standardisierte Dokumente oder ein belastbares Betriebsmodell.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { title: "Gründung & Selbstständigkeit", desc: "Sie möchten ein neues Finanzdienstleistungsunternehmen gründen oder sich selbstständig machen." },
+          { title: "Struktur-Rückstand", desc: "Ihre bestehende Organisation ist gewachsen, aber die internen Strukturen sind nicht mitgewachsen." },
+          { title: "Team- & Partneraufbau", desc: "Sie bauen eine Vermittlerorganisation oder ein Beraterteam auf und benötigen klare Leitlinien." },
+          { title: "Geschäftsmodell-Schärfung", desc: "Sie wollen Ihr Angebot, Pricing und Rollenmodell professionalisieren." },
+          { title: "Skalierbarkeit-Fokus", desc: "Sie möchten Ihr Unternehmen so aufstellen, dass es langfristig skaliert und Risiken minimiert." }
+        ].map((item) => (
+          <div class="p-8 rounded-3xl border border-slate-100 bg-surface flex flex-col h-full hover:shadow-lg transition-all duration-300">
+            <h3 class="text-xl font-bold text-navy mb-4">{item.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. DETAILED SCOPE -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Was wir unter Firmenaufbau verstehen</h2>
+        <p class="text-lg text-slate-600">
+          Firmenaufbau bedeutet für uns nicht nur Gründungsbegleitung. Es geht um den praktischen Aufbau eines funktionsfähigen Unternehmens im Finanzdienstleistungsbereich. Dazu gehören strategische, organisatorische, regulatorische und operative Fragestellungen.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Geschäftsmodell und Angebotsstruktur</h3>
+            <p class="text-slate-600 mb-6 text-sm">Wir prüfen mit Ihnen, wie Ihr Unternehmen am Markt auftreten soll, welche Leistungen angeboten werden und welche Zielgruppen wirtschaftlich sinnvoll sind. Dabei geht es nicht um theoretische Konzepte, sondern um ein tragfähiges Modell für den Alltag.</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Welche Leistungen sollen angeboten werden?</li>
+              <li>• Welche Zielgruppen sind realistisch und profitabel?</li>
+              <li>• Wie soll die Beratungslogik aufgebaut sein?</li>
+              <li>• Welche Partner, Produkte oder Anbieter werden benötigt?</li>
+              <li>• Welche Kompetenzen müssen intern vorhanden sein?</li>
+              <li>• Welche Aufgaben können extern unterstützt werden?</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Organisationsaufbau</h3>
+            <p class="text-slate-600 mb-6 text-sm">Ein Finanzdienstleistungsunternehmen braucht klare Zuständigkeiten. Unklare Rollen führen zu Reibungsverlusten, Doppelspurigkeiten und operativen Risiken. Wir unterstützen beim Aufbau einer sinnvollen Organisationsstruktur:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Rollenmodell & Verantwortlichkeiten</li>
+              <li>• Entscheidungswege & Stellvertretungen</li>
+              <li>• Kontrollpunkte & Eskalationslogik</li>
+              <li>• Schnittstellen zwischen Beratung, Administration und Compliance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Prozessaufbau</h3>
+            <p class="text-slate-600 mb-6 text-sm">Professionelle Finanzdienstleistung braucht wiederholbare Abläufe. Das gilt für Beratung, Kundenaufnahme, Dokumentation, Produktabwicklung, Nachbearbeitung und laufende Betreuung. Wir helfen Ihnen, zentrale Prozesse zu definieren und zu dokumentieren:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Kundenaufnahme & Erstberatung</li>
+              <li>• Bedarfsanalyse & Angebots-/Produktauswahl</li>
+              <li>• Beratungsdokumentation & Vertragsabwicklung</li>
+              <li>• Nachbearbeitung, Kundenbetreuung & Qualitätskontrolle</li>
+              <li>• Interne Ablage und Nachweisführung</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-8 rounded-3xl border border-slate-100">
+            <h3 class="text-2xl font-bold text-navy mb-4">Regulatorik & Operations-Basis</h3>
+            <p class="text-slate-600 mb-6 text-sm">Regulatorische Anforderungen gehören von Anfang an in die Unternehmensstruktur (inkl. Registrierung, Fachnachweise, Weisungen, Standards). Gleichzeitig betrachten wir die operative Umsetzung:</p>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li>• Back-Office-Strukturen & administrative Abläufe</li>
+              <li>• Dokumenten- und Vorlagenlogik</li>
+              <li>• Tool- und Systemanforderungen</li>
+              <li>• Interne Arbeitsorganisation & Prioritätenplanung</li>
+            </ul>
+            <p class="text-xs text-slate-400 mt-4 leading-relaxed"><em>* Hinweis: Kathiago unterstützt in der praktischen Vorbereitung und Umsetzung. Eine verbindliche Rechtsberatung erfolgt bei Bedarf in Zusammenarbeit mit spezialisierten Fachpersonen.</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abgrenzungen -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Wie ordnet sich dieser Service ein?</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-3">Abgrenzung zu Bildungsprogrammen</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Unsere Bildungsprogramme vermitteln Fachwissen, bereiten auf Prüfungen vor und stärken Fachkompetenzen. Der Service Firmenaufbau geht einen Schritt weiter: Hier begleiten wir Sie bei der konkreten Gestaltung Ihres Unternehmens, Ihrer Organisation und Ihrer Abläufe.<br />
+            <strong>Kurz gesagt: Bildungsprogramme befähigen Personen – Firmenaufbau strukturiert Unternehmen.</strong>
+          </p>
+        </div>
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-3">Schnittstellen & weitere Begleitung</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Nach dem erfolgreichen strukturellen Aufbau des Unternehmens kann Kathiago flexibel in weiteren modular abgestimmten Bereichen begleiten: im Back-Office, bei Prozessen, Compliance, operativer Unterstützung oder im strategischen Mentoring.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WARUM KATHIAGO -->
+  <section class="section-spacing bg-surface border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-3xl font-bold text-navy mb-4">Warum Kathiago?</h2>
+        <p class="text-slate-600">
+          Kathiago verbindet Finanzbildung, Praxiserfahrung und tiefes Verständnis für den Schweizer Finanzdienstleistungsmarkt. Dadurch kennen wir nicht nur die fachlichen Anforderungen, sondern auch die operativen Realitäten im Beratungsalltag.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+        <div class="space-y-2">
+          <h4 class="font-bold text-navy">Markt- & Regulierungs-Erfahrung</h4>
+          <p class="text-slate-600">Fundiertes Fachwissen im Schweizer Markt kombiniert mit praxisnaher Regulierungs-Sensibilität.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold text-navy">Prozess- & Operations-Kompetenz</h4>
+          <p class="text-slate-600">Direkte Übersetzung strategischer Konzepte in funktionierende, digitale Abläufe.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold text-navy">Loyal & Pragmatisch</h4>
+          <p class="text-slate-600">Gemeinsame Erarbeitung statt herablassender Beratung – wir sprechen Ihre Alltagssprache.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PROCESS & FAQ -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Der Ablauf</h3>
+          <div class="space-y-8">
+            {[
+              { num: "1", title: "Erstgespräch", desc: "Wir klären Ihre Ausgangslage, Ihre Ziele und die wichtigsten offenen Fragen." },
+              { num: "2", title: "Standortbestimmung", desc: "Wir analysieren, wo Ihr Unternehmen heute steht oder welche Grundlagen für die Gründung bereits vorhanden sind." },
+              { num: "3", title: "Strukturkonzept", desc: "Wir entwickeln eine klare Struktur für Geschäftsmodell, Organisation, Prozesse und nächste Umsetzungsschritte." },
+              { num: "4", title: "Umsetzungsbegleitung", desc: "Auf Wunsch begleiten wir Sie bei der konkreten Umsetzung, bei Dokumenten, Prozessen, internen Abläufen und weiteren Service-Themen." }
+            ].map((step) => (
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">
+                  {step.num}
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy">{step.title}</h4>
+                  <p class="text-sm text-slate-600 mt-1">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Häufige Fragen</h3>
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Unterstützt Kathiago direkt bei einer Neugründung?</h4>
+              <p class="text-sm text-slate-600">Ja. Kathiago unterstützt beim strukturellen und operativen Aufbau von Finanzdienstleistungsunternehmen. Dazu gehören Geschäftsmodell, Organisation, Prozesse, Dokumentation und regulatorische Vorbereitung.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Ist dieser Service nur für neue Unternehmen geeignet?</h4>
+              <p class="text-sm text-slate-600">Nein. Der Service eignet sich auch für bestehende Finanzdienstleister, die gewachsen sind und ihre Strukturen professionalisieren möchten.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Unterstützt Kathiago auch bei regulatorischen Themen?</h4>
+              <p class="text-sm text-slate-600">Ja. Regulatorische Anforderungen werden im Firmenaufbau mitgedacht. Für vertiefte Themen rund um Registrierung und Compliance bieten wir eigene Servicebereiche.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ACTION BOX -->
+  <section class="section-spacing bg-navy text-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/3 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+      <h2 class="text-3xl md:text-5xl font-bold max-w-3xl mx-auto">Bereit für den Firmenaufbau?</h2>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto">Wenn Sie ein Finanzdienstleistungsunternehmen aufbauen oder Ihre bestehende Struktur professionalisieren möchten, lohnt sich eine frühe Standortbestimmung.</p>
+      <a href="/kontakt/" class="btn-accent text-lg px-10 py-4 inline-block">Erstgespräch vereinbaren</a>
+    </div>
+  </section>
+</Layout>

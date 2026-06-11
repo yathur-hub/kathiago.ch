@@ -1,0 +1,252 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Mentoring für Finanzdienstleister | Kathiago" description="Kathiago begleitet Finanzberater, Vermittler und Unternehmer im Finanzdienstleistungsbereich mit persönlichem Mentoring, Sparring und strategischer Orientierung.">
+  <!-- 1. HERO -->
+  <section class="relative bg-surface pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6 font-mono">
+            Service
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-8 text-navy leading-[1.1] tracking-tight">
+            Mentoring für Finanzdienstleister
+          </h1>
+          <p class="text-xl md:text-2xl text-primary font-medium mb-8 leading-relaxed">
+            Wer im Finanzdienstleistungsbereich Verantwortung übernimmt, steht oft vor Entscheidungen, die fachlich, unternehmerisch und persönlich anspruchsvoll sind.
+          </p>
+          <div class="space-y-6 text-lg text-slate-600 mb-10 leading-relaxed">
+            <p>
+              Kathiago begleitet Finanzberater, Vermittler, Gründer und Führungspersonen mit persönlichem Mentoring. Im Zentrum stehen Orientierung, Sparring, Entwicklung und die Fähigkeit, bessere Entscheidungen für den eigenen Weg, das Unternehmen und die Kunden zu treffen.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/kontakt/" class="btn-primary text-center text-lg px-8 py-4 shadow-lg shadow-primary/20">Erstgespräch vereinbaren</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 border-hidden pointer-events-none md:block"></div>
+
+        <div class="lg:col-span-4">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-2xl space-y-8 relative">
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-2xl"></div>
+            <h3 class="text-2xl font-bold text-navy font-sans tracking-tight">Im Fokus</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Persönliche Begleitung für anspruchsvolle Entwicklungs- & Karriereschritte.
+            </p>
+            <div class="space-y-4 text-sm text-slate-700 font-medium">
+              {[
+                "Ehrliches Sparring auf Augenhöhe",
+                "Praktische Schweizer Markterfahrung",
+                "Klare Struktur & Reflexion",
+                "Konkrete, realistische Meilensteine"
+              ].map((item) => (
+                <div class="flex items-center gap-3">
+                  <div class="w-2 h-2 rounded-full bg-primary"></div>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. RELEVANT FOR -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div>
+          <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">Für wen dieser Service relevant ist</h2>
+          <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+            Mentoring richtet sich an Personen, die fachlich oder unternehmerisch einen nächsten Schritt machen möchten. Fachwissen allein reicht im Finanzdienstleistungsbereich oft nicht aus. Wer Kunden professionell beraten, ein Team führen oder den Schritt in die Selbstständigkeit wagen möchte, sucht reibungsloses, ehrliches Orientierungssparring.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4 text-sm">
+            {[
+              "Angehende Finanzberaterinnen & -berater",
+              "Selbstständige Finanzberater & Planer",
+              "Versicherungsvermittler & Broker",
+              "Vermögensberater",
+              "Gründer & Nachfolger in der Finanzbranche",
+              "Junge Unternehmerinnen & Unternehmer",
+              "Führungspersonen in Finanzvertrieben",
+              "Berater vor wichtigen Prüfungen / Zertifizierungen"
+            ].map((item) => (
+              <div class="flex items-center gap-2 p-3 bg-surface rounded-xl border border-slate-100 font-medium text-navy text-xs">
+                <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-surface p-8 rounded-3xl border border-slate-100">
+          <h3 class="text-2xl font-bold text-navy mb-6">Typische Ausgangslagen</h3>
+          <p class="text-slate-600 text-sm mb-6">Mentoring wird dann wertvoll, wenn Fragen nicht mehr nur fachlich, sondern strategisch und persönlich werden:</p>
+          <ul class="space-y-4 text-slate-700 text-sm leading-relaxed">
+            <li><strong>🌱 Selbstständigkeit vorbereiten:</strong> Sie möchten sich als Finanzberater oder Vermittler selbstständig machen oder Ihre Rolle schärfen.</li>
+            <li><strong>✨ Positionierung entwickeln:</strong> Sie haben fachliche Qualifikationen, aber noch keine glasklare Positionierung und Struktur beim Kundengewinn.</li>
+            <li><strong>🧭 Strategische Hürden meistern:</strong> Sie brauchen ehrliches Sparring über Marktauftritt, Vertrieb, Pricing, Honorarmodelle oder Organisation.</li>
+            <li><strong>🦁 Führungsrolle annehmen:</strong> Sie übernehmen ein Team oder ein Vertriebsbüro und wollen ein hocheffizientes Front-Team leiten.</li>
+            <li><strong>🔒 Qualität absichern:</strong> Sie suchen Sicherheit im Umgang mit regulatorischen, operativen oder schwierigen Kundensituationen.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SCHWERPUNKTE -->
+  <section class="section-spacing bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">Unsere Mentoring-Schwerpunkte</h2>
+        <p class="text-lg text-slate-600">Wir verbinden persönliche Entwicklung mit konkretem, ungefiltertem Branchenverständnis für den Schweizer Markt.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          {
+            title: "Unternehmerische Orientierung",
+            desc: "Berufliche Standortbestimmung, Selbstständigkeit oder nächste Karrierestufe, strategische Ziele und Definition eines langfristigen persönlichen Rollenverständnisses."
+          },
+          {
+            title: "Positionierung & Marktauftritt",
+            desc: "Wofür stehen Sie als Berater oder Partner? Definition von Zielgruppe, USP, klarem Kundennutzen und dem professionellen Vertrauensaufbau im Markt."
+          },
+          {
+            title: "Eigene Beratungslogik",
+            desc: "Gesprächsführung, Bedarfsanalyse, Beratungsstruktur, Umgang mit Kundenerwartungen, Qualitätssicherung und das nötige regulatorische Dokumentationsbewusstsein."
+          },
+          {
+            title: "Selbstständigkeit & Aufbau",
+            desc: "Begleitung in das freie Unternehmertum. Entwicklung von tragfähigen Geschäftsmodellen, Honorar- und Pricingmodellen sowie des persönlichen Netzwerks."
+          },
+          {
+            title: "Führung & Verantwortung",
+            desc: "Teambuilding, Führungsrolle ausfüllen, Aufbau hocheffizienter Front-Teams und Etablierung einer Qualitäts- und Lernkultur."
+          },
+          {
+            title: "Aussensicht / Sparring-Sessions",
+            desc: "Strukturierte Aussensicht auf akute Wachstumsentscheidungen, neue Angebote, Kooperationen, Marktauftritte oder regulatorische Auswirkungen auf Ihren Betrieb."
+          }
+        ].map((item) => (
+          <div class="bg-white p-8 rounded-3xl border border-slate-100 flex flex-col h-full hover:shadow-md transition-all">
+            <h4 class="font-bold text-navy text-lg mb-3">{item.title}</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Abgrenzungen -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Wie grenzt sich dieser Service ab?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-surface p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2 text-sm uppercase font-mono tracking-wider text-primary">vs. Bildungsprogramme</h4>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Bildungsprogramme vermitteln strukturiertes Fachwissen und bereiten auf Prüfungen vor. Mentoring setzt danach an: Es schafft Orientierung bei der Umsetzung des Wissens in Rolle, Alltag, Partnerschaft und Selbstständigkeit.
+          </p>
+        </div>
+        <div class="bg-surface p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2 text-sm uppercase font-mono tracking-wider text-primary">vs. Firmenaufbau</h4>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Firmenaufbau strukturiert die rechtliche und prozessuale Basis Ihres Betriebs (Geschäftsmodell, Regulierung, Verträge). Mentoring fokussiert dagegen auf die Person hinter dem Geschäft: auf Ihre Führungsrolle, Ihre Entscheidungsfindung und Ihre Entwicklung.
+          </p>
+        </div>
+        <div class="bg-surface p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2 text-sm uppercase font-mono tracking-wider text-primary">vs. Operative Unterstützung</h4>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Operative Unterstützung entlastet Sie tatkräftig im Back-Office bei administrativen Aufgaben. Mentoring hilft Ihnen, strategische Weichen zu stellen, um diese operative Flut langfristig klüger einzudämmen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARUM KATHIAGO -->
+  <section class="section-spacing bg-surface border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-3xl font-bold text-navy mb-4">Warum Kathiago?</h2>
+        <p class="text-slate-600">
+          Kathiago verbindet Finanzfachwissen, Ausbildungserfahrung, tiefe Marktkenntnis und praktische Nähe zum Schweizer Finanzdienstleistungssektor. Dadurch entsteht ein Mentoring, das nicht theoretisch bleibt, sondern konkrete Orientierung bietet.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+        <div class="bg-white p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2">Erfahrung im Schweizer Finanzökosystem</h4>
+          <p class="text-slate-600 text-xs">Zugang zu unserem erstklassigen lizenzierten Netzwerk an Depotbanken, Softwareanbietern, Treuhändern und Branchenexperten.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-100">
+          <h4 class="font-bold text-navy mb-2">Praxis-Blaupausen</h4>
+          <p class="text-slate-600 text-xs">Wir stellen Ihnen bewährte Vorlagen für Mailings, Honorarvereinbarungen, Kooperationsverträge und Skalierungskonzepte bereit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATS, PROCESS & FAQ -->
+  <section class="section-spacing bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Der Ablauf</h3>
+          <div class="space-y-8">
+            {[
+              { num: "1", title: "Erstgespräch", desc: "Wir klären Ihre Ausgangslage, Ihre Ziele und die Frage, wobei Mentoring konkret helfen soll." },
+              { num: "2", title: "Standortbestimmung", desc: "Wir betrachten Ihre aktuelle Rolle, Ihre Herausforderungen und Ihre wichtigsten Entscheidungsfelder." },
+              { num: "3", title: "Mentoring-Fokus", desc: "Wir definieren gemeinsam die Schwerpunkt-Themen, die im Mentoring priorisiert werden sollen." },
+              { num: "4", title: "Begleitung & Reflexion", desc: "In Terminen arbeiten wir strukturiert an Ihren Fragen. Zwischen Terminen setzen Sie konkrete Schritte um." }
+            ].map((step) => (
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0">
+                  {step.num}
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy">{step.title}</h4>
+                  <p class="text-sm text-slate-600 mt-1">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-navy mb-8">Häufige Fragen</h3>
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Ist Mentoring ein standardisierter Kurs?</h4>
+              <p class="text-sm text-slate-600">Nein. Mentoring ist keine Schulung oder Prüfungsvorbereitung. Es ist eine massgeschneiderte 1:1 Begleitung mit Fokus auf strategische Entwicklung, Klarheit und unternehmerischen Erfolg.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Mögliche Formate der Zusammenarbeit?</h4>
+              <p class="text-sm text-slate-600">Von einer einmaligen Sparring-Session über Begleitung während der Gründungsphase bis hin zu langfristigen Mentoring-Rhythmen parallel zu Ihrer Zertifizierung.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-navy text-base mb-2">Kann Mentoring mit Bildungsprogrammen kombiniert werden?</h4>
+              <p class="text-sm text-slate-600">Ja, absolut. Gerne begleiten wir Sie bei der Übersetzung Ihres erworbenen Fachwissens in die reibungsfreie Praxis direkt bei Ihren ersten echten Kunden.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ACTION BOX -->
+  <section class="section-spacing bg-navy text-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/3 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+      <h2 class="text-3xl md:text-5xl font-bold max-w-3xl mx-auto">Bereit für Ihren nächsten grossen Wachstumsschritt?</h2>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto">Sichern Sie sich einen unserer limitierten Mentoring-Plätze. Vereinbaren Sie ein erstes kostenfreies Orientierungsgespräch.</p>
+      <a href="/kontakt/" class="btn-accent text-lg px-10 py-4 inline-block">Erstgespräch vereinbaren</a>
+    </div>
+  </section>
+</Layout>
