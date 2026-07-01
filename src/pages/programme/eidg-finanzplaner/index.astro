@@ -71,317 +71,861 @@ import Layout from '../../../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 2. WARUM EIDG. FINANZPLANER? -->
-  <section class="section-spacing bg-white">
+  <!-- 2. TRANSFORMATION: PRODUKTBERATUNG VS. GANZEITLICHE STRATEGIE -->
+  <section class="section-spacing bg-white border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Von Produktberatung zu ganzheitlicher Finanzstrategie</h2>
-        <div class="space-y-6 text-slate-600 mb-12">
-          <p>Die meisten Finanzberater arbeiten fragmentiert:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Vorsorge isoliert</li>
-            <li>Anlagen isoliert</li>
-            <li>Steuern isoliert</li>
-            <li>Immobilien isoliert</li>
-          </ul>
-          <p>Der Kunde erhält Einzelteile – aber kein Gesamtbild.</p>
-          <p>Der Eidg. Finanzplaner schliesst genau diese Lücke.</p>
-          <p>Er verbindet:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Vorsorge</li>
-            <li>Vermögen</li>
-            <li>Steuern</li>
-            <li>Finanzierung</li>
-            <li>Lebensplanung</li>
-          </ul>
-          <p>zu einem strukturierten Gesamtkonzept.</p>
-        </div>
-        <blockquote class="border-l-4 border-primary pl-6 py-2 italic text-2xl text-navy font-display">
-          „Komplexität ist kein Problem – solange du sie strukturieren kannst.“
-        </blockquote>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Vom Produktberater zum strategischen Finanzplaner
+        </h2>
+        <p class="text-lg text-slate-600">
+          Die herkömmliche Finanzberatung leidet unter der Fragmentierung einzelner Themen. Der eidgenössische Finanzplaner schliesst diese Lücke systematisch.
+        </p>
       </div>
-    </div>
-  </section>
 
-  <!-- 3. ZIELGRUPPE -->
-  <section class="section-spacing bg-surface">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Für Berater, die mehr wollen als Standardberatung</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Diese Ausbildung richtet sich an Personen, die ihre Rolle im Markt neu definieren wollen.</p>
-          <p>Typische Profile:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Finanzberater mit Berufserfahrung</li>
-            <li>Vermögensberater (IAF)</li>
-            <li>Versicherungsberater mit Ambition zur Ganzheitlichkeit</li>
-            <li>Selbständige Finanzberater</li>
-            <li>Berater in Banken und unabhängigen Strukturen</li>
-          </ul>
-          <p>Voraussetzung (implizit):</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>solides Grundverständnis der Finanzberatung</li>
-            <li>Bereitschaft, komplexe Zusammenhänge zu denken</li>
-            <li>Ambition, Kunden langfristig zu begleiten</li>
-          </ul>
-          <p>Dieser Lehrgang ist nicht für Einsteiger. Er ist für Berater, die den nächsten Schritt machen wollen.</p>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Fragmentierte Beratung (Problem) -->
+        <div class="bg-slate-50 p-8 md:p-10 rounded-2xl border border-slate-100 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-2 h-full bg-red-400"></div>
+          <h3 class="text-xl font-bold text-navy mb-6 flex items-center">
+            <span class="p-2 bg-red-50 text-red-500 rounded-lg mr-3">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </span>
+            Fragmentierte Produktberatung (Status Quo)
+          </h3>
+          <p class="text-slate-600 mb-6">
+            Die meisten Finanzberater arbeiten reaktiv und isoliert in voneinander getrennten Silos. Der Kunde erhält Einzelteile, aber kein aufeinander abgestimmtes Gesamtbild.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-start">
+              <span class="text-red-500 mr-2 mt-1">✕</span>
+              <span class="text-slate-600 font-medium"><strong>Vorsorge isoliert:</strong> Abdeckung von Risiken ohne Bezug auf Steuereffekte.</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-red-500 mr-2 mt-1">✕</span>
+              <span class="text-slate-600 font-medium"><strong>Anlagen isoliert:</strong> Portfoliostruktur ohne Abstimmung auf Pensionsplanung.</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-red-500 mr-2 mt-1">✕</span>
+              <span class="text-slate-600 font-medium"><strong>Steuern isoliert:</strong> Reine Deklarationshilfe statt zukunftsorientierter Optimierung.</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-red-500 mr-2 mt-1">✕</span>
+              <span class="text-slate-600 font-medium"><strong>Immobilien isoliert:</strong> Hypothekarberatung ohne Einbezug der Liquiditätsplanung.</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- 4. KOMPETENZPROFIL -->
-  <section class="section-spacing bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl mb-8 text-navy">Was dich vom Markt differenziert</h2>
-      <div class="max-w-3xl space-y-6 text-slate-600 mb-12">
-        <p>Nach Abschluss bist du in der Lage, komplexe finanzielle Situationen strukturiert zu analysieren und in konkrete Strategien zu überführen.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Ganzheitliche Finanzplanung</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>Analyse der finanziellen Gesamtsituation</li>
-            <li>Entwicklung langfristiger Strategien</li>
-            <li>Verknüpfung aller relevanten Bereiche</li>
-          </ul>
-        </div>
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Pensionsplanung</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>Planung der finanziellen Situation nach der Pensionierung</li>
-            <li>Szenarienberechnung</li>
-            <li>Einkommens- und Kapitalstrategien</li>
-          </ul>
-        </div>
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Steueroptimierung</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>Identifikation steuerlicher Optimierungspotenziale</li>
-            <li>Integration in Gesamtstrategie</li>
-          </ul>
-        </div>
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Vorsorgeplanung</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>1., 2. und 3. Säule</li>
-            <li>Absicherung von Risiken</li>
-            <li>Strukturierung von Vorsorgelösungen</li>
-          </ul>
-        </div>
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Immobilienfinanzierung</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>Finanzierungskonzepte</li>
-            <li>Tragbarkeit</li>
-            <li>Integration in Gesamtplanung</li>
-          </ul>
-        </div>
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Umgang mit Komplexität</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>Einbindung von Fachexperten</li>
-            <li>Strukturierung komplexer Fälle</li>
-            <li>Entscheidungslogik für Kunden</li>
-          </ul>
+        <!-- Ganzheitliche Strategie (Ziel) -->
+        <div class="bg-primary/5 p-8 md:p-10 rounded-2xl border border-primary/10 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-2 h-full bg-primary"></div>
+          <h3 class="text-xl font-bold text-navy mb-6 flex items-center">
+            <span class="p-2 bg-primary/10 text-primary rounded-lg mr-3">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </span>
+            Ganzheitliche Finanzplanung (Eidg. Niveau)
+          </h3>
+          <p class="text-slate-600 mb-6">
+            Als strategischer Finanzplaner verbinden Sie alle Aspekte über den gesamten Lebenszyklus Ihrer Kunden zu einer perfekt aufeinander abgestimmten Gesamtstrategie.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-start">
+              <span class="text-primary mr-2 mt-1">✓</span>
+              <span class="text-slate-700 font-medium"><strong>Vorsorge, Vermögen & Steuern</strong> greifen lückenlos ineinander.</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-primary mr-2 mt-1">✓</span>
+              <span class="text-slate-700 font-medium"><strong>Finanzierung & Liquidität</strong> sichern die langfristige Stabilität.</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-primary mr-2 mt-1">✓</span>
+              <span class="text-slate-700 font-medium"><strong>Dynamische Lebensplanung</strong> berücksichtigt geänderte Lebensumstände flexibel.</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-primary mr-2 mt-1">✓</span>
+              <span class="text-slate-700 font-medium"><strong>Strukturiertes Gesamtkonzept</strong> macht komplexe Szenarien einfach verständlich.</span>
+            </div>
+          </div>
         </div>
       </div>
-      <p class="text-slate-600 max-w-3xl">Diese Fähigkeiten ermöglichen Beratung auf einem anderen Niveau – fachlich und strategisch.</p>
-    </div>
-  </section>
 
-  <!-- 5. PRAXISBEZUG -->
-  <section class="section-spacing bg-surface">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Nicht Theorie – sondern Anwendung</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Die Ausbildung ist stark praxisorientiert aufgebaut.</p>
-          <p>Zentrale Elemente:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Fallstudien</li>
-            <li>reale Beratungssituationen</li>
-            <li>strukturierte Analyseprozesse</li>
-            <li>konkrete Umsetzungsschritte</li>
-          </ul>
-          <p>Fokus in der Praxis:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Erstgespräch bis Abschluss</li>
-            <li>Analyse und Empfehlung</li>
-            <li>Visualisierung von Finanzplänen</li>
-            <li>Kommunikation mit Kunden</li>
-          </ul>
-          <p>Ziel ist nicht Wissen – sondern Handlungskompetenz.</p>
+      <div class="mt-16 bg-navy text-white p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="space-y-2">
+          <p class="text-amber-400 font-semibold uppercase tracking-wider text-xs">Der strategische Vorteil</p>
+          <h4 class="text-xl md:text-2xl font-bold">„Komplexität ist kein Problem – solange du sie strukturieren kannst.“</h4>
+        </div>
+        <div class="flex-shrink-0">
+          <a href="/kontakt/" class="btn-accent px-6 py-3">Beratungskompetenz steigern</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. AUSBILDUNGSSTRUKTUR -->
-  <section class="section-spacing bg-white">
+  <!-- 3. ZIELGRUPPE & CHECK -->
+  <section class="section-spacing bg-surface border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Strukturiert aufgebaut – systematisch vertieft</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Die Ausbildung umfasst 16 Seminartage und ist modular aufgebaut.</p>
-          <p>Inhaltliche Schwerpunkte:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Vertiefung Vermögen inkl. FIDLEG</li>
-            <li>Vertiefung Vorsorge</li>
-            <li>Aufbauplanung</li>
-            <li>Pensionsplanung</li>
-            <li>Prüfungsvorbereitung</li>
-          </ul>
-          <p>Format:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Präsenz oder hybrid</li>
-            <li>strukturierte Lernphasen</li>
-            <li>flexible Pausen- und Vertiefungseinheiten</li>
-          </ul>
-          <p>Der Aufbau folgt einer klaren Logik: von Fachwissen → zu Anwendung → zu Integration.</p>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Für Berater, die mehr wollen als Standardberatung
+        </h2>
+        <p class="text-lg text-slate-600">
+          Der Lehrgang richtet sich gezielt an ambitionierte Praktiker im Schweizer Markt. Er ist nicht für Einsteiger konzipiert, sondern setzt fundierte Vorkenntnisse voraus.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Profile -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-bold text-navy flex items-center mb-4">
+            <span class="w-1.5 h-6 bg-accent rounded-full mr-3"></span>
+            Zielgruppe: Wer profitiert am meisten?
+          </h3>
+          <div class="grid gap-4">
+            <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex items-start gap-4">
+              <div class="p-2 bg-primary/10 text-primary rounded-lg shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy">Finanzberater mit Berufserfahrung</h4>
+                <p class="text-sm text-slate-500">Praktiker, die komplexe Vermögens- und Vorsorgeszenarien auf Expertenniveau lösen möchten.</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex items-start gap-4">
+              <div class="p-2 bg-primary/10 text-primary rounded-lg shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy">Vermögensberater IAF</h4>
+                <p class="text-sm text-slate-500">Zertifizierte Fachkräfte, die den logischen nächsten Schritt zum eidg. Fachausweis anstreben.</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex items-start gap-4">
+              <div class="p-2 bg-primary/10 text-primary rounded-lg shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy">Versicherungsberater mit Ambition</h4>
+                <p class="text-sm text-slate-500">Berater, die aus der reinen Risikoabdeckung ausbrechen und ganzheitliche Konzepte erstellen wollen.</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex items-start gap-4">
+              <div class="p-2 bg-primary/10 text-primary rounded-lg shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy">Selbständige & Berater in Instituten</h4>
+                <p class="text-sm text-slate-500">Sowohl freie Berater als auch Bank- und Verbandsspezialisten, die ihre Mandatsgrösse steigern wollen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voraussetzungen & Eignungscheck -->
+        <div class="bg-navy text-white p-8 md:p-10 rounded-2xl flex flex-col justify-between relative overflow-hidden shadow-xl">
+          <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/5 rounded-full pointer-events-none"></div>
+          <div>
+            <div class="inline-block px-3 py-1 rounded-full bg-white/15 text-amber-400 text-xs font-bold uppercase tracking-widest mb-6">
+              Eignungs-Check
+            </div>
+            <h3 class="text-2xl font-bold mb-6">Unsere klaren Erwartungen an Sie</h3>
+            <p class="text-slate-300 mb-8 leading-relaxed">
+              Dieser Lehrgang fordert Ihre intellektuelle Bereitschaft. Wir bereiten Sie auf ein eidgenössisches Expertenniveau vor. Sie bringen folgendes Profil mit:
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <span class="p-1 bg-white/10 text-amber-400 rounded-lg mr-3 shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </span>
+                <span class="text-slate-200">Solides und praxiserprobtes Grundverständnis der Schweizer Finanzberatung</span>
+              </div>
+              <div class="flex items-start">
+                <span class="p-1 bg-white/10 text-amber-400 rounded-lg mr-3 shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </span>
+                <span class="text-slate-200">Bereitschaft, komplexe, vernetzte Zusammenhänge strategisch zu durchdenken</span>
+              </div>
+              <div class="flex items-start">
+                <span class="p-1 bg-white/10 text-amber-400 rounded-lg mr-3 shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </span>
+                <span class="text-slate-200">Die Ambition, anspruchsvolle Privatkunden langfristig und systematisch zu begleiten</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-12 pt-8 border-t border-white/10">
+            <p class="text-amber-400 font-bold text-sm mb-4">Hinweis: Der Lehrgang ist nicht für Einsteiger geeignet.</p>
+            <a href="/kontakt/" class="btn-accent w-full text-center">Eignungsprüfung anfragen</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 7. PRÜFUNG -->
-  <section class="section-spacing bg-surface">
+  <!-- 4. KOMPETENZPROFIL / DIFFERENZIERUNG -->
+  <section class="section-spacing bg-white border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Anspruchsvoll – praxisnah</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Die Abschlussprüfung ist umfassend und mehrstufig aufgebaut.</p>
-          <p>Prüfungsbestandteile:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Online-Prüfung (90 Minuten)</li>
-            <li>Schriftliche Finanzplanung (240 Minuten)</li>
-            <li>Mündliche Prüfung (30 Minuten)</li>
-          </ul>
-          <p>Fokus:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Anwendung von Wissen</li>
-            <li>strukturierte Problemlösung</li>
-            <li>Fähigkeit zur ganzheitlichen Planung</li>
-          </ul>
-          <p>Diese Prüfung stellt sicher, dass Absolventen tatsächlich in der Lage sind, komplexe Beratungen durchzuführen.</p>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Was dich vom Markt differenziert
+        </h2>
+        <p class="text-lg text-slate-600">
+          Nach erfolgreichem Abschluss analysieren Sie komplexe finanzielle Lebensläufe strategisch, strukturieren diese logisch und überführen sie in lückenlos funktionierende Konzepte.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100 hover:border-primary/30 transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-4">Ganzheitliche Finanzplanung</h3>
+            <ul class="space-y-2.5 text-slate-600 text-sm">
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Vollständige Analyse der finanziellen Gesamtsituation</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Entwicklung massgeschneiderter, langfristiger Lebenszyklusstrategien</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Nahtlose Verknüpfung aller finanziellen Disziplinen</li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100 hover:border-primary/30 transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-4">Pensionsplanung</h3>
+            <ul class="space-y-2.5 text-slate-600 text-sm">
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Exakte finanzielle Modellierung vor und nach dem Drittberufsabschnitt</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Erstellung präziser, mehrgleisiger Szenarienberechnungen</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Optimale Strukturierung von Einkommens- und Kapitalstrategien</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100 hover:border-primary/30 transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-4">Steueroptimierung</h3>
+            <ul class="space-y-2.5 text-slate-600 text-sm">
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Identifikation von ungenutzten steuerlichen Entlastungspotenzialen</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Integration von steuerwirksamen Massnahmen in das Gesamtkonzept</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Abgleich mit den rechtlichen Vorschriften des Kantons</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100 hover:border-primary/30 transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-4">Vorsorgeplanung</h3>
+            <ul class="space-y-2.5 text-slate-600 text-sm">
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Tiefgreifende Abdeckung der 1., 2. und 3. Säule</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Strukturierte Absicherung existenzieller familiärer & geschäftlicher Risiken</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Fachgerechte Ausgestaltung komplexer Vorsorgelösungen</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100 hover:border-primary/30 transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-4">Immobilienfinanzierung</h3>
+            <ul class="space-y-2.5 text-slate-600 text-sm">
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Erstellung zukunftsfähiger, tragfähiger Hypothekarkonzepte</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Exakte Tragbarkeitsberechnungen bei Zins- und Einkommensänderungen</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Nahtlose Integration von Immobilienwerten in die Gesamtplanung</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-surface p-8 rounded-2xl border border-slate-100 hover:border-primary/30 transition-all duration-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-4">Umgang mit Komplexität</h3>
+            <ul class="space-y-2.5 text-slate-600 text-sm">
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Professionelle Schnittstellenführung zu externen Fachexperten (Notare, Treuhänder)</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Strukturierung komplexer vermögens- und erbrechtlicher Fälle</li>
+              <li class="flex items-start"><span class="text-primary mr-2">•</span> Bereitstellung klarer, rationaler Entscheidungsmatrizen für Kunden</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center text-slate-500 text-sm font-medium">
+        Diese strategischen Kernkompetenzen heben Ihre Beratung auf ein neues, unvergleichbares Niveau.
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PRAXISBEZUG / PROZESS -->
+  <section class="section-spacing bg-surface border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Nicht Theorie – sondern reale Anwendung
+        </h2>
+        <p class="text-lg text-slate-600">
+          Wissen allein schafft keinen Mehrwert in der Beratung. Unser Fokus liegt konsequent auf der operativen Umsetzungskompetenz – vom Erstkontakt bis zur Umsetzung.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-stretch">
+        <!-- Praxisfokus Methodik -->
+        <div class="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold text-navy mb-6">Wie wir Praxisbezug garantieren</h3>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold shrink-0">1</div>
+                <div>
+                  <h4 class="font-bold text-navy">Strukturierte Fallstudien</h4>
+                  <p class="text-sm text-slate-500">Arbeit an komplexen Fallbeispielen direkt aus der Schweizer Beratungspraxis.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold shrink-0">2</div>
+                <div>
+                  <h4 class="font-bold text-navy">Reale Beratungssituationen</h4>
+                  <p class="text-sm text-slate-500">Simulationen von typischen Einwänden, Kundensituationen und strategischen Hürden.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold shrink-0">3</div>
+                <div>
+                  <h4 class="font-bold text-navy">Strukturierte Analyseprozesse</h4>
+                  <p class="text-sm text-slate-500">Methoden zur schrittweisen Datenaufnahme, Bereinigung und Auswertung.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center font-bold shrink-0">4</div>
+                <div>
+                  <h4 class="font-bold text-navy">Konkrete Umsetzungsschritte</h4>
+                  <p class="text-sm text-slate-500">Praktische Formulierungshilfen und rechtssichere Handlungsempfehlungen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prozessverlauf in der Praxis -->
+        <div class="bg-navy text-white p-8 md:p-10 rounded-2xl flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold mb-6">Der strukturierte Beratungsprozess</h3>
+            <p class="text-slate-300 mb-8 text-sm">
+              Sie erlernen den lückenlosen Beratungsprozess, der von den Aufsichtsbehörden und Qualitätsstandards gefordert wird:
+            </p>
+            <div class="space-y-6 relative pl-6 border-l-2 border-white/10">
+              <div class="relative">
+                <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-accent border-4 border-navy"></div>
+                <h4 class="font-bold text-white text-sm">Erstgespräch bis Abschluss</h4>
+                <p class="text-xs text-slate-400 mt-1">Strukturierte Bedarfsklärung und Vereinbarung des Planungsumfangs.</p>
+              </div>
+              <div class="relative">
+                <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-navy"></div>
+                <h4 class="font-bold text-white text-sm">Analyse & Empfehlung</h4>
+                <p class="text-xs text-slate-400 mt-1">Identifikation von Deckungslücken, Steuerrisiken und Vermögensallokation.</p>
+              </div>
+              <div class="relative">
+                <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-navy"></div>
+                <h4 class="font-bold text-white text-sm">Visualisierung von Finanzplänen</h4>
+                <p class="text-xs text-slate-400 mt-1">Ganzheitliche, für den Kunden visuell nachvollziehbare Abbildung komplexer Szenarien.</p>
+              </div>
+              <div class="relative">
+                <div class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-navy"></div>
+                <h4 class="font-bold text-white text-sm">Verständliche Kundenkommunikation</h4>
+                <p class="text-xs text-slate-400 mt-1">Sicheres und verständliches Vermitteln komplexer regulatorischer und steuerlicher Sachverhalte.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 pt-6 border-t border-white/10 text-slate-300 text-xs italic">
+            Ziel dieses Lehrgangs ist kein theoretisches Auswendiglernen, sondern Ihre operative Handlungskompetenz.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. LERNPFAD / SEMINARDETAILS -->
+  <section class="section-spacing bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Strukturiert aufgebaut – systematisch vertieft
+        </h2>
+        <p class="text-lg text-slate-600">
+          Die Ausbildung umfasst insgesamt 16 Seminartage und ist als nachvollziehbarer, logischer modularer Lernpfad aufgebaut.
+        </p>
+      </div>
+
+      <!-- Lernpfad Timeline -->
+      <div class="grid gap-6 max-w-4xl mx-auto">
+        <!-- Modul 1 -->
+        <div class="bg-surface p-6 rounded-2xl border border-slate-100 flex flex-col md:flex-row gap-6 items-start md:items-center">
+          <div class="w-16 h-16 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl font-bold shrink-0">
+            01
+          </div>
+          <div class="flex-grow">
+            <h4 class="text-lg font-bold text-navy mb-1">Vertiefung Vermögen inklusive FIDLEG</h4>
+            <p class="text-sm text-slate-500">Fundierte Vermittlung der rechtlichen Rahmenbedingungen im Schweizer Markt und anlagebezogener Optimierungsansätze.</p>
+          </div>
+          <div class="shrink-0 text-sm bg-white border border-slate-100 px-3 py-1.5 rounded-lg font-medium text-slate-600">
+            Modul 1
+          </div>
+        </div>
+
+        <!-- Modul 2 -->
+        <div class="bg-surface p-6 rounded-2xl border border-slate-100 flex flex-col md:flex-row gap-6 items-start md:items-center">
+          <div class="w-16 h-16 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl font-bold shrink-0">
+            02
+          </div>
+          <div class="flex-grow">
+            <h4 class="text-lg font-bold text-navy mb-1">Vertiefung Vorsorge</h4>
+            <p class="text-sm text-slate-500">Eingehende Analyse des Drei-Säulen-Prinzips, Absicherung von Invalidität, Todesfall und Erwerbsunfähigkeit.</p>
+          </div>
+          <div class="shrink-0 text-sm bg-white border border-slate-100 px-3 py-1.5 rounded-lg font-medium text-slate-600">
+            Modul 2
+          </div>
+        </div>
+
+        <!-- Modul 3 -->
+        <div class="bg-surface p-6 rounded-2xl border border-slate-100 flex flex-col md:flex-row gap-6 items-start md:items-center">
+          <div class="w-16 h-16 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl font-bold shrink-0">
+            03
+          </div>
+          <div class="flex-grow">
+            <h4 class="text-lg font-bold text-navy mb-1">Aufbauplanung</h4>
+            <p class="text-sm text-slate-500">Methodischer Vermögensaufbau, strategische Asset Allocation und Verknüpfung der steuerlichen Rahmenbedingungen.</p>
+          </div>
+          <div class="shrink-0 text-sm bg-white border border-slate-100 px-3 py-1.5 rounded-lg font-medium text-slate-600">
+            Modul 3
+          </div>
+        </div>
+
+        <!-- Modul 4 -->
+        <div class="bg-surface p-6 rounded-2xl border border-slate-100 flex flex-col md:flex-row gap-6 items-start md:items-center">
+          <div class="w-16 h-16 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl font-bold shrink-0">
+            04
+          </div>
+          <div class="flex-grow">
+            <h4 class="text-lg font-bold text-navy mb-1">Pensionsplanung</h4>
+            <p class="text-sm text-slate-500">Budgetierung nach dem Erwerbsleben, Optimierung der Steuerbelastung bei Kapitalbezug vs. Rente.</p>
+          </div>
+          <div class="shrink-0 text-sm bg-white border border-slate-100 px-3 py-1.5 rounded-lg font-medium text-slate-600">
+            Modul 4
+          </div>
+        </div>
+
+        <!-- Modul 5 -->
+        <div class="bg-surface p-6 rounded-2xl border border-slate-100 flex flex-col md:flex-row gap-6 items-start md:items-center">
+          <div class="w-16 h-16 rounded-xl bg-accent/20 text-accent-dark flex items-center justify-center text-xl font-bold shrink-0">
+            05
+          </div>
+          <div class="flex-grow">
+            <h4 class="text-lg font-bold text-navy mb-1">Prüfungsvorbereitung</h4>
+            <p class="text-sm text-slate-500">Gezielte Simulationen aller Prüfungsbestandteile zur Sicherung Ihres Ausbildungserfolges.</p>
+          </div>
+          <div class="shrink-0 text-sm bg-accent/10 text-accent-dark border border-accent/20 px-3 py-1.5 rounded-lg font-medium">
+            Intensiv-Training
+          </div>
+        </div>
+      </div>
+
+      <!-- Format-Boxen -->
+      <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex gap-4">
+          <div class="text-primary shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </div>
+          <div>
+            <h5 class="font-bold text-navy mb-1">Präsenz oder Hybrid</h5>
+            <p class="text-xs text-slate-500">Flexible Teilnahme vor Ort oder online – ideal auf Ihre berufliche Auslastung abgestimmt.</p>
+          </div>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex gap-4">
+          <div class="text-primary shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </div>
+          <div>
+            <h5 class="font-bold text-navy mb-1">Strukturierte Lernphasen</h5>
+            <p class="text-xs text-slate-500">Klare Abwechslung zwischen intensivem Unterricht, Fallbearbeitungen und Selbststudium.</p>
+          </div>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex gap-4 md:col-span-2 lg:col-span-1">
+          <div class="text-primary shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <div>
+            <h5 class="font-bold text-navy mb-1">Flexible Vertiefung</h5>
+            <p class="text-xs text-slate-500">Gelegenheiten für individuelle Fragen, Pausen-Networking und gezielten Fachaustausch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PRÜFUNG / ANSPRUCH -->
+  <section class="section-spacing bg-surface border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Die Abschlussprüfung: Anspruchsvoll & praxisnah
+        </h2>
+        <p class="text-lg text-slate-600">
+          Die eidgenössische Prüfung stellt sicher, dass Absolventen komplexe Situationen unter hohem fachlichen und zeitlichen Standard perfekt beherrschen.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Part 1 -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 right-0 bg-primary/10 text-primary text-xs font-bold px-3 py-1.5 rounded-bl-xl">
+            Teil 1
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-navy mb-2 mt-4">Online-Prüfung</h4>
+            <p class="text-3xl font-bold text-primary mb-4">90 Min.</p>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Prüfung des breiten theoretischen und regulatorischen Fachwissens direkt am PC – fokussiert und zeiteffizient.
+            </p>
+          </div>
+        </div>
+
+        <!-- Part 2 -->
+        <div class="bg-white p-8 rounded-2xl border-2 border-primary shadow-md relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-bl-xl">
+            Teil 2 (Hauptfokus)
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-navy mb-2 mt-4">Schriftliche Finanzplanung</h4>
+            <p class="text-3xl font-bold text-primary mb-4">240 Min.</p>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Ausarbeitung eines lückenlosen, realen Finanzplans auf Basis eines komplexen Praxisszenarios – das Herzstück der Prüfung.
+            </p>
+          </div>
+        </div>
+
+        <!-- Part 3 -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 right-0 bg-primary/10 text-primary text-xs font-bold px-3 py-1.5 rounded-bl-xl">
+            Teil 3
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-navy mb-2 mt-4">Mündliche Prüfung</h4>
+            <p class="text-3xl font-bold text-primary mb-4">30 Min.</p>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Präsentation und Fachgespräch vor einer Expertenkommission. Nachweis Ihrer strategischen Kommunikationsstärke.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 bg-slate-50 p-6 rounded-xl border border-slate-100 text-center max-w-3xl mx-auto text-sm text-slate-600">
+        <strong>Qualitätsgarantie:</strong> Diese anspruchsvolle Prüfungsstruktur stellt die hohe Akzeptanz und Marktwertigkeit Ihres zukünftigen Titels sicher.
       </div>
     </div>
   </section>
 
   <!-- 8. ABSCHLUSS & ANERKENNUNG -->
-  <section class="section-spacing bg-white">
+  <section class="section-spacing bg-white border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Eidgenössischer Fachausweis</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Nach erfolgreichem Abschluss erhältst du:</p>
-          <p class="text-lg text-primary font-bold leading-relaxed">→ den eidgenössisch anerkannten Fachausweis</p>
-          <p>Dieser Abschluss:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>ist im Schweizer Finanzmarkt etabliert</li>
-            <li>signalisiert hohe Fachkompetenz</li>
-            <li>stärkt deine Marktposition nachhaltig</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 9. INVESTITION -->
-  <section class="section-spacing bg-surface">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Investition in Positionierung</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Seminarkosten: CHF 6’500 (inkl. Finanzberater IAF)</p>
-          <p>Prüfungskosten: durch Teilnehmer getragen</p>
-          <p>Diese Ausbildung ist keine kurzfristige Weiterbildung. Sie ist ein strategischer Schritt.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10. STRATEGISCHE ROLLE -->
-  <section class="section-spacing bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Das Top-Level im Ausbildungssystem</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Der Eidg. Finanzplaner ist die höchste Stufe im Bildungssystem.</p>
-          <p>Einordnung:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Versicherungsvermittler VBV → Einstieg</li>
-            <li>Vermögensberater KT → Grundlagen</li>
-            <li>Vermögensberater IAF → Vertiefung</li>
-            <li>Finanzberater IAF → Ganzheitlichkeit</li>
-            <li>Eidg. Finanzplaner → Expertenniveau</li>
-          </ul>
-          <p>Er markiert den Übergang:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>→ vom Berater</li>
-            <li>→ zum strategischen Finanzplaner</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 11. KARRIERE- UND POSITIONIERUNGSEFFEKT -->
-  <section class="section-spacing bg-surface">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Was sich für dich verändert</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Mit diesem Abschluss verändert sich deine Rolle im Markt.</p>
-          <div class="grid md:grid-cols-2 gap-8 mt-8">
-            <div class="bg-white p-6 rounded-xl border border-slate-100">
-              <h3 class="font-bold text-navy mb-4">Vorher</h3>
-              <ul class="space-y-2 text-slate-600">
-                <li>Produktberater</li>
-                <li>reaktive Beratung</li>
-                <li>fragmentierte Themen</li>
-              </ul>
+      <div class="bg-navy text-white rounded-3xl overflow-hidden shadow-2xl relative">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/10 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
+        <div class="p-8 md:p-16 max-w-3xl">
+          <div class="inline-block px-3 py-1 rounded-full bg-white/15 text-amber-400 text-xs font-bold uppercase tracking-widest mb-6">
+            Anerkennung
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold mb-6">Eidgenössischer Fachausweis</h2>
+          <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+            Nach erfolgreichem Abschluss aller Prüfungsteile tragen Sie den staatlich geschützten Titel:
+          </p>
+          
+          <div class="bg-white/5 border border-white/10 p-6 rounded-xl mb-8 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-lg bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
             </div>
-            <div class="bg-white p-6 rounded-xl border border-slate-100">
-              <h3 class="font-bold text-navy mb-4">Nachher</h3>
-              <ul class="space-y-2 text-slate-600">
-                <li>ganzheitlicher Finanzplaner</li>
-                <li>strukturierte Beratung</li>
-                <li>strategische Kundenbegleitung</li>
-              </ul>
+            <div>
+              <p class="text-xs text-slate-400 uppercase tracking-wider">Geschützter Titel</p>
+              <h4 class="text-xl font-bold text-white">Eidg. Finanzplaner/in mit Fachausweis</h4>
             </div>
           </div>
-          <p>Das wirkt sich aus auf:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Vertrauen</li>
-            <li>Mandatsgrösse</li>
-            <li>Beratungsqualität</li>
-            <li>Positionierung</li>
-          </ul>
+
+          <div class="grid sm:grid-cols-3 gap-6">
+            <div class="space-y-1">
+              <h5 class="font-bold text-white">Etabliert</h5>
+              <p class="text-xs text-slate-400">Höchste Akzeptanz im gesamten Schweizer Finanz- und Vorsorgemarkt.</p>
+            </div>
+            <div class="space-y-1">
+              <h5 class="font-bold text-white">Kompetent</h5>
+              <p class="text-xs text-slate-400">Signalisiert anspruchsvolles Fachwissen und strategische Exzellenz.</p>
+            </div>
+            <div class="space-y-1">
+              <h5 class="font-bold text-white">Zukunftssicher</h5>
+              <p class="text-xs text-slate-400">Stärkt Ihre Marktposition und Ihr Kunden-Vertrauen nachhaltig.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 12. ABSCHLUSS -->
-  <section class="py-24 bg-navy text-white text-center">
+  <!-- 9. INVESTITION & GEBÜHREN -->
+  <section class="section-spacing bg-surface border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl md:text-5xl mb-8 text-white">Beratung auf einem anderen Niveau</h2>
-      <div class="max-w-2xl mx-auto space-y-6 mb-12 opacity-90">
-        <p>Finanzplanung ist mehr als Fachwissen.</p>
-        <p>Es ist die Fähigkeit:</p>
-        <ul class="list-none space-y-2">
-          <li>Zusammenhänge zu erkennen</li>
-          <li>Komplexität zu strukturieren</li>
-          <li>Entscheidungen zu ermöglichen</li>
-        </ul>
-        <p>Der Eidg. Finanzplaner ist der Rahmen dafür.</p>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Investition in Ihre strategische Positionierung
+        </h2>
+        <p class="text-lg text-slate-600">
+          Die Seminargebühren sind transparent kalkuliert und umfassen alle regulären Ausbildungsmodule bis zur Prüfungsreife.
+        </p>
       </div>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="/kontakt/" class="bg-accent hover:bg-amber-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">Jetzt bewerben</a>
-        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Individuelle Beratung anfragen</a>
-        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Weiterbildungsweg planen</a>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch max-w-5xl mx-auto">
+        <!-- Gebührenkarte -->
+        <div class="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm lg:col-span-7 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold text-navy mb-6">Seminarkosten</h3>
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-5xl font-bold text-primary">CHF 6’500</span>
+              <span class="text-sm text-slate-500">einmalig</span>
+            </div>
+            <p class="text-slate-600 mb-8 text-sm">
+              Im Betrag von CHF 6’500 sind alle 16 Seminartage sowie der integrierte Abschluss als Finanzberater IAF enthalten.
+            </p>
+            <div class="space-y-3.5 border-t border-slate-100 pt-6">
+              <div class="flex items-start">
+                <span class="text-emerald-500 mr-2">✓</span>
+                <span class="text-sm text-slate-600">Alle Seminarunterlagen und digitale Lernmaterialien inklusive</span>
+              </div>
+              <div class="flex items-start">
+                <span class="text-emerald-500 mr-2">✓</span>
+                <span class="text-sm text-slate-600">Integrierter Abschluss als Finanzberater IAF</span>
+              </div>
+              <div class="flex items-start">
+                <span class="text-emerald-500 mr-2">✓</span>
+                <span class="text-sm text-slate-600">Präsenz- oder hybride Unterrichtsformen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prüfungskosten / Erklärung -->
+        <div class="bg-navy text-white p-8 md:p-10 rounded-2xl lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold mb-6">Prüfungskosten</h3>
+            <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+              Die Kosten der eidgenössischen Abschlussprüfung werden direkt durch die Teilnehmenden getragen und separat durch die Prüfungsorganisation erhoben.
+            </p>
+            <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
+              <p class="text-xs text-slate-400">Vergütungsmöglichkeit</p>
+              <p class="text-sm text-slate-200 font-semibold mt-1">
+                Klären Sie ab, ob Ihr Arbeitgeber oder kantonale Förderungen die Lehrgangs- und Prüfungskosten unterstützen.
+              </p>
+            </div>
+          </div>
+          <div class="mt-8">
+            <a href="/kontakt/" class="btn-accent w-full text-center">Aufnahme & Kosten klären</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. EINORDNUNG IM SYSTEM -->
+  <section class="section-spacing bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Das Top-Level im Ausbildungssystem
+        </h2>
+        <p class="text-lg text-slate-600">
+          Der Eidg. Finanzplaner stellt das anerkannte Expertenniveau im Schweizer Vorsorge- und Anlagemarkt dar.
+        </p>
+      </div>
+
+      <!-- Progression Stair -->
+      <div class="max-w-4xl mx-auto space-y-4">
+        <!-- Level 5 -->
+        <div class="bg-primary text-white p-6 rounded-xl border border-primary/20 flex flex-col sm:flex-row justify-between items-start sm:items-center shadow-lg relative overflow-hidden">
+          <div class="absolute right-0 top-0 bottom-0 bg-white/5 w-1/4 -skew-x-12 transform translate-x-1/4"></div>
+          <div>
+            <span class="text-xs text-amber-300 font-bold uppercase tracking-widest">Stufe 5 - Expertenniveau</span>
+            <h4 class="text-xl font-bold">Eidg. Finanzplaner/in mit Fachausweis</h4>
+          </div>
+          <div class="bg-amber-400 text-navy font-bold text-xs px-3 py-1.5 rounded-full mt-2 sm:mt-0">
+            Ihr Ziel
+          </div>
+        </div>
+
+        <!-- Level 4 -->
+        <div class="bg-surface p-5 rounded-xl border border-slate-100 flex justify-between items-center opacity-90">
+          <div>
+            <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">Stufe 4 - Ganzheitlichkeit</span>
+            <h4 class="text-lg font-bold text-navy">Finanzberater IAF</h4>
+          </div>
+          <span class="text-xs font-semibold text-slate-500">Zertifiziert</span>
+        </div>
+
+        <!-- Level 3 -->
+        <div class="bg-surface p-5 rounded-xl border border-slate-100 flex justify-between items-center opacity-80">
+          <div>
+            <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">Stufe 3 - Vertiefung</span>
+            <h4 class="text-base font-bold text-navy">Vermögensberater IAF</h4>
+          </div>
+          <span class="text-xs font-semibold text-slate-400">Zertifiziert</span>
+        </div>
+
+        <!-- Level 2 -->
+        <div class="bg-surface p-5 rounded-xl border border-slate-100 flex justify-between items-center opacity-70">
+          <div>
+            <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">Stufe 2 - Grundlagen</span>
+            <h4 class="text-sm font-bold text-navy">Vermögensberater KT</h4>
+          </div>
+          <span class="text-xs font-semibold text-slate-400">Zertifiziert</span>
+        </div>
+
+        <!-- Level 1 -->
+        <div class="bg-surface p-5 rounded-xl border border-slate-100 flex justify-between items-center opacity-60">
+          <div>
+            <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">Stufe 1 - Einstieg</span>
+            <h4 class="text-sm font-bold text-navy">Versicherungsvermittler VBV</h4>
+          </div>
+          <span class="text-xs font-semibold text-slate-400">Grundzertifikat</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. POSITIONIERUNGSEFFEKT: VORHER / NACHHER -->
+  <section class="section-spacing bg-surface border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-navy mb-4">
+          Was sich für dich verändert
+        </h2>
+        <p class="text-lg text-slate-600">
+          Die Weiterbildung initiiert einen tiefgreifenden Rollenwechsel in Ihrer täglichen Beratungspraxis und erhöht Ihre strategische Relevanz beim Kunden.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Vorher -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm relative">
+          <div class="absolute -top-3 left-6 bg-red-100 text-red-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Vorher (Silo-Ansatz)
+          </div>
+          <div class="space-y-6 mt-4">
+            <div class="space-y-2">
+              <h4 class="font-bold text-navy text-lg">Produktberater</h4>
+              <p class="text-sm text-slate-500">Fokus auf Einzelthemen und Platzierung von Finanz- und Vorsorgeprodukten.</p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-bold text-navy text-lg">Reaktive Beratung</h4>
+              <p class="text-sm text-slate-500">Beratungsgespräche finden meist reaktiv statt, wenn der Kunde nachfragt oder Ereignisse anstehen.</p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-bold text-navy text-lg">Fragmentierte Themen</h4>
+              <p class="text-sm text-slate-500">Keine ineinandergreifenden Strategien. Vorsorge, Steuern und Vermögen bleiben isoliert.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nachher -->
+        <div class="bg-navy text-white p-8 rounded-2xl shadow-lg relative">
+          <div class="absolute -top-3 left-6 bg-emerald-500 text-navy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Nachher (Ganzheitlich)
+          </div>
+          <div class="space-y-6 mt-4">
+            <div class="space-y-2">
+              <h4 class="font-bold text-white text-lg">Ganzheitlicher Finanzplaner</h4>
+              <p class="text-sm text-slate-300">Entwicklung umfassender Lebenszykluskonzepte und strukturierter Optimierungsansätze.</p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-bold text-white text-lg">Strukturierte Beratung</h4>
+              <p class="text-sm text-slate-300">Methodisch geführter Analyse- und Beratungsprozess, der dem Kunden maximale Sicherheit bietet.</p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-bold text-white text-lg">Strategische Kundenbegleitung</h4>
+              <p class="text-sm text-slate-300">Langfristige Begleitung anspruchsvoller Vermögen auf Basis verlässlicher Planungsdaten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spürbare Effekte -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-5 rounded-xl border border-slate-100 text-center shadow-sm">
+          <span class="text-2xl block mb-2">🤝</span>
+          <h5 class="font-bold text-navy text-sm">Mehr Vertrauen</h5>
+          <p class="text-xs text-slate-500 mt-1">durch eidgenössische Kompetenz.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-100 text-center shadow-sm">
+          <span class="text-2xl block mb-2">📈</span>
+          <h5 class="font-bold text-navy text-sm">Grössere Mandate</h5>
+          <p class="text-xs text-slate-500 mt-1">durch komplexe Lösungen.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-100 text-center shadow-sm">
+          <span class="text-2xl block mb-2">⭐</span>
+          <h5 class="font-bold text-navy text-sm">Beratungsqualität</h5>
+          <p class="text-xs text-slate-500 mt-1">auf absolutem Expertenniveau.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-100 text-center shadow-sm">
+          <span class="text-2xl block mb-2">🏆</span>
+          <h5 class="font-bold text-navy text-sm">Positionierung</h5>
+          <p class="text-xs text-slate-500 mt-1">als führender Spezialist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FINALES INSIGHT & CTA -->
+  <section class="py-24 bg-navy text-white text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+        Beratung auf einem anderen Niveau
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+        Finanzplanung ist die höchste Disziplin der Beratung. Sie verbindet fundiertes Fachwissen mit der Fähigkeit, komplexe Zusammenhänge einfach und logisch zu strukturieren. Starten Sie jetzt Ihre Ausbildung.
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-16">
+        <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
+          <span class="text-amber-400 font-bold block text-lg mb-1">01</span>
+          <span class="text-xs text-slate-300">Zusammenhänge erkennen</span>
+        </div>
+        <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
+          <span class="text-amber-400 font-bold block text-lg mb-1">02</span>
+          <span class="text-xs text-slate-300">Komplexität strukturieren</span>
+        </div>
+        <div class="bg-white/5 border border-white/10 p-5 rounded-xl">
+          <span class="text-amber-400 font-bold block text-lg mb-1">03</span>
+          <span class="text-xs text-slate-300">Entscheidungen ermöglichen</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="/kontakt/" class="btn-accent text-lg px-8 py-4 shadow-lg shadow-accent/20 w-full sm:w-auto">Jetzt bewerben</a>
+        <a href="/kontakt/" class="btn-secondary text-lg px-8 py-4 bg-transparent text-white border-white/30 hover:bg-white/10 w-full sm:w-auto">Individuelle Beratung anfragen</a>
+        <a href="/kontakt/" class="text-slate-300 hover:text-white transition-colors text-sm font-semibold underline underline-offset-4 mt-2 sm:mt-0">Weiterbildungsweg planen</a>
       </div>
     </div>
   </section>

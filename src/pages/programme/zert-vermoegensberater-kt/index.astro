@@ -1,64 +1,65 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
---- 
+import KtCurriculum from '../../../components/KtCurriculum';
+---
 
 <Layout title="Zert. Vermögensberater KT">
+  <!-- HERO -->
   <section class="relative bg-surface pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <!-- Decorative background -->
     <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         <div class="lg:col-span-7">
           <div class="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
-            Programm
+            Zertifikatsprogramm
           </div>
-          <h1 class="text-5xl md:text-7xl font-bold mb-8 text-navy leading-[0.9] tracking-tight">
+          <h1 class="text-5xl md:text-7xl font-bold mb-8 text-navy leading-[0.9] tracking-tight font-sans">
             Zert. Vermögensberater/in KT
           </h1>
-          <p class="text-xl md:text-2xl text-primary font-medium mb-8 leading-relaxed">
-            Kompakte Anlagekompetenz im FIDLEG-Kontext – praxisnah, strukturiert und direkt anwendbar.
+          <p class="text-xl md:text-2xl text-primary font-medium mb-8 leading-relaxed font-sans">
+            Kompakte Anlagekompetenz im FIDLEG-Kontext – Ihr praxisorientierter Nachweis gemäss Art. 6 FIDLEG.
           </p>
-          <div class="space-y-6 text-lg text-slate-600 mb-10 leading-relaxed">
+          <div class="space-y-6 text-lg text-slate-600 mb-10 leading-relaxed font-sans">
             <p>
-              Die Anforderungen an Kundenberater im Anlagebereich haben sich mit FIDLEG klar verändert.
-              Es reicht nicht mehr, Produkte zu kennen.
-              Berater müssen nachweisen können, dass sie über die notwendigen Fachkenntnisse verfügen.
+              Die Anforderungen an Kundenberater im Anlagebereich sind klar definiert: Es reicht nicht mehr aus, lediglich Beratungserfahrung vorzuweisen. Das Schweizer Finanzdienstleistungsgesetz (FIDLEG) fordert einen fundierten, nachweisbaren Kompetenzstand.
             </p>
             <p class="hidden md:block">
-              Der Zertifizierte Vermögensberater KT schafft genau diesen Nachweis – kompakt, fokussiert und auf die Praxis ausgerichtet.
+              Mit dem Zertifizierten Vermögensberater KT erwerben Sie diesen regulatorischen Nachweis hocheffizient – ohne unnötige akademische Umwege, fokussiert auf das Wesentliche und direkt am Beratungstisch umsetzbar.
             </p>
           </div>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="/kontakt/" class="btn-primary text-lg px-8 py-4 shadow-lg shadow-primary/20">Teilnahme anfragen</a>
-            <a href="/kontakt/" class="btn-secondary text-lg px-8 py-4">Weiterbildungsstrategie besprechen</a>
+          <div class="flex flex-col sm:flex-row gap-4 font-sans">
+            <a href="/kontakt/" class="btn-primary text-lg px-8 py-4 shadow-lg shadow-primary/20 justify-center">Teilnahme anfragen</a>
+            <a href="/kontakt/" class="btn-secondary text-lg px-8 py-4 justify-center">Beratungsgespräch vereinbaren</a>
           </div>
         </div>
 
         <div class="lg:col-span-5">
           <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-2xl space-y-8 relative">
             <div class="absolute -top-4 -right-4 w-20 h-20 bg-accent/10 rounded-full blur-2xl"></div>
-            <h3 class="text-2xl font-bold text-navy">Eckdaten zum Lehrgang</h3>
-            <div class="space-y-6">
+            <h3 class="text-2xl font-bold text-navy font-sans">Eckdaten zum Lehrgang</h3>
+            <div class="space-y-6 font-sans">
               <div class="flex items-center justify-between py-3 border-b border-slate-100">
-                <span class="text-slate-500">Dauer</span>
+                <span class="text-slate-500 font-medium">Dauer</span>
                 <span class="font-bold text-navy">28 Lektionen</span>
               </div>
               <div class="flex items-center justify-between py-3 border-b border-slate-100">
-                <span class="text-slate-500">Format</span>
+                <span class="text-slate-500 font-medium">Format</span>
                 <span class="font-bold text-navy">Präsenz / Hybrid</span>
               </div>
               <div class="flex items-center justify-between py-3 border-b border-slate-100">
-                <span class="text-slate-500">Anerkennung</span>
+                <span class="text-slate-500 font-medium">Anerkennung</span>
                 <span class="font-bold text-navy">FIDLEG Art. 6</span>
               </div>
               <div class="flex items-center justify-between py-3">
-                <span class="text-slate-500">Investition</span>
-                <span class="font-bold text-navy">CHF 2’150</span>
+                <span class="text-slate-500 font-medium">Investition</span>
+                <span class="font-bold text-navy">CHF 2’150 <span class="text-xs font-normal text-slate-400">zzgl. Prüf.</span></span>
               </div>
             </div>
-            <div class="pt-4">
+            <div class="pt-4 font-sans">
               <a href="/kontakt/" class="flex items-center justify-center w-full bg-surface text-navy p-4 rounded-xl font-bold hover:bg-slate-100 transition-colors group">
-                <span>Jetzt Platz prüfen</span>
+                <span>Freie Plätze prüfen</span>
                 <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
             </div>
@@ -68,252 +69,497 @@ import Layout from '../../../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 2. WARUM DER ZERT. VERMÖGENSBERATER KT? -->
+  <!-- SECTION 1: FIDLEG VERLANGT NACHWEIS – NICHT NUR ERFAHRUNG -->
   <section class="section-spacing bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">FIDLEG verlangt Nachweis – nicht nur Erfahrung</h2>
-        <div class="space-y-6 text-slate-600 mb-12">
-          <p>Mit dem Finanzdienstleistungsgesetz (FIDLEG) wurde die Rolle des Kundenberaters klar definiert.</p>
-          <p>Wer Anlageberatung erbringt, muss:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>über ausreichende Fachkenntnisse verfügen</li>
-            <li>diese Kenntnisse nachweisen können</li>
-            <li>Verhaltensregeln einhalten</li>
-            <li>Kunden korrekt informieren</li>
-          </ul>
-          <p>Der Zertifizierte Vermögensberater KT erfüllt genau diese Funktion.</p>
-          <p>Er ist kein umfangreicher Diplomlehrgang. Er ist ein gezielter Kompetenz- und Nachweisbaustein.</p>
-          <p>Besonders relevant ist er für:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>neue Kundenberater</li>
-            <li>Quereinsteiger</li>
-            <li>Berater ohne formale Anlageausbildung</li>
-            <li>bestehende Berater mit Nachholbedarf im regulatorischen Kontext</li>
-          </ul>
-        </div>
-        <blockquote class="border-l-4 border-primary pl-6 py-2 italic text-2xl text-navy font-display">
-          „FIDLEG bewertet nicht deine Erfahrung.<br />
-          Es bewertet deinen nachweisbaren Kompetenzstand.“
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. ZIELGRUPPE & POSITIONIERUNG -->
-  <section class="section-spacing bg-surface">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Für wen ist dieser Lehrgang geeignet?</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Der Lehrgang richtet sich an Finanzberater, die eine kompakte, strukturierte Einführung in die Anlageberatung benötigen oder ihre Fachkenntnisse im Sinne von FIDLEG formalisieren möchten.</p>
-          <p>Typische Profile:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Kundenberater bei Banken oder Versicherungen</li>
-            <li>Neueinsteiger in der Finanzberatung</li>
-            <li>Berater mit Fokus Versicherungen, die Anlagekompetenz ergänzen wollen</li>
-            <li>Personen, die den regulatorischen Nachweis gemäss Art. 6 FIDLEG erbringen müssen</li>
-          </ul>
-          <p>Der Lehrgang eignet sich nicht für Berater, die bereits tiefgehende Anlageanalyse betreiben oder komplexe Mandate führen – hier ist der Vermögensberater IAF die passende Weiterentwicklung.</p>
-        </div>
-        <a href="/programme/vermoegensberater-iaf/" class="btn-primary">IAF vs. KT verstehen</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. KOMPETENZPROFIL NACH ABSCHLUSS -->
-  <section class="section-spacing bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl mb-8 text-navy">Welche Kompetenzen du entwickelst</h2>
-      <div class="max-w-3xl space-y-6 text-slate-600 mb-12">
-        <p>Der Fokus liegt auf einer klar strukturierten Grundkompetenz im Anlagebereich.</p>
-        <p>Absolventinnen und Absolventen verfügen über:</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <!-- Anlageklassen -->
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Verständnis zentraler Anlageklassen</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>Zinsanlagen</li>
-            <li>Aktien</li>
-            <li>Alternative Anlagen</li>
-            <li>Kollektive Kapitalanlagen</li>
-          </ul>
-        </div>
-        <!-- Anlageinstrumente -->
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Einordnung von Anlageinstrumenten</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>Merkmale von Anlagefonds</li>
-            <li>Strukturierte Produkte</li>
-          </ul>
-        </div>
-        <!-- Portfolioanalyse -->
-        <div class="card p-8 bg-surface">
-          <h3 class="text-xl font-bold mb-4 text-primary">Grundlagen der Portfolioanalyse</h3>
-          <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
-            <li>Risikoprofil erstellen</li>
-            <li>Asset Allocation verstehen</li>
-            <li>Kostenstrukturen erkennen</li>
-            <li>Einfache Portfolios beurteilen</li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-slate-600 max-w-3xl">Diese Kompetenzen bilden die Grundlage für eine korrekte und nachvollziehbare Anlageberatung im Rahmen einfacher bis mittlerer Komplexität.</p>
-    </div>
-  </section>
-
-  <!-- 5. REGULATORISCHE RELEVANZ -->
-  <section class="section-spacing bg-surface">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Nachweis gemäss FIDLEG Art. 6</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Ein zentraler Aspekt dieses Lehrgangs ist seine regulatorische Einordnung.</p>
-          <p>Das Zertifikat gilt als:</p>
-          <p class="text-lg text-primary font-bold leading-relaxed">
-            → anerkannter Nachweis der notwendigen Fachkenntnisse als Kundenberater gemäss Art. 6 FIDLEG
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        {/* Left Content */}
+        <div class="lg:col-span-7 space-y-6 max-w-3xl">
+          <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
+            Gesetzliche Rahmenbedingungen
+          </div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy leading-tight tracking-tight font-sans">
+            FIDLEG verlangt echten Kompetenznachweis – nicht nur langjährige Erfahrung.
+          </h2>
+          <p class="text-slate-600 text-lg md:text-xl font-medium leading-relaxed font-sans">
+            Das Schweizer Finanzdienstleistungsgesetz bewertet nicht, wie viele Jahre Sie bereits in der Finanzbranche tätig sind. Es verlangt von jedem Kundenberater den formalen Nachweis hinreichender Fachkenntnisse.
           </p>
-          <p>Das bedeutet:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>formale Absicherung der Beratungstätigkeit</li>
-            <li>Erfüllung regulatorischer Anforderungen</li>
-            <li>Grundlage für die Tätigkeit im Anlagebereich</li>
-          </ul>
-          <p class="font-bold">Wichtig:</p>
-          <p>Die Verhaltensregeln selbst sind nicht Teil dieses Lehrgangs und werden in einem separaten Modul vertieft.</p>
+          <div class="space-y-4 text-slate-600 font-sans leading-relaxed text-base">
+            <p>
+              Wer im Schweizer Markt anlagebezogen berät, steht unter genauer Aufsicht. Die Pflichten zur Erfassung des Risikoprofils, zur Offenlegung von Kosten und zur bedarfsgerechten Allokation sind gesetzlich verankert.
+            </p>
+            <p>
+              Unser Lehrgang „Zert. Vermögensberater/in KT“ ist die exakte Antwort darauf: Er dient als kompakter Hebel, um Wissenslücken zu schliessen und Ihre Tätigkeit regulatorisch sauber abzusichern. So verbinden Sie gesetzeskonforme Sicherheit mit spürbarer, praktischer Beratungskompetenz am Tisch.
+            </p>
+          </div>
+          <div class="pt-4">
+            <blockquote class="border-l-4 border-primary pl-6 py-2 italic text-xl md:text-2xl text-navy font-sans font-semibold">
+              „FIDLEG bewertet nicht deine Erfahrung. Es bewertet deinen nachweisbaren Kompetenzstand.“
+            </blockquote>
+          </div>
         </div>
-        <a href="/programme/fidleg-verhaltensregeln/" class="btn-primary">Verhaltensregeln FIDLEG ansehen</a>
+
+        {/* Right Highlight Box */}
+        <div class="lg:col-span-5">
+          <div class="bg-slate-50 border border-slate-200/60 rounded-[2.5rem] p-8 md:p-10 space-y-6 shadow-sm">
+            <div class="text-center pb-4 border-b border-slate-200/60">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-1">Regulatorische Kernpflichten</span>
+              <h3 class="text-xl font-extrabold text-navy font-sans">Die gesetzlichen Säulen</h3>
+            </div>
+            
+            <div class="space-y-4 font-sans">
+              <div class="flex gap-3.5 items-start">
+                <span class="w-6 h-6 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">01</span>
+                <div>
+                  <h4 class="font-bold text-navy text-sm leading-tight">Nachweisbare Fachkenntnisse</h4>
+                  <p class="text-xs text-slate-500 mt-1">Eindeutige theoretische und praktische Qualifikationen im Anlagebereich.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3.5 items-start">
+                <span class="w-6 h-6 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">02</span>
+                <div>
+                  <h4 class="font-bold text-navy text-sm leading-tight">Einhaltung der Verhaltensregeln</h4>
+                  <p class="text-xs text-slate-500 mt-1">Sorgfaltspflichten, Treuepflichten und Informationspflichten gegenüber Kunden.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3.5 items-start">
+                <span class="w-6 h-6 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">03</span>
+                <div>
+                  <h4 class="font-bold text-navy text-sm leading-tight">Pflicht zur Registrierung</h4>
+                  <p class="text-xs text-slate-500 mt-1">Eintragung in das Beraterregister für die rechtskonforme Ausübung.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200/60 text-center text-xs text-slate-500 font-sans font-semibold">
+              Kathiago schliesst Ihre Haftungsrisiken strukturiert und zeitnah.
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- 6. AUSBILDUNGSSTRUKTUR -->
+  <!-- SECTION 2: ZIELGRUPPE - PASST ZU MIR / PASST NICHT -->
+  <section class="section-spacing bg-surface relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(#0f172a_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.015] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-extrabold text-primary uppercase tracking-[0.2em] mb-3 block">Bedarfsanalyse</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight font-sans">
+          Für wen ist dieser Lehrgang der richtige Hebel?
+        </h2>
+        <p class="text-slate-600 text-lg mt-4 font-sans leading-relaxed">
+          Prüfen Sie direkt selbst, ob der „Zert. Vermögensberater KT“ zu Ihrer aktuellen beruflichen Ausgangslage und Ihren Ambitionen passt.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+        
+        {/* Passt perfekt */}
+        <div class="bg-white border border-slate-200/80 rounded-[2.5rem] p-8 md:p-10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 text-lg">✓</span>
+              <h3 class="text-xl font-extrabold text-navy font-sans">Der Lehrgang passt perfekt, wenn Sie:</h3>
+            </div>
+            
+            <ul class="space-y-4 font-sans">
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2"></span>
+                <span>Kundenberater/in bei einer Bank, Versicherung oder einem Vermögensverwalter sind.</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2"></span>
+                <span>Als Neueinsteiger/in oder Quereinsteiger/in eine schnelle, fundierte Anlageausbildung suchen.</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2"></span>
+                <span>Einen gesetzlichen Nachweis gemäss Art. 6 FIDLEG erbringen müssen.</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2"></span>
+                <span>Bestehende Kenntnisse im Anlagefonds- und Rentenbereich kompakt auffrischen wollen.</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="pt-6 border-t border-slate-100 mt-8 text-xs text-slate-500 font-medium">
+            → Perfekt für den gezielten und schnellen Qualifikationserwerb.
+          </div>
+        </div>
+
+        {/* Passt eher nicht */}
+        <div class="bg-white border border-slate-200/80 rounded-[2.5rem] p-8 md:p-10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-red-50 text-red-600 text-lg">✕</span>
+              <h3 class="text-xl font-extrabold text-navy font-sans">Der Lehrgang ist weniger geeignet für Sie, wenn:</h3>
+            </div>
+            
+            <ul class="space-y-4 font-sans">
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500 shrink-0 mt-2"></span>
+                <span>Sie bereits eine tiefgehende Wertpapier- und Anlageberatung für hochkomplexe Vermögen betreiben.</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500 shrink-0 mt-2"></span>
+                <span>Sie einen vollumfänglichen, eidgenössisch anerkannten Diplomabschluss anstreben.</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500 shrink-0 mt-2"></span>
+                <span>Ihr Fokus ausschliesslich auf Nicht-Lebensversicherungen (Sach/Haftpflicht) liegt.</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="pt-6 border-t border-slate-100 mt-8">
+            <a href="/programme/vermoegensberater-iaf/" class="text-primary font-bold text-xs flex items-center gap-1 hover:translate-x-1 transition-transform font-sans">
+              Alternative: Vermögensberater IAF prüfen
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: NACHWEIS GEMÄSS FIDLEG ART. 6 -->
   <section class="section-spacing bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Kompakt. Fokussiert. Umsetzbar.</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Der Lehrgang umfasst 28 Lektionen und ist bewusst kompakt gehalten.</p>
-          <p>Mögliche Formate:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>4 Ausbildungstage vor Ort</li>
-            <li>oder 8 kompakte Sessions</li>
-          </ul>
-          <p>Die Inhalte sind in vier Blöcke strukturiert:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Block 1: Grundlagen & Analyse (Risikoprofil, Obligationen, Aktien, Kennzahlen)</li>
-            <li>Block 2: Kollektive Anlagen & Struktur (Fonds, Kostenarten, Asset Allocation)</li>
-            <li>Block 3: Strukturierte Produkte (Pay-Off-Diagramme, Produktlogik, Berechnungen)</li>
-            <li>Block 4: Integration & Vorbereitung (Praxisbeispiele, FIDLEG-Einordnung, Prüfungsvorbereitung)</li>
-          </ul>
-          <p>Der Fokus liegt klar auf Verständnis und Anwendung – nicht auf theoretischer Breite.</p>
+      <div class="max-w-4xl mx-auto bg-navy text-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl"></div>
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-6">
+            <span class="text-xs font-bold text-accent uppercase tracking-[0.25em] bg-white/10 px-3.5 py-1.5 rounded-full inline-block">Aufsichtsrechtliche Abdeckung</span>
+            <h3 class="text-3xl md:text-4xl font-extrabold tracking-tight font-sans">Nachweis gemäss FIDLEG Art. 6</h3>
+            <p class="text-slate-300 font-sans leading-relaxed text-base md:text-lg">
+              Dieser Lehrgang erfüllt die Anforderungen zur Nachweisbarkeit der Fachkenntnisse als Kundenberater gemäss Art. 6 FIDLEG vollumfänglich. Damit sichern Sie Ihre Beratungstätigkeit sowie Ihre Registereintragung lückenlos ab.
+            </p>
+            <div class="p-4 bg-white/5 rounded-2xl border border-white/10 flex items-start gap-3">
+              <span class="text-xl">⚠️</span>
+              <p class="text-xs text-slate-300 font-sans leading-relaxed">
+                <strong>Wichtig zur Abgrenzung:</strong> Die reinen Verhaltensregeln (FIDLEG Art. 7–20) sind gesetzlich eine separate Pflicht. Sie sind nicht Bestandteil dieses Fachkenntnis-Moduls, sondern werden in unserem spezifischen Verhaltensregeln-Kurs vermittelt.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col gap-3 font-sans">
+            <a href="/programme/fidleg-verhaltensregeln/" class="bg-accent hover:bg-amber-600 text-white text-center py-4 rounded-xl font-bold transition-colors shadow-lg shadow-accent/20">Verhaltensregeln ansehen</a>
+            <a href="/kontakt/" class="bg-white/10 hover:bg-white/15 text-white text-center py-4 rounded-xl font-bold border border-white/10 transition-colors">Voraussetzungen klären</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 7. PRÜFUNG -->
-  <section class="section-spacing bg-surface">
+  <!-- SECTION 4: CURRICULUM (KOMPAKT. FOKUSSIERT. UMSETZBAR.) -->
+  <section class="section-spacing bg-surface relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Leistungsnachweis</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Die Prüfung erfolgt online im Multiple-Choice-Format.</p>
-          <p class="font-bold">Besonderheiten:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Nutzung von Unterlagen erlaubt</li>
-            <li>flexible Durchführung innerhalb eines definierten Zeitfensters</li>
-            <li>Fokus auf Verständnis statt Reproduktion</li>
-          </ul>
-          <p>Die Prüfung wird im webbasierten Schulungssystem bereitgestellt und muss innerhalb einer Woche absolviert werden</p>
-        </div>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-extrabold text-primary uppercase tracking-[0.2em] mb-3 block">Inhaltliches Konzept</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight font-sans">
+          Kompakt. Fokussiert. Umsetzbar.
+        </h2>
+        <p class="text-slate-600 text-lg mt-4 font-sans leading-relaxed">
+          Das Curriculum umfasst 28 kompakte Lektionen. Sie haben die Wahl zwischen zwei zeitlich flexiblen Formaten: 4 intensive Ausbildungstage vor Ort oder 8 Halbtages-Sessions im zeitsparenden Hybrid-Format.
+        </p>
       </div>
+
+      <KtCurriculum client:visible />
     </div>
   </section>
 
-  <!-- 8. INVESTITION -->
+  <!-- SECTION 5: LEISTUNGSNACHWEIS -->
   <section class="section-spacing bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Kostenstruktur</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Seminarkosten: CHF 2’150</p>
-          <p>Prüfungskosten: CHF 150</p>
-          <p class="font-bold">Optionaler Vorteil:</p>
-          <p>Bei Kombination mit dem Modul „Verhaltensregeln“ werden Prüfungsgebühren teilweise übernommen</p>
-          <p>Die Investition ist bewusst niedrigschwellig gehalten – um schnellen Kompetenzaufbau zu ermöglichen.</p>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-extrabold text-primary uppercase tracking-[0.2em] mb-3 block">Zertifizierungsprozess</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight font-sans">
+          Der Leistungsnachweis: Fair und verständnisorientiert.
+        </h2>
+        <p class="text-slate-600 text-lg mt-4 font-sans leading-relaxed">
+          Wir glauben nicht an sinnloses Auswendiglernen unter künstlichem Stress. Unsere Online-Abschlussprüfung prüft das echte Verständnis und die Fähigkeit zur Einordnung.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto font-sans">
+        
+        {/* Step 1 */}
+        <div class="p-8 bg-slate-50 border border-slate-200/50 rounded-3xl relative">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest bg-primary/10 px-2.5 py-1 rounded-full mb-6 inline-block">01. Format</span>
+          <h4 class="text-xl font-extrabold text-navy mb-3">Online-Fachprüfung</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Die Prüfung erfolgt vollkommen digital im webbasierten Schulungssystem. Sie lösen praxisorientierte Multiple-Choice-Fragen, die typische Alltagsfälle der Beratung widerspiegeln.
+          </p>
         </div>
+
+        {/* Step 2 */}
+        <div class="p-8 bg-slate-50 border border-slate-200/50 rounded-3xl relative">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest bg-primary/10 px-2.5 py-1 rounded-full mb-6 inline-block">02. Rahmen</span>
+          <h4 class="text-xl font-extrabold text-navy mb-3">Nutzung von Unterlagen</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Echtes Wissen bedeutet zu wissen, wo es steht. Deshalb ist die Nutzung sämtlicher Kursunterlagen während der Online-Prüfung gestattet („Open Book“-Konzept).
+          </p>
+        </div>
+
+        {/* Step 3 */}
+        <div class="p-8 bg-slate-50 border border-slate-200/50 rounded-3xl relative">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest bg-primary/10 px-2.5 py-1 rounded-full mb-6 inline-block">03. Flexibilität</span>
+          <h4 class="text-xl font-extrabold text-navy mb-3">Zeitfenster nach Wahl</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Kein starrer Terminzwang. Sie absolvieren Ihre Prüfung flexibel innerhalb eines vordefinierten Zeitfensters von einer Woche – genau dann, wenn Sie bereit sind.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- 9. STRATEGISCHE EINORDNUNG -->
-  <section class="section-spacing bg-surface">
+  <!-- SECTION 6: KOSTENSTRUKTUR -->
+  <section class="section-spacing bg-surface relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Wo steht der KT im Gesamtmodell?</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Der Zert. Vermögensberater KT ist kein Ersatz für den Vermögensberater IAF.</p>
-          <p>Er erfüllt eine andere Funktion.</p>
-          <p>Er ist:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>Einstieg in die Anlageberatung</li>
-            <li>regulatorischer Nachweis</li>
-            <li>kompakte Kompetenzbasis</li>
-          </ul>
-          <p>Der IAF hingegen ist:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li>vertiefte Analysekompetenz</li>
-            <li>umfangreichere Ausbildung</li>
-            <li>höhere Komplexitätsstufe</li>
-          </ul>
-          <p>Die Wahl hängt von deiner Ausgangslage ab.</p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        {/* Left side info */}
+        <div class="lg:col-span-6 space-y-6 max-w-xl">
+          <div class="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest">
+            Investition
+          </div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy leading-tight tracking-tight font-sans">
+            Transparente Kosten ohne versteckte Gebühren.
+          </h2>
+          <p class="text-slate-600 text-lg font-sans leading-relaxed">
+            Wir halten die Einstiegshürde bewusst niedrig, um Ihnen den effizienten und rechtssicheren Aufbau Ihrer Anlagekompetenz zu ermöglichen.
+          </p>
+          
+          <div class="p-5 bg-white border border-slate-200/50 rounded-2xl flex items-start gap-4 font-sans shadow-xs">
+            <span class="text-2xl shrink-0 mt-1">💎</span>
+            <div>
+              <h4 class="font-bold text-navy text-sm">Kombinations-Vorteil nutzen</h4>
+              <p class="text-xs text-slate-500 mt-1">
+                Kombinieren Sie dieses Fachkenntnis-Modul mit unserem Lehrgang „Verhaltensregeln“ – wir erlassen oder übernehmen in diesem Fall Teile der Prüfungsgebühren für Sie.
+              </p>
+            </div>
+          </div>
         </div>
-        <a href="/programme/vermoegensberater-iaf/" class="btn-primary">Vermögensberater IAF entdecken</a>
+
+        {/* Right side cost break-down card */}
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="w-full max-w-md bg-white border border-slate-200/80 rounded-[2.5rem] p-8 md:p-10 shadow-xl relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-accent/5 rounded-full blur-2xl"></div>
+            
+            <h3 class="text-2xl font-extrabold text-navy font-sans mb-8">Kostenaufstellung</h3>
+            
+            <div class="space-y-4 font-sans mb-8">
+              <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                <span class="text-slate-500 font-medium text-sm">Seminarkosten</span>
+                <span class="font-extrabold text-navy text-lg">CHF 2’150.-</span>
+              </div>
+              <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                <span class="text-slate-500 font-medium text-sm">Prüfungsgebühren</span>
+                <span class="font-extrabold text-navy text-lg">CHF 150.-</span>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="text-slate-600 font-bold text-sm">Gesamtinvestition</span>
+                <span class="font-black text-primary text-xl">CHF 2’300.-</span>
+              </div>
+            </div>
+
+            <div class="space-y-3 mb-8 text-xs text-slate-500 font-sans leading-relaxed">
+              <div class="flex items-center gap-2">
+                <span class="w-1 h-1 rounded-full bg-slate-400"></span>
+                <span>Inklusive aller Lehrmittel und Unterrichtsmaterialien</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1 h-1 rounded-full bg-slate-400"></span>
+                <span>Inklusive Zugang zur Kathiago-E-Learning-Plattform</span>
+              </div>
+            </div>
+
+            <a href="/kontakt/" class="btn-primary w-full text-center justify-center font-bold py-4 rounded-xl shadow-lg shadow-primary/10 font-sans">
+              Lehrgang buchen
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- 10. WEITERER ENTWICKLUNGSPFAD -->
+  <!-- SECTION 7: WO STEHT DER KT IM GESAMTMODELL? (COMPARE MATRIX) -->
   <section class="section-spacing bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Wie geht es nach dem KT weiter?</h2>
-        <div class="space-y-6 text-slate-600 mb-10">
-          <p>Der KT kann als Einstieg oder Ergänzung dienen.</p>
-          <p>Mögliche nächste Schritte:</p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li><a href="/programme/vermoegensberater-iaf/" class="text-primary hover:underline">Vermögensberater IAF</a> (Vertiefung)</li>
-            <li><a href="/programme/finanzberater-iaf/" class="text-primary hover:underline">Finanzberater IAF</a> (Ganzheitlichkeit)</li>
-            <li><a href="/programme/eidg-finanzplaner/" class="text-primary hover:underline">Eidg. Finanzplaner</a> (Komplexität)</li>
-          </ul>
-          <p>Der KT ist kein Endpunkt. Er ist ein Baustein.</p>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-extrabold text-primary uppercase tracking-[0.2em] mb-3 block">Modellvergleich</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight font-sans">
+          Wo steht der KT im Gesamtmodell?
+        </h2>
+        <p class="text-slate-600 text-lg mt-4 font-sans leading-relaxed">
+          Es ist wichtig zu verstehen, dass der Zert. Vermögensberater KT kein Ersatz für den vollwertigen Diplomlehrgang Vermögensberater/in IAF ist, sondern eine ganz andere Funktion erfüllt.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto font-sans">
+        
+        {/* KT Card */}
+        <div class="bg-slate-50 border border-slate-200/60 rounded-3xl p-8 flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="pb-4 border-b border-slate-200/60">
+              <span class="text-xs font-bold text-primary uppercase tracking-wider block">Kathiago-Baustein</span>
+              <h4 class="text-2xl font-extrabold text-navy mt-1">Zert. Vermögensberater KT</h4>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-slate-600">
+              <li class="flex items-start gap-2.5">
+                <span class="text-primary text-base">➔</span>
+                <span><strong>Einstieg:</strong> Ideal für den grundlegenden, kompakten Einstieg in die Beratung.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-primary text-base">➔</span>
+                <span><strong>Regulatorik:</strong> Konzentrierter Fachkenntnisnachweis gemäss Art. 6 FIDLEG.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-primary text-base">➔</span>
+                <span><strong>Umfang:</strong> Hocheffiziente 28 Lektionen, ideal berufsbegleitend.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 mt-8 border-t border-slate-200/60">
+            <span class="text-xs font-semibold text-slate-400 block mb-3">Status</span>
+            <span class="text-xs font-bold text-primary uppercase tracking-widest bg-primary/10 px-3 py-1.5 rounded-full inline-block">Derzeit aktive Ausbildung</span>
+          </div>
         </div>
-        <a href="/programme/vermoegensberater-iaf/" class="btn-primary">Vermögensberater IAF entdecken</a>
+
+        {/* IAF Card */}
+        <div class="bg-slate-50 border border-slate-200/60 rounded-3xl p-8 flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="pb-4 border-b border-slate-200/60">
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block">Diplomstufe</span>
+              <h4 class="text-2xl font-extrabold text-navy mt-1">Vermögensberater/in IAF</h4>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-slate-600">
+              <li class="flex items-start gap-2.5">
+                <span class="text-slate-400 text-base">➔</span>
+                <span><strong>Analyse:</strong> Tiefgehende, wissenschaftlich fundierte Portfolioanalyse.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-slate-400 text-base">➔</span>
+                <span><strong>Diplom:</strong> Umfassender, eidgenössisch anerkannter Fachausweis.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-slate-400 text-base">➔</span>
+                <span><strong>Komplexität:</strong> Geeignet für anspruchsvollere Mandate und Steuerfälle.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 mt-8 border-t border-slate-200/60">
+            <a href="/programme/vermoegensberater-iaf/" class="text-primary font-bold text-sm flex items-center gap-1 hover:translate-x-1 transition-transform">
+              IAF-Programm ansehen
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- 11. ABSCHLUSS -->
-  <section class="py-24 bg-navy text-white text-center">
+  <!-- SECTION 8: WIE GEHT ES NACH DEM KT WEITER? (ROADMAP) -->
+  <section class="section-spacing bg-surface relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl md:text-5xl mb-8 text-white">Kompetenz beginnt mit Klarheit.</h2>
-      <div class="max-w-2xl mx-auto space-y-6 mb-12 opacity-90">
-        <p>Anlageberatung verlangt Struktur, nicht Meinung.</p>
-        <p>Wer Kunden begleitet, muss:</p>
-        <ul class="list-none space-y-2">
-          <li>verstehen</li>
-          <li>einordnen</li>
-          <li>erklären</li>
-          <li>dokumentieren</li>
-        </ul>
-        <p>Der Zert. Vermögensberater KT schafft die Grundlage dafür – kompakt und regulatorisch sauber.</p>
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-extrabold text-primary uppercase tracking-[0.2em] mb-3 block">Lernpfad</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight font-sans">
+          Ihre Weiterbildungs-Roadmap nach dem KT.
+        </h2>
+        <p class="text-slate-600 text-lg mt-4 font-sans leading-relaxed">
+          Das erworbene Zertifikat ist kein Endpunkt Ihrer beruflichen Entwicklung – es ist das ideale Zwischenplateau für weiterführende, höhere Qualifikationen.
+        </p>
       </div>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="/kontakt/" class="bg-accent hover:bg-amber-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">Teilnahme anfragen</a>
-        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Beratungsgespräch vereinbaren</a>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto font-sans">
+        
+        {/* Step 1: Vermoegensberater */}
+        <div class="bg-white border border-slate-200/80 rounded-[2.5rem] p-8 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-primary uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">Stufe 1</span>
+            <h4 class="text-xl font-extrabold text-navy">Vermögensberater/in IAF</h4>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Bringen Sie Ihre Anlagekenntnisse auf diplomiertes Niveau. Vertiefen Sie Portfoliomanagement und komplexe Anlageberatungen mit schweizweit anerkannter Ausstrahlungskraft.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-100 mt-6">
+            <a href="/programme/vermoegensberater-iaf/" class="text-primary font-bold text-sm flex items-center gap-1 hover:translate-x-1 transition-transform">
+              IAF-Programm entdecken
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Step 2: Finanzberater */}
+        <div class="bg-white border border-slate-200/80 rounded-[2.5rem] p-8 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-primary uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">Stufe 2</span>
+            <h4 class="text-xl font-extrabold text-navy">Finanzberater/in IAF</h4>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Erweitern Sie Ihr Portfolio um Ganzheitlichkeit. Verknüpfen Sie Anlagekompetenz mit Steuern, Vorsorge, Immobilien und rechtlichen Nachlassfragen.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-100 mt-6">
+            <a href="/programme/finanzberater-iaf/" class="text-primary font-bold text-sm flex items-center gap-1 hover:translate-x-1 transition-transform">
+              Finanzberater-Pfad ansehen
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Step 3: Finanzplaner */}
+        <div class="bg-white border border-slate-200/80 rounded-[2.5rem] p-8 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-primary uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">Stufe 3</span>
+            <h4 class="text-xl font-extrabold text-navy">Eidg. Finanzplaner/in</h4>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Die höchste eidgenössische Stufe für anspruchsvolle, strategische Planungen, Nachfolgeplanungen und hochvolumige Firmenkundenberatungen.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-100 mt-6">
+            <a href="/programme/eidg-finanzplaner/" class="text-primary font-bold text-sm flex items-center gap-1 hover:translate-x-1 transition-transform">
+              Meisterklasse ansehen
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: KOMPETENZ BEGINNT MIT KLARHEIT -->
+  <section class="py-24 bg-navy text-white text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-primary/10 mix-blend-color-dodge pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-4xl md:text-5xl font-black mb-8 text-white font-sans tracking-tight">
+        Kompetenz beginnt mit Klarheit.
+      </h2>
+      <div class="max-w-2xl mx-auto space-y-6 mb-12 text-slate-300 font-sans leading-relaxed text-base md:text-lg">
+        <p>Gute Anlageberatung beruht auf sauberer, transparenter Struktur – nicht auf blosser Meinung oder Gefühl.</p>
+        <p>Wer Schweizer Kunden kompetent und rechtssicher durch Portfoliorisiken und Produktstrukturen navigieren will, benötigt ein felsenfestes Fundament. Machen Sie den ersten Schritt zu absoluter regulatorischer Sicherheit am Tisch.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 font-sans">
+        <a href="/kontakt/" class="bg-accent hover:bg-amber-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg shadow-accent/20 justify-center">Teilnahme anfragen</a>
+        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors justify-center">Beratungsgespräch vereinbaren</a>
       </div>
     </div>
   </section>
