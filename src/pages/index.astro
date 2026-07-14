@@ -76,7 +76,6 @@ const videoTestimonials = [
             </div>
             <div class="flex flex-wrap items-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
               <img src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/vbv%20logo.webp" alt="VBV" class="h-12 w-auto object-contain" />
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqtbOiYEwWSpsqvTVH572nIMLNbvjMhmOwvw&s" alt="IAF" class="h-10 w-auto object-contain" />
               <img src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/Eidgeno%CC%88ssische_Finanzmarktaufsicht_logo.svg.png" alt="FINMA" class="h-8 w-auto object-contain" />
               <img src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/SAQ_Logo_CMYK.jpg" alt="SAQ" class="h-8 w-auto object-contain" />
             </div>
@@ -121,24 +120,7 @@ const videoTestimonials = [
         </div>
       </div>
 
-      <!-- Wide emotional image showing success/graduation -->
-      <div class="mt-16 rounded-[2rem] overflow-hidden shadow-xl border border-slate-200/50 aspect-[21/9] md:aspect-[24/9] w-full relative group">
-        <img 
-          src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/04_Zertifikatsuebergabe_Dachterrasse/kathiago-zertifikatsuebergabe-dachterrasse-01.jpeg" 
-          alt="Kathiago Absolventen bei der Zertifikatsübergabe" 
-          class="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700"
-          referrerpolicy="no-referrer"
-        />
-        <!-- Dark gradient overlay to blend beautifully -->
-        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-navy/15 to-transparent"></div>
-        <div class="absolute bottom-6 left-6 md:bottom-8 md:left-10 text-white z-10 max-w-xl">
-          <span class="inline-block px-3 py-1 rounded-full bg-accent text-navy text-xs font-bold uppercase tracking-widest mb-3">Erfolg & Community</span>
-          <h4 class="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight mb-2">Gemeinsam an der Spitze</h4>
-          <p class="text-xs md:text-sm text-slate-200 leading-relaxed">
-            Feierliche Zertifikatsübergabe auf der Dachterrasse — Stolze Gesichter nach hocheffizienter, erfolgreicher Prüfungsvorbereitung.
-          </p>
-        </div>
-      </div>
+
     </div>
   </section>
 
@@ -402,28 +384,40 @@ const videoTestimonials = [
   <!-- 2. MARKTRELEVANZ – WARUM JETZT? -->
   <section class="section-spacing bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl md:text-4xl mb-8 text-navy">Der Beratungsmarkt wird nicht einfacher. Er wird anspruchsvoller.</h2>
-        <div class="space-y-6 text-slate-600 mb-12">
-          <p>Die Anforderungen an Finanzberater haben sich in den letzten Jahren fundamental verändert.</p>
-          <p>
-            FIDLEG verlangt nicht nur formale Kenntnisse, sondern einen strukturierten Umgang mit Verhaltensregeln, Informationspflichten und Dokumentationsanforderungen.
-            Gleichzeitig erwarten Kunden transparente Erklärungen zu Anlageklassen, Risiken, Gebührenstrukturen und Alternativen.
-          </p>
-          <p>
-            Hinzu kommt eine neue Dimension: digitale Vermögenswerte.
-            Bitcoin, Tokenisierung und neue Marktinfrastrukturen sind Teil öffentlicher Diskussionen geworden – und damit Teil von Kundengesprächen.
-          </p>
-          <p>
-            Die Herausforderung besteht nicht darin, alles zu wissen.
-            Die Herausforderung besteht darin, strukturiert zu denken, korrekt zu argumentieren und regulatorisch sauber zu handeln.
-          </p>
-          <p>Kathiago adressiert genau diese Schnittstelle zwischen Marktanforderung und Kompetenzentwicklung.</p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <h2 class="text-3xl md:text-4xl mb-8 text-navy font-bold leading-tight">Der Beratungsmarkt wird nicht einfacher. Er wird anspruchsvoller.</h2>
+          <div class="space-y-6 text-slate-600 mb-12">
+            <p>Die Anforderungen an Finanzberater haben sich in den letzten Jahren fundamental verändert.</p>
+            <p>
+              FIDLEG verlangt nicht nur formale Kenntnisse, sondern einen strukturierten Umgang mit Verhaltensregeln, Informationspflichten und Dokumentationsanforderungen.
+              Gleichzeitig erwarten Kunden transparente Erklärungen zu Anlageklassen, Risiken, Gebührenstrukturen und Alternativen.
+            </p>
+            <p>
+              Hinzu kommt eine neue Dimension: digitale Vermögenswerte.
+              Bitcoin, Tokenisierung und neue Marktinfrastrukturen sind Teil öffentlicher Diskussionen geworden – und damit Teil von Kundengesprächen.
+            </p>
+            <p>
+              Die Herausforderung besteht nicht darin, alles zu wissen.
+              Die Herausforderung besteht darin, strukturiert zu denken, korrekt zu argumentieren und regulatorisch sauber zu handeln.
+            </p>
+            <p>Kathiago adressiert genau diese Schnittstelle zwischen Marktanforderung und Kompetenzentwicklung.</p>
+          </div>
+          <blockquote class="border-l-4 border-primary pl-6 py-2 italic text-2xl text-navy font-display">
+            „Beratung beginnt nicht beim Produkt.<br />
+            Sie beginnt beim Verständnis.“
+          </blockquote>
         </div>
-        <blockquote class="border-l-4 border-primary pl-6 py-2 italic text-2xl text-navy font-display">
-          „Beratung beginnt nicht beim Produkt.<br />
-          Sie beginnt beim Verständnis.“
-        </blockquote>
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
+            <img 
+              src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/WhatsApp%20Image%202026-07-14%20at%2013.09.50%20(1).jpeg" 
+              alt="Anspruchsvoller Beratungsmarkt" 
+              class="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </section>
