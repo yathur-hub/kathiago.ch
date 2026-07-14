@@ -56,7 +56,7 @@ const videoTestimonials = [
           <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
             Zukunft der Finanzberatung
           </div>
-          <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 text-navy leading-[1.12] tracking-tight">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold mb-8 text-navy leading-[1.12] tracking-tight">
             Finanzbildung für Berater, die <span class="text-primary">Verantwortung</span> tragen.
           </h1>
           <div class="max-w-2xl space-y-6 text-xl text-slate-600 mb-12 leading-relaxed">
@@ -118,6 +118,25 @@ const videoTestimonials = [
               vergebene Zertifikate seit 2020
             </p>
           </div>
+        </div>
+      </div>
+
+      <!-- Wide emotional image showing success/graduation -->
+      <div class="mt-16 rounded-[2rem] overflow-hidden shadow-xl border border-slate-200/50 aspect-[21/9] md:aspect-[24/9] w-full relative group">
+        <img 
+          src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/04_Zertifikatsuebergabe_Dachterrasse/kathiago-zertifikatsuebergabe-dachterrasse-01.jpeg" 
+          alt="Kathiago Absolventen bei der Zertifikatsübergabe" 
+          class="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700"
+          referrerpolicy="no-referrer"
+        />
+        <!-- Dark gradient overlay to blend beautifully -->
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-navy/15 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 md:bottom-8 md:left-10 text-white z-10 max-w-xl">
+          <span class="inline-block px-3 py-1 rounded-full bg-accent text-navy text-xs font-bold uppercase tracking-widest mb-3">Erfolg & Community</span>
+          <h4 class="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight mb-2">Gemeinsam an der Spitze</h4>
+          <p class="text-xs md:text-sm text-slate-200 leading-relaxed">
+            Feierliche Zertifikatsübergabe auf der Dachterrasse — Stolze Gesichter nach hocheffizienter, erfolgreicher Prüfungsvorbereitung.
+          </p>
         </div>
       </div>
     </div>
@@ -253,7 +272,34 @@ const videoTestimonials = [
   <!-- Unsere Bildungsprogramme -->
   <section class="section-spacing bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl mb-12 text-navy text-center">Unsere Bildungsprogramme</h2>
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-4">
+          Ausbildungs-Campus
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-navy">Unsere Bildungsprogramme</h2>
+        <p class="text-lg text-slate-600 mb-8">
+          Eidgenössisch anerkannte Abschlüsse und praxisorientierte Zertifikate – fundiert aufgebaut für Ihren messbaren Erfolg am Beratungstisch.
+        </p>
+      </div>
+
+      <!-- Real Seminar banner image -->
+      <div class="mb-16 rounded-[2rem] overflow-hidden shadow-lg border border-slate-100/50 aspect-[21/9] md:aspect-[24/8] w-full relative group">
+        <img 
+          src="https://raw.githubusercontent.com/yathur-hub/kathiago.ch-assets/main/03_Seminar_Formal-Weisshemden/kathiago-seminar-formal-01.jpeg" 
+          alt="Kathiago Seminarteilnehmer im Präsenzunterricht" 
+          class="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700"
+          referrerpolicy="no-referrer"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/65 via-navy/15 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 md:bottom-8 md:left-10 text-white z-10 max-w-xl">
+          <span class="inline-block px-2.5 py-1 rounded bg-primary text-white text-xs font-bold uppercase tracking-widest mb-3">Live-Präsenzunterricht</span>
+          <h4 class="text-lg md:text-2xl font-bold tracking-tight mb-1">Professionelles Lernumfeld</h4>
+          <p class="text-xs md:text-sm text-slate-200 leading-relaxed hidden sm:block">
+            Unsere Seminare kombinieren fundierte Theorie mit intensiver Praxis. In Kleingruppen schärfen Sie Ihre Beratungskompetenz.
+          </p>
+        </div>
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {programs.map(program => (
           <div class="card flex flex-col">
@@ -277,6 +323,78 @@ const videoTestimonials = [
       </div>
     </div>
   </section>
+
+  <!-- Unsere Partner -->
+  <section class="section-spacing bg-surface border-t border-b border-slate-100/50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Unsere Partner</h2>
+        <p class="text-lg text-slate-600">Firmen, mit denen wir zusammenarbeiten.</p>
+      </div>
+
+      <div class="relative w-full py-4">
+        <!-- Mask for smooth fade-out edges left and right -->
+        <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-surface to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-surface to-transparent z-10 pointer-events-none"></div>
+
+        <div class="marquee-container overflow-hidden flex whitespace-nowrap">
+          <!-- Track 1 -->
+          <div class="marquee-track flex shrink-0 items-center">
+            <img src="/images/partner/ssm-partner-ag.png" alt="SSM Partner AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/beyeler-consulting-gmbh.svg" alt="Beyeler Consulting GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/mission-13-gmbh.svg" alt="Mission 13 GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/profinder-gmbh.png" alt="Profinder GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/finwiwo-ag.png" alt="Finwiwo AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/veritas-finance-ag.png" alt="Veritas Finance AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/swiss-united-gmbh.png" alt="Swiss United GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/bsafe-invest-gmbh.svg" alt="Bsafe Invest GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/fianza-ag.png" alt="Fianza AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/satara-consulting-gmbh.svg" alt="Satara Consulting GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/combinvest-ag.png" alt="Combinvest AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+          </div>
+          <!-- Track 2 (Exact copy for seamless looping) -->
+          <div class="marquee-track flex shrink-0 items-center" aria-hidden="true">
+            <img src="/images/partner/ssm-partner-ag.png" alt="SSM Partner AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/beyeler-consulting-gmbh.svg" alt="Beyeler Consulting GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/mission-13-gmbh.svg" alt="Mission 13 GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/profinder-gmbh.png" alt="Profinder GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/finwiwo-ag.png" alt="Finwiwo AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/veritas-finance-ag.png" alt="Veritas Finance AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/swiss-united-gmbh.png" alt="Swiss United GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/bsafe-invest-gmbh.svg" alt="Bsafe Invest GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/fianza-ag.png" alt="Fianza AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/satara-consulting-gmbh.svg" alt="Satara Consulting GmbH Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+            <img src="/images/partner/combinvest-ag.png" alt="Combinvest AG Logo" class="h-10 md:h-12 w-auto object-contain mx-6 sm:mx-8 md:mx-10 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    @keyframes marquee-scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .marquee-track {
+      animation: marquee-scroll 35s linear infinite;
+    }
+    .marquee-container:hover .marquee-track {
+      animation-play-state: paused;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .marquee-track {
+        animation: none;
+        overflow-x: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
 
   <!-- Holistic Advisory Section (Kunde im Zentrum und 6 Beratungswelten) -->
   <HolisticAdvisorySection client:visible />
@@ -489,6 +607,7 @@ const videoTestimonials = [
             <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
               Direkt aus der Praxis
             </div>
+
             <h2 class="text-3xl md:text-4xl font-bold mb-6 text-navy leading-tight">
               Von aktiven Marktpraktikern geführt.
             </h2>
@@ -553,21 +672,5 @@ const videoTestimonials = [
     </div>
   </section>
 
-  <!-- 9. ABSCHLUSS -->
-  <section class="py-24 bg-primary text-white text-center">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl md:text-5xl mb-8">Kompetenz ist eine Entscheidung.</h2>
-      <div class="max-w-2xl mx-auto space-y-6 mb-12 opacity-90">
-        <p>Die Finanzberatung wird nicht einfacher.</p>
-        <p>Sie wird anspruchsvoller, technischer und verantwortungsvoller.</p>
-        <p>Weiterbildung ist deshalb kein Zusatzmodul im Kalender.</p>
-        <p>Sie ist Grundlage professioneller Beratung.</p>
-        <p>Wenn du Beratung ernst nimmst, ist der nächste Schritt klar.</p>
-      </div>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="/programme/" class="bg-accent hover:bg-amber-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors">Programm auswählen</a>
-        <a href="/kontakt/" class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-md font-bold text-lg transition-colors">Strategiegespräch buchen</a>
-      </div>
-    </div>
-  </section>
+
 </Layout>

@@ -18,9 +18,7 @@ const menuSections = [
     links: [
       { label: 'Firmenaufbau', href: '/services/firmenaufbau/' },
       { label: 'FINMA-Registrierung & Regulatorik', href: '/services/finma-registrierung-regulatorik/' },
-      { label: 'Compliance', href: '/services/compliance/' },
       { label: 'Back-Office & Prozesse', href: '/services/back-office-prozesse/' },
-      { label: 'Operative Unterstützung', href: '/services/operative-unterstuetzung/' },
       { label: 'Mentoring', href: '/services/mentoring/' },
     ]
   },
