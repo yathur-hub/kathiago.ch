@@ -1,6 +1,7 @@
 ---
 import '../index.css';
 import MegaMenu from '../components/MegaMenu';
+import ContactModal from '../components/ContactModal';
 
 interface Props {
   title: string;
@@ -27,6 +28,37 @@ const {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta name="robots" content="index, follow" />
+
+    <script is:inline>
+      (function() {
+        try {
+          if (typeof window === 'undefined') return;
+          
+          // Track original landing page
+          if (!sessionStorage.getItem('contact_landing_page')) {
+            sessionStorage.setItem('contact_landing_page', window.location.href);
+          }
+          
+          // Track original referrer
+          if (!sessionStorage.getItem('contact_referrer')) {
+            sessionStorage.setItem('contact_referrer', document.referrer || '');
+          }
+          
+          // Track UTM parameters
+          var urlParams = new URLSearchParams(window.location.search);
+          var utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+          
+          utmParams.forEach(function(param) {
+            var val = urlParams.get(param);
+            if (val) {
+              sessionStorage.setItem('contact_' + param, val);
+            }
+          });
+        } catch (e) {
+          console.warn('Session storage tracking failed:', e);
+        }
+      })();
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,5 +135,6 @@ const {
         </div>
       </div>
     </footer>
+    <ContactModal client:load />
   </body>
 </html>
